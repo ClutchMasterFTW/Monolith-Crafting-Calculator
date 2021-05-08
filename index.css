@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'Purista';
+    src: url('fonts/Purista-SemiBold.woff2') format('woff2'),
+        url('fonts/Purista-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Purista';
+    src: url('fonts/Purista-Bold.woff2') format('woff2'),
+        url('fonts/Purista-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Purista';
+    src: url('fonts/Purista-Medium.woff2') format('woff2'),
+        url('fonts/Purista-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'hhhbold';
+    src: url('fonts/icaorwyid-webfont.woff2') format('woff2'),
+         url('fonts/icaorwyid-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    font-family: 'Purista';
+}
+
+html {
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#background-img {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+#header {
+    width: 100vw;
+    height: 60px;
+    background-color: #111111;
+    border-bottom: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+}
+
+#logo-text {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+#guns-container {
+    width: 50vw;
+    height: 82%;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 5vw;
+    left: 5vw;
+    background-image: linear-gradient(135deg, rgba(86, 86, 86, 1), rgba(86, 86, 86, 0.25));
+    border: 1px solid white;
+}
+
+/*#test {
+    position: absolute;
+    top: 5vw;
+    left: 7vw;
+    font-family: 'hhhbold';
+    font-size: 5vw;
+    color: white;
+    letter-spacing: -1.1vw;
+}*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#header {
+    width: 100vw;
+    height: 60px;
+    background-color: #111111;
+    border-bottom: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    filter: invert(1);
+    transform: rotate(-10deg) scaleX(-1);
+}
+
+#logo-text {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+#credits {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    z-index: 100;
+    color: black;
+}
+
+#link {
+    color: blue;
+}
+
+#warning {
+    position: absolute;
+    bottom: 5px;
+    right: 575px;
+    user-select: none;
+}
+
+#warning-text {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: black;
+}
+
+#dim-warning-container {
+    background-image: linear-gradient(160deg,salmon, red);
+    opacity: 80%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    z-index: 100;
+    visibility: hidden;
+}
+
+#dim-warning-icon {
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    width: 100%;
+    user-select: none;
+    margin-top: 5%;
+}
+
+#dim-warning-title {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -1%;
+}
+
+#dim-warning-text {
+    color: white;
+    font-size: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+#proceed {
+    border: white solid 5px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#proceed:hover {
+    box-shadow: 0px 0px 10px black;
+    transition: box-shadow ease-in-out 0.25s;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#material-container {
+    width: 37.5vw;
+    height: 82%;
+    position: absolute;
+    top: 5vw;
+    left: 57.5vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: linear-gradient(135deg, rgba(86, 86, 86, 1), rgba(86, 86, 86, 0.25));
+    border: 1px solid white;
+}
