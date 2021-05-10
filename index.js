@@ -687,6 +687,33 @@ var guns = [
     }
 ];
 
+var materials = [
+    material0 = {
+        name: "Copper Ore",
+        image: "images/ores/copper.png"
+    },
+    material1 = {
+        name: "Coal Ore",
+        image: "images/ores/coal.png"
+    },
+    material2 = {
+        name: "Iron Ore",
+        image: "images/ores/iron.png"
+    },
+    material3 = {
+        name: "Silver Ore",
+        image: "images/ores/silver.png"
+    },
+    material4 = {
+        name: "Gold Ore",
+        image: "images/ores/gold.png"
+    },
+    material5 = {
+        name: "Titanium Ore",
+        image: "images/ores/titanium.png"
+    }
+];
+
 function loadGuns() {
     for(i = 0; i < guns.length; i++) {
         var itemContainer = document.createElement("div");
@@ -814,8 +841,8 @@ function loadGuns() {
         itemInputBox.setAttribute("type", "number");
         itemInputBox.setAttribute("min", "0");
         itemInputBox.setAttribute("max", "99");
-        itemInputBox.setAttribute("onchange", "inputChange(" + this.id + ")");
-        itemInputBox.setAttribute("onkeydown", "inputChange(" + this.id + ")");
+        itemInputBox.setAttribute("onchange", "inputChange(this.id)");
+        itemInputBox.setAttribute("onkeydown", "inputChange(this.id)");
         
         var mainContainer = document.getElementById("guns-container");
         mainContainer.appendChild(itemContainer);
@@ -869,4 +896,48 @@ function fadeIn() {
 
 function closeWarning() {
     document.getElementById("dim-warning-container").style.visibility = "hidden";
+}
+
+function loadMaterials() {
+    for(i = 0; i < materials.length; i++) {
+        var materialItemContainer = document.createElement("div");
+        materialItemContainer.id = "material-item-container" + i;
+        materialItemContainer.style.border = "1px solid gray";
+        materialItemContainer.style.height = "5vw";
+        materialItemContainer.setAttribute("onclick", "materialClick(this.id)");
+
+        var materialImage = document.createElement("img");
+        materialImage.id = "material-image" + i;
+        materialImage.setAttribute("src", materials[i].image);
+        materialImage.style.width = "4.5vw";
+        materialImage.setAttribute("title", materials[i].name);
+        materialImage.style.display = "block";
+        materialImage.style.position = "relative";
+        materialImage.style.top = "0.2vw";
+        materialImage.style.left = "0.2vw";
+        materialImage.style.border = "1px solid #333333";
+        materialImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
+
+        var materialName = document.createElement("div");
+        materialName.id = "material-name" + i;
+        materialName.innerHTML = materials[i].name;
+        materialName.style.display = "block";
+        materialName.style.position = "relative";
+        materialName.style.top = "-4.5vw";
+        materialName.style.left = "5.25vw";
+        materialName.style.fontSize = "1.5vw";
+        materialName.style.color = "white";
+        materialName.style.fontWeight = "bold";
+
+        var mainContainer = document.getElementById("material-container");
+        mainContainer.appendChild(materialItemContainer);
+        materialItemContainer.appendChild(materialImage);
+        materialItemContainer.appendChild(materialName);
+    }
+}
+
+loadMaterials();
+
+function materialClick(id) {
+    
 }
