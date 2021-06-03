@@ -1,7 +1,7 @@
 //Variables
 //Weapon crafting data received from parkerx's weapon recipes spreadsheet
 var guns = [
-    gun0 = {
+    {
         name: "Makarov",
         class: "Pistol",
         amount: 0,
@@ -19,7 +19,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun1 = {
+    {
         name: "M1911",
         class: "Pistol",
         amount: 0,
@@ -37,7 +37,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun2 = {
+    {
         name: "P99",
         class: "Pistol",
         amount: 0,
@@ -55,7 +55,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun3 = {
+    {
         name: "FN Five-Seven",
         class: "Pistol",
         amount: 0,
@@ -73,7 +73,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun4 = {
+    {
         name: "Mac-11",
         class: "Rifle",
         amount: 0,
@@ -91,7 +91,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun5 = {
+    {
         name: "MR96",
         class: "Pistol",
         amount: 0,
@@ -109,7 +109,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun6 = {
+    {
         name: "H&K MP5",
         class: "Rifle",
         amount: 0,
@@ -127,7 +127,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun7 = {
+    {
         name: "Machete",
         class: "Knife",
         amount: 0,
@@ -145,7 +145,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun8 = {
+    {
         name: "H&K UMP .45",
         class: "Rifle",
         amount: 0,
@@ -163,7 +163,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun9 = {
+    {
         name: "AK-74",
         class: "Rifle",
         amount: 0,
@@ -181,7 +181,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun10 = {
+    {
         name: "Glock 18",
         class: "Pistol",
         amount: 0,
@@ -199,7 +199,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun11 = {
+    {
         name: "AR-15",
         class: "Rifle",
         amount: 0,
@@ -217,7 +217,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun12 = {
+    {
         name: "Thompson",
         class: "Rifle",
         amount: 0,
@@ -235,7 +235,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun13 = {
+    {
         name: "Glock 17",
         class: "Pistol",
         amount: 0,
@@ -253,7 +253,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun14 = {
+    {
         name: "Kriss Vector",
         class: "Rifle",
         amount: 0,
@@ -271,7 +271,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun15 = {
+    {
         name: "Desert Eagle",
         class: "Pistol",
         amount: 0,
@@ -289,7 +289,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun16 = {
+    {
         name: "G36C",
         class: "Rifle",
         amount: 0,
@@ -307,7 +307,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun17 = {
+    {
         name: "LR-300",
         class: "Rifle",
         amount: 0,
@@ -325,7 +325,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun18 = {
+    {
         name: "DP-28",
         class: "Rifle",
         amount: 0,
@@ -343,7 +343,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun19 = {
+    {
         name: "Serbu Shorty",
         class: "Shotgun",
         amount: 0,
@@ -361,7 +361,7 @@ var guns = [
         maple: 12,
         willow: 0
     },
-    gun20 = {
+    {
         name: "IMI Galil",
         class: "Rifle",
         amount: 0,
@@ -379,7 +379,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun21 = {
+    {
         name: "G3A3",
         class: "Rifle",
         amount: 0,
@@ -397,7 +397,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun22 = {
+    {
         name: "Honey Badger",
         class: "Rifle",
         amount: 0,
@@ -415,7 +415,25 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun23 = {
+    {
+        name: "SCAR-H",
+        class: "Rifle",
+        amount: 0,
+        level: 52,
+        mag: 20,
+        firemodes: "Automatic, Semi-Automatic",
+        legal: false,
+        copper: 24,
+        iron: 69,
+        silver: 0,
+        gold: 0,
+        titanium: 0,
+        coal: 176,
+        wood: 0,
+        maple: 0,
+        willow: 0
+    },
+    {
         name: "M249",
         class: "Rifle",
         amount: 0,
@@ -433,7 +451,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun24 = {
+    {
         name: "BT MP9",
         class: "Rifle",
         amount: 0,
@@ -451,7 +469,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun25 = {
+    {
         name: "Mosin Nagant",
         class: "Rifle",
         amount: 0,
@@ -469,7 +487,7 @@ var guns = [
         maple: 0,
         willow: 12
     },
-    gun26 = {
+    {
         name: "M14",
         class: "Rifle",
         amount: 0,
@@ -487,7 +505,7 @@ var guns = [
         maple: 0,
         willow: 12
     },
-    gun27 = {
+    {
         name: "M3 Super 90",
         class: "Shotgun",
         amount: 0,
@@ -505,7 +523,7 @@ var guns = [
         maple: 12,
         willow: 0
     },
-    gun28 = {
+    {
         name: "M4 Carbine",
         class: "Rifle",
         amount: 0,
@@ -523,7 +541,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun29 = {
+    {
         name: "ACR-E",
         class: "Rifle",
         amount: 0,
@@ -541,7 +559,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun30 = {
+    {
         name: "KSG-12",
         class: "Shotgun",
         amount: 0,
@@ -559,7 +577,7 @@ var guns = [
         maple: 12,
         willow: 0
     },
-    gun31 = {
+    {
         name: "AUG A3",
         class: "Rifle",
         amount: 0,
@@ -577,7 +595,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun32 = {
+    {
         name: "XM8",
         class: "Rifle",
         amount: 0,
@@ -595,7 +613,7 @@ var guns = [
         maple: 0,
         willow: 0
     },
-    gun33 = {
+    {
         name: "L115",
         class: "Exotic",
         amount: 0,
@@ -613,7 +631,7 @@ var guns = [
         maple: null,
         willow: null
     },
-    gun34 = {
+    {
         name: "Silver Baller",
         class: "Exotic",
         amount: 0,
@@ -631,7 +649,7 @@ var guns = [
         maple: null,
         willow: null
     },
-    gun35 = {
+    {
         name: "HK-416",
         class: "Exotic",
         amount: 0,
@@ -649,25 +667,7 @@ var guns = [
         maple: null,
         willow: null
     },
-    gun36 = {
-        name: "SCAR-H",
-        class: "Exotic",
-        amount: 0,
-        level: 0,
-        mag: 20,
-        firemodes: "Automatic, Semi-Automatic",
-        legal: false,
-        copper: null,
-        iron: null,
-        silver: null,
-        gold: null,
-        titanium: null,
-        coal: null,
-        wood: null,
-        maple: null,
-        willow: null
-    },
-    gun37 = {
+    {
         name: "BMG-50",
         class: "Police",
         amount: 0,
@@ -684,33 +684,90 @@ var guns = [
         wood: null,
         maple: null,
         willow: null
+    },
+    {
+        name: "Gas Mask",
+        class: "Equipable",
+        amount: 0,
+        level: 52,
+        mag: "Doesn't accept ammo",
+        firemodes: "Doesn't fire ammo",
+        legal: true,
+        copper: 6,
+        iron: 24,
+        silver: 0,
+        gold: 0,
+        titanium: 0,
+        coal: 18,
+        wood: 0,
+        maple: 0,
+        willow: 0
+    },
+    {
+        name: "Gas Filter",
+        class: "Equipable",
+        amount: 0,
+        level: 52,
+        mag: "Doesn't accept ammo",
+        firemodes: "Doesn't fire ammo",
+        legal: true,
+        copper: 6,
+        iron: 15,
+        silver: 0,
+        gold: 0,
+        titanium: 0,
+        coal: 12,
+        wood: 0,
+        maple: 0,
+        willow: 0
     }
 ];
 
 var materials = [
-    material0 = {
+    {
         name: "Copper Ore",
-        image: "images/ores/copper.png"
+        image: "images/ores/copper.png",
+        amount: 0
     },
-    material1 = {
+    {
         name: "Coal Ore",
-        image: "images/ores/coal.png"
+        image: "images/ores/coal.png",
+        amount: 0
     },
-    material2 = {
+    {
         name: "Iron Ore",
-        image: "images/ores/iron.png"
+        image: "images/ores/iron.png",
+        amount: 0
     },
-    material3 = {
+    {
         name: "Silver Ore",
-        image: "images/ores/silver.png"
+        image: "images/ores/silver.png",
+        amount: 0
     },
-    material4 = {
+    {
         name: "Gold Ore",
-        image: "images/ores/gold.png"
+        image: "images/ores/gold.png",
+        amount: 0
     },
-    material5 = {
+    {
         name: "Titanium Ore",
-        image: "images/ores/titanium.png"
+        image: "images/ores/titanium.png",
+        amount: 0
+    },
+    {
+        name: "Wood Plank",
+        image: "images/ores/plank.png",
+        amount: 0
+    },
+    {
+        name: "Maple Plank",
+        image: "images/ores/plank.png",
+        amount: 0
+    },
+    {
+        name: "Willow Plank",
+        image: "images/ores/plank.png",
+        amount: 0
     }
 ];
 
@@ -748,6 +805,9 @@ function loadGuns() {
         } else if(guns[i].class == "Police") {
             itemImage.style.border = "1px solid #0015ff";
             itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(124, 135, 255, 1), rgba(0, 21, 255, 0.25))";
+        } else if(guns[i].class == "Equipable") {
+            itemImage.style.border = "1px solid #46d300";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(135, 209, 98, 1), rgba(70, 211, 0, 0.25))";
         }
 
         var itemName = document.createElement("div");
@@ -820,13 +880,11 @@ function loadGuns() {
         itemFiremodes.style.fontWeight = "600";
         itemFiremodes.style.color = "white";
 
-        var itemInputBox = document.createElement("input");
+        itemInputBox = document.createElement("input");
         itemInputBox.id = "item-input-box" + i;
         itemInputBox.value = 0;
         itemInputBox.style.fontSize = "3vw";
         itemInputBox.style.fontWeight = "600";
-        itemInputBox.style.color = "black";
-        itemInputBox.style.backgroundColor = "white";
         itemInputBox.style.opacity = "75%";
         itemInputBox.style.width = "5vw";
         itemInputBox.style.height = "5vw";
@@ -839,10 +897,19 @@ function loadGuns() {
         itemInputBox.style.lineHeight = "5vw";
         itemInputBox.style.verticalAlign = "middle";
         itemInputBox.setAttribute("type", "number");
-        itemInputBox.setAttribute("min", "0");
-        itemInputBox.setAttribute("max", "99");
-        itemInputBox.setAttribute("onchange", "inputChange(this.id)");
-        itemInputBox.setAttribute("onkeydown", "inputChange(this.id)");
+        if(guns[i].class == "Police" || guns[i].class == "Exotic") {
+            itemInputBox.style.backgroundColor = "salmon";
+            itemInputBox.style.color = "red";
+            itemInputBox.setAttribute("min", "0");
+            itemInputBox.setAttribute("max", "0");
+        } else {
+            itemInputBox.style.backgroundColor = "white";
+            itemInputBox.style.color = "black";
+            itemInputBox.setAttribute("min", "0");
+            itemInputBox.setAttribute("max", "99");
+            itemInputBox.setAttribute("onchange", "inputChange()");
+            itemInputBox.setAttribute("onInput", "inputChange()");
+        }
         
         var mainContainer = document.getElementById("guns-container");
         mainContainer.appendChild(itemContainer);
@@ -857,14 +924,6 @@ function loadGuns() {
 }
 
 loadGuns();
-
-function inputChange(id) {
-    //var value = document.getElementById(id).value;
-    console.log(id);
-    //if(value < 0) {
-    //    document.getElementById(id).value = 0;
-    //}
-}
 
 //If width of page is less than 1000, run function:
 setInterval(function(){
@@ -929,15 +988,85 @@ function loadMaterials() {
         materialName.style.color = "white";
         materialName.style.fontWeight = "bold";
 
+        var materialAmount = document.createElement("div");
+        materialAmount.id = "material-amount" + i;
+        materialAmount.innerHTML = "Amount: " + materials[i].amount;
+        materialAmount.style.display = "block";
+        materialAmount.style.position = "relative";
+        materialAmount.style.top = "-4.5vw";
+        materialAmount.style.left = "5.25vw";
+        materialAmount.style.fontSize = "1.25vw";
+        materialAmount.style.color = "white";
+        materialAmount.style.fontWeight = "600";
+
         var mainContainer = document.getElementById("material-container");
         mainContainer.appendChild(materialItemContainer);
         materialItemContainer.appendChild(materialImage);
         materialItemContainer.appendChild(materialName);
+        materialItemContainer.appendChild(materialAmount);
     }
 }
 
 loadMaterials();
 
-function materialClick(id) {
+var list = [];
+
+function inputChange() {
+    list = [];
+    for(j = 0; j < materials.length; j++) {
+        materials[j].amount = 0;
+    }
+
+    for(i = 0; i < guns.length; i++) {
+        var currentAmount = document.getElementById("item-input-box" + i).value;
+
+        if(currentAmount == "") {
+            guns[i].amount = "0";
+        } else {
+            guns[i].amount = currentAmount;
+        }
+        list.push(guns[i].amount);
+    }
+    console.log(list);
+    for(x = 0; x < guns.length; x++) {
+        //Copper
+        materials[0].amount += (guns[x].copper * list[x]);
+        document.getElementById("material-amount0").innerHTML = "Amount: " + materials[0].amount;
+
+        //Coal
+        materials[1].amount += (guns[x].coal * list[x]);
+        document.getElementById("material-amount1").innerHTML = "Amount: " + materials[1].amount;
     
+        //Iron
+        materials[2].amount += (guns[x].iron * list[x]);
+        document.getElementById("material-amount2").innerHTML = "Amount: " + materials[2].amount;
+
+        //Silver
+        materials[3].amount += (guns[x].silver * list[x]);
+        document.getElementById("material-amount3").innerHTML = "Amount: " + materials[3].amount;
+
+        //Gold
+        materials[4].amount += (guns[x].gold * list[x]);
+        document.getElementById("material-amount4").innerHTML = "Amount: " + materials[4].amount;
+
+        //Titanium
+        materials[5].amount += (guns[x].titanium * list[x]);
+        document.getElementById("material-amount5").innerHTML = "Amount: " + materials[5].amount;
+
+        //Wood
+        materials[6].amount += (guns[x].wood * list[x]);
+        document.getElementById("material-amount6").innerHTML = "Amount: " + materials[6].amount;
+
+        //Maple
+        materials[7].amount += (guns[x].maple * list[x]);
+        document.getElementById("material-amount7").innerHTML = "Amount: " + materials[7].amount;
+
+        //Willow
+        materials[8].amount += (guns[x].willow * list[x]);
+        document.getElementById("material-amount8").innerHTML = "Amount: " + materials[8].amount;
+    }
+}
+
+function materialClick(id) {
+    var sliced = id.slice(12);
 }
