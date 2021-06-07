@@ -382,25 +382,6 @@ var guns = [
         steel: 10
     },
     {
-        name: "IMI Galil",
-        class: "Rifle",
-        amount: 0,
-        level: 41,
-        mag: 30,
-        firemodes: "Automatic, Semi-Automatic",
-        legal: false,
-        copper: 7.5,
-        iron: 78,
-        silver: 12,
-        gold: 0,
-        titanium: 0,
-        coal: 53,
-        wood: 0,
-        maple: 0,
-        willow: 0,
-        steel: 9
-    },
-    {
         name: "G3A3",
         class: "Rifle",
         amount: 0,
@@ -570,6 +551,25 @@ var guns = [
         maple: 0,
         willow: 0,
         steel: 10
+    },
+    {
+        name: "IMI Galil",
+        class: "Rifle",
+        amount: 0,
+        level: 70,
+        mag: 30,
+        firemodes: "Automatic, Semi-Automatic",
+        legal: false,
+        copper: 7.5,
+        iron: 78,
+        silver: 12,
+        gold: 0,
+        titanium: 0,
+        coal: 53,
+        wood: 0,
+        maple: 0,
+        willow: 0,
+        steel: 9
     },
     {
         name: "ACR-E",
