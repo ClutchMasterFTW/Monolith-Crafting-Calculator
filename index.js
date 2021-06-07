@@ -455,7 +455,7 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: null
+        steel: 10
     },
     {
         name: "M249",
@@ -740,7 +740,7 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: null
+        steel: 4
     },
     {
         name: "Gas Filter",
@@ -759,7 +759,7 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: null
+        steel: 2
     }
 ];
 
