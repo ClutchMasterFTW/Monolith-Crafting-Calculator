@@ -89,7 +89,7 @@ body {
     position: absolute;
     overflow-x: hidden;
     overflow-y: auto;
-    top: 5vw;
+    top: 6vw;
     left: 5vw;
     background-image: linear-gradient(135deg, rgba(86, 86, 86, 1), rgba(86, 86, 86, 0.25));
     border: 1px solid white;
@@ -231,7 +231,7 @@ textarea:focus, input:focus{
     width: 37.5vw;
     height: 82%;
     position: absolute;
-    top: 5vw;
+    top: 6vw;
     left: 57.5vw;
     overflow-x: hidden;
     overflow-y: auto;
@@ -252,7 +252,7 @@ textarea:focus, input:focus{
 #reset {
     border: 2px solid white;
     position: absolute;
-    top: 45.3vw;
+    top: 95%;
     left: 44.9vw;
     width: 10vw;
     height: 2vw;
@@ -269,4 +269,22 @@ textarea:focus, input:focus{
 #reset:hover {
     border: 2px solid black;
     transition: border ease-in-out 0.25s;
+}
+
+#title1 {
+    position: absolute;
+    top: 3vw;
+    left: 5vw;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#title2 {
+    position: absolute;
+    top: 3vw;
+    left: 57.5vw;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
 }
