@@ -2117,3 +2117,25 @@ function extendedAmount() {
         document.getElementById("extended-material-crushed-willow-amount").innerHTML = "Amount: " + extendedMaterials[14].amount;
     }
 }
+
+var background = "monoford";
+
+function changeBG() {
+    if(background == "monoford") {
+        document.getElementById("background-img").style.backgroundImage = "linear-gradient(#181818, #070707)";
+        document.getElementById("background-img").style.filter = "blur(0px)";
+        document.getElementById("warning-text").style.color = "white";
+        document.getElementById("warning").style.color = "white";
+        document.getElementById("credits").style.color = "white";
+        document.getElementById("bg-type").innerHTML = "Background: Simple";
+        background = "simple";
+    } else if(background == "simple") {
+        document.getElementById("background-img").style.backgroundImage = "url(images/background.jpg)";
+        document.getElementById("background-img").style.filter = "blur(2px)";
+        document.getElementById("warning-text").style.color = "black";
+        document.getElementById("warning").style.color = "black";
+        document.getElementById("credits").style.color = "black";
+        document.getElementById("bg-type").innerHTML = "Background: Monoford";
+        background = "monoford";
+    }
+}
