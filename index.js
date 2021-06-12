@@ -276,11 +276,11 @@ var guns = [
         firemodes: "Automatic, Burst, Semi-Automatic",
         legal: false,
         copper: 3,
-        iron: 52.5,
-        silver: 7.5,
+        iron: 61.5,
+        silver: 9,
         gold: 9,
         titanium: 0,
-        coal: 43.5,
+        coal: 50.25,
         wood: 8,
         maple: 0,
         willow: 0,
@@ -760,6 +760,25 @@ var guns = [
         maple: 0,
         willow: 0,
         steel: 2
+    },
+    {
+        name: "Door Charge",
+        class: "Door Charge",
+        amount: 0,
+        level: 52,
+        mag: "Doesn't accept ammo",
+        firemodes: "Doesn't fire ammo",
+        legal: false,
+        copper: 9,
+        iron: 25.5,
+        silver: 0,
+        gold: 6,
+        titanium: 0,
+        coal: 19.5,
+        wood: 0,
+        maple: 0,
+        willow: 0,
+        steel: 3
     }
 ];
 
@@ -926,6 +945,9 @@ function loadGuns() {
         } else if(guns[i].class == "Equipable") {
             itemImage.style.border = "1px solid #46d300";
             itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(135, 209, 98, 1), rgba(70, 211, 0, 0.25))";
+        } else if(guns[i].class == "Door Charge") {
+            itemImage.style.border = "1px solid #41006d";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(108, 0, 181, 1), rgba(65, 0, 109, 0.25))";
         }
 
         var itemName = document.createElement("div");
@@ -942,7 +964,7 @@ function loadGuns() {
         var itemLevel = document.createElement("div");
         itemLevel.id = "item-level" + i;
         if(guns[i].level != 0) {
-            if(guns[i].name == "Gas Mask" || guns[i].name == "Gas Filter") {
+            if(guns[i].name == "Gas Mask" || guns[i].name == "Gas Filter" || guns[i].name == "Door Charge") {
                 itemLevel.innerHTML = "Metalworking Level: " + guns[i].level;
             } else {
                 itemLevel.innerHTML = "Crafting Level: " + guns[i].level;
