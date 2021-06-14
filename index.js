@@ -765,7 +765,7 @@ var guns = [
         name: "Door Charge",
         class: "Door Charge",
         amount: 0,
-        level: 52,
+        level: 54,
         mag: "Doesn't accept ammo",
         firemodes: "Doesn't fire ammo",
         legal: false,
@@ -964,7 +964,7 @@ function loadGuns() {
         var itemLevel = document.createElement("div");
         itemLevel.id = "item-level" + i;
         if(guns[i].level != 0) {
-            if(guns[i].name == "Gas Mask" || guns[i].name == "Gas Filter" || guns[i].name == "Door Charge") {
+            if(guns[i].name == "Gas Mask" || guns[i].name == "Gas Filter") {
                 itemLevel.innerHTML = "Metalworking Level: " + guns[i].level;
             } else {
                 itemLevel.innerHTML = "Crafting Level: " + guns[i].level;
