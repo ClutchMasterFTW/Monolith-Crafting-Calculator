@@ -786,47 +786,65 @@ var materials = [
     {
         name: "Copper Chunk",
         image: "images/ores/copper.png",
-        amount: 0
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Coal Chunk",
         image: "images/ores/coal.png",
-        amount: 0
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Iron Chunk",
         image: "images/ores/iron.png",
-        amount: 0
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Silver Chunk",
         image: "images/ores/silver.png",
-        amount: 0
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Gold Chunk",
         image: "images/ores/gold.png",
-        amount: 0
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Titanium Chunk",
         image: "images/ores/titanium.png",
-        amount: 0
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Wood Log",
         image: "images/ores/log.png",
-        amount: 0
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Maple Log",
         image: "images/ores/log.png",
-        amount: 0
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Willow Log",
         image: "images/ores/log.png",
-        amount: 0
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     }
 ];
 
@@ -1163,6 +1181,9 @@ function inputChange() {
     for(j = 0; j < materials.length; j++) {
         materials[j].amount = 0;
         steel = 0;
+
+        materials[j].stacks = 0;
+        materials[j].remainder = 0;
     }
     for(k = 0; k < extendedMaterials.length; k++) {
         extendedMaterials[k].amount = 0;
@@ -1220,6 +1241,14 @@ function inputChange() {
         steel += guns[x].steel * list[x];
     }
     extendedAmount();
+
+    for(z = 0; z < materials.length; z++) {
+        materials[z].remainder = (materials[z].amount % 16);
+        materials[z].stacks = ((materials[z].amount - materials[z].remainder) / 16);
+        if(stacks == true) {
+            document.getElementById("material-amount" + z).innerHTML = "Stacks: " + materials[z].stacks + "; Remainder: " + materials[z].remainder;
+        }
+    }
 }
 
 var copperClicked = false;
@@ -2159,5 +2188,23 @@ function changeBG() {
         document.getElementById("credits").style.color = "black";
         document.getElementById("bg-type").innerHTML = "Background: Monoford";
         background = "monoford";
+    }
+}
+
+var stacks = false;
+
+function changeStackType() {
+    if(stacks == false) {
+        for(z = 0; z < materials.length; z++) {
+            document.getElementById("material-amount" + z).innerHTML = "Stacks: " + materials[z].stacks + "; Remainder: " + materials[z].remainder;
+        }
+        document.getElementById("stack-type").innerHTML = "Stacks: On";
+        stacks = true;
+    } else if(stacks == true) {
+        for(z = 0; z < materials.length; z++) {
+            document.getElementById("material-amount" + z).innerHTML = "Amount: " + materials[z].amount;
+        }
+        document.getElementById("stack-type").innerHTML = "Stacks: Off";
+        stacks = false;
     }
 }

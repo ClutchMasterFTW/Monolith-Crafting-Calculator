@@ -19,11 +19,19 @@
         <div id="title2">Crafting Ingredients</div>
         <div id="material-container"></div>
         <div id="reset" onclick="location.reload()">RESET QUANTITY</div>
+
         <div id="bg-type">Background: Monoford</div>
-        <label class="switch">
+        <label class="switch" id="switch1">
             <input type="checkbox" id="checkbox" onclick="changeBG()">
             <span class="slider"></span>
         </label>
+
+        <div id="stack-type">Stacks: Off</div>
+        <label class="switch" id="switch2">
+            <input type="checkbox" id="checkbox2" onclick="changeStackType()">
+            <span class="slider"></span>
+        </label>
+
         <div id="dim-warning-container">
             <span class="material-icons" id="dim-warning-icon">report_problem</span>
             <div id="dim-warning-title">ATTENTION:</div>
@@ -34,7 +42,7 @@
         <span class="material-icons" id="warning">report_problem</span>
         <div id="warning-text">If you experience any bugs, please post them on the <a href="https://github.com/ClutchMasterFTW/Monolith-Crafting-Calculator/issues" target="_blank" class="link">GitHub issues</a> page.</div>
     
-        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class">ClutchMasterFTW</a> | v.1.2</div>
+        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class">ClutchMasterFTW</a> | v.1.3</div>
         <script src="index.js"></script>
     </body>
 </html>
