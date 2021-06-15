@@ -1242,7 +1242,7 @@ function inputChange() {
     }
     extendedAmount();
 
-    for(z = 0; z < materials.length; z++) {
+    for(z = 0; z < 6; z++) {
         materials[z].remainder = (materials[z].amount % 16);
         materials[z].stacks = ((materials[z].amount - materials[z].remainder) / 16);
         if(stacks == true) {
@@ -2195,13 +2195,13 @@ var stacks = false;
 
 function changeStackType() {
     if(stacks == false) {
-        for(z = 0; z < materials.length; z++) {
+        for(z = 0; z < 6; z++) {
             document.getElementById("material-amount" + z).innerHTML = "Stacks: " + materials[z].stacks + "; Remainder: " + materials[z].remainder;
         }
         document.getElementById("stack-type").innerHTML = "Stacks: On";
         stacks = true;
     } else if(stacks == true) {
-        for(z = 0; z < materials.length; z++) {
+        for(z = 0; z < 6; z++) {
             document.getElementById("material-amount" + z).innerHTML = "Amount: " + materials[z].amount;
         }
         document.getElementById("stack-type").innerHTML = "Stacks: Off";
