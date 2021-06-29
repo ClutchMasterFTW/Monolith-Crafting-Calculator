@@ -1249,6 +1249,8 @@ function inputChange() {
             document.getElementById("material-amount" + z).innerHTML = "Stacks: " + materials[z].stacks + "; Remainder: " + materials[z].remainder;
         }
     }
+
+    time(2);
 }
 
 var copperClicked = false;
@@ -2206,5 +2208,91 @@ function changeStackType() {
         }
         document.getElementById("stack-type").innerHTML = "Stacks: Off";
         stacks = false;
+    }
+}
+
+var crushers = 1;
+var seconds = 0;
+var minutes = 0;
+var hours = 0;
+var presentable_seconds = "0";
+var presentable_minutes = "0";
+var presentable_hours = "0";
+
+function time(param) {
+    if(param == 1) {
+        //Open Menu
+        document.getElementById("time-menu-container").style.visibility = "visible";
+    } else if(param == 0) {
+        //Close Menu
+        document.getElementById("time-menu-container").style.visibility = "hidden";
+    }
+
+    if(param == 2) {
+        seconds = 0;
+        minutes = 0;
+        hours = 0;
+        presentable_seconds = 0;
+        presentable_minutes = 0;
+        presentable_hours = 0;
+
+        crushers = document.getElementById("slider").value;
+        crushers = parseInt(crushers);
+        
+        //Mining
+        for(i = 0; i < 9; i++) {
+            seconds += (materials[i].amount * 9);
+        }
+        //Crushing
+        for(i = 0; i < 6; i++) {
+            seconds += ((materials[i].amount * 10) / crushers);
+        }
+        //Crafting/Smelting
+        for(i = 0; i < extendedMaterials.length; i++) {
+            if(i == 1 || i == 4 || i == 5 || i == 7 || i == 9 || i == 11 || i == 12 || i == 13 || i == 14) {
+                seconds += (extendedMaterials[i].amount * 6);
+            }
+        }
+
+        if(seconds >= 60) {
+            var secondRem = seconds % 60;
+            minutes = ((seconds / 60) - (secondRem / 60));
+            secondRem = Math.ceil(secondRem);
+            seconds = secondRem;
+        }
+
+        if(minutes >= 60) {
+            var minuteRem = minutes % 60;
+            hours = ((minutes / 60) - (minuteRem / 60));
+            hours = Math.ceil(hours);
+            minuteRem = Math.ceil(minuteRem);
+            minutes = minuteRem;
+        }
+
+
+        //Fix timestamps
+
+        if(hours < 10) {
+            presentable_hours = "0" + hours;
+        } else if(hours >= 10) {
+            presentable_hours = hours;
+        }
+
+        if(minutes < 10) {
+            presentable_minutes = "0" + minutes;
+        } else if(minutes >= 10) {
+            presentable_minutes = minutes;
+        }
+
+        if(seconds < 10) {
+            presentable_seconds = "0" + seconds;
+        } else if(seconds >= 10) {
+            presentable_seconds = seconds;
+        }
+
+        console.log(hours, minutes, seconds, crushers);
+
+        document.getElementById("time").innerHTML = presentable_hours + ":" + presentable_minutes + ":" + presentable_seconds;
+        document.getElementById("time2").innerHTML = presentable_hours + ":" + presentable_minutes + ":" + presentable_seconds;
     }
 }
