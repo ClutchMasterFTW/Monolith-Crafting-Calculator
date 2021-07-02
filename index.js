@@ -2440,6 +2440,10 @@ function time(param) {
             }
         }
 
+        seconds = Math.ceil(seconds);
+        minutes = Math.ceil(minutes);
+        hours = Math.ceil(hours);
+
         if(seconds >= 60) {
             var secondRem = seconds % 60;
             minutes = ((seconds / 60) - (secondRem / 60));
@@ -2455,6 +2459,9 @@ function time(param) {
             minutes = minuteRem;
         }
 
+        seconds = Math.ceil(seconds);
+        minutes = Math.ceil(minutes);
+        hours = Math.ceil(hours);
 
         //Fix timestamps
 
