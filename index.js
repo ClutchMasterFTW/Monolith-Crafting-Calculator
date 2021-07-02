@@ -18,7 +18,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 0
+        steel: 0,
+        price: 900
     },
     {
         name: "M1911",
@@ -37,7 +38,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 0
+        steel: 0,
+        price: 1250
     },
     {
         name: "P99",
@@ -56,7 +58,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 0
+        steel: 0,
+        price: 1750
     },
     {
         name: "FN Five-Seven",
@@ -75,7 +78,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 2
+        steel: 2,
+        price: 2500
     },
     {
         name: "Mac-11",
@@ -94,7 +98,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 0
+        steel: 0,
+        price: 4000
     },
     {
         name: "MR96",
@@ -113,7 +118,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 5
+        steel: 5,
+        price: 3500
     },
     {
         name: "H&K MP5",
@@ -132,7 +138,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 2
+        steel: 2,
+        price: 4500
     },
     {
         name: "Machete",
@@ -151,7 +158,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 0
+        steel: 0,
+        price: 2250
     },
     {
         name: "H&K UMP .45",
@@ -170,7 +178,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 0
+        steel: 0,
+        price: 5500
     },
     {
         name: "AK-74",
@@ -189,7 +198,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 1
+        steel: 1,
+        price: 7500
     },
     {
         name: "Glock 18",
@@ -208,7 +218,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 6
+        steel: 6,
+        price: 4500
     },
     {
         name: "AR-15",
@@ -227,7 +238,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 3
+        steel: 3,
+        price: 6000
     },
     {
         name: "Thompson",
@@ -246,7 +258,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 2
+        steel: 2,
+        price: 8000
     },
     {
         name: "Glock 17",
@@ -265,7 +278,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 3
+        steel: 3,
+        price: 3000
     },
     {
         name: "Kriss Vector",
@@ -284,7 +298,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 7
+        steel: 7,
+        price: 10000
     },
     {
         name: "Desert Eagle",
@@ -303,7 +318,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 3
+        steel: 3,
+        price: 5000
     },
     {
         name: "G36C",
@@ -322,7 +338,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 5
+        steel: 5,
+        price: 10000
     },
     {
         name: "LR-300",
@@ -341,7 +358,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 5
+        steel: 5,
+        price: 11000
     },
     {
         name: "DP-28",
@@ -360,7 +378,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 6
+        steel: 6,
+        price: 12000
     },
     {
         name: "Serbu Shorty",
@@ -379,7 +398,8 @@ var guns = [
         wood: 0,
         maple: 12,
         willow: 0,
-        steel: 10
+        steel: 10,
+        price: 9000
     },
     {
         name: "G3A3",
@@ -398,7 +418,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 12
+        steel: 12,
+        price: 16000
     },
     {
         name: "Honey Badger",
@@ -417,7 +438,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 12
+        steel: 12,
+        price: 15000
     },
     {
         name: "SCAR-H",
@@ -436,7 +458,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 10
+        steel: 10,
+        price: 15000
     },
     {
         name: "M249",
@@ -455,7 +478,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 12
+        steel: 12,
+        price: 18000
     },
     {
         name: "BT MP9",
@@ -474,7 +498,8 @@ var guns = [
         wood: 8,
         maple: 0,
         willow: 0,
-        steel: 5
+        steel: 5,
+        price: 15000
     },
     {
         name: "Mosin Nagant",
@@ -493,7 +518,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 12,
-        steel: 16
+        steel: 16,
+        price: 22000
     },
     {
         name: "M14",
@@ -512,7 +538,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 12,
-        steel: 13
+        steel: 13,
+        price: 24000
     },
     {
         name: "M3 Super 90",
@@ -531,7 +558,8 @@ var guns = [
         wood: 0,
         maple: 12,
         willow: 0,
-        steel: 6
+        steel: 6,
+        price: 17000
     },
     {
         name: "M4 Carbine",
@@ -550,7 +578,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 10
+        steel: 10,
+        price: 20000
     },
     {
         name: "IMI Galil",
@@ -569,7 +598,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 9
+        steel: 9,
+        price: 18000
     },
     {
         name: "ACR-E",
@@ -588,7 +618,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 10
+        steel: 10,
+        price: 23000
     },
     {
         name: "KSG-12",
@@ -607,7 +638,8 @@ var guns = [
         wood: 0,
         maple: 12,
         willow: 0,
-        steel: 13
+        steel: 13,
+        price: 25000
     },
     {
         name: "AUG A3",
@@ -626,7 +658,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 14
+        steel: 14,
+        price: 25000
     },
     {
         name: "XM8",
@@ -645,7 +678,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 14
+        steel: 14,
+        price: 28000
     },
     {
         name: "L115",
@@ -664,7 +698,8 @@ var guns = [
         wood: null,
         maple: null,
         willow: null,
-        steel: null
+        steel: null,
+        price: 650000
     },
     {
         name: "Silver Baller",
@@ -683,7 +718,8 @@ var guns = [
         wood: null,
         maple: null,
         willow: null,
-        steel: null
+        steel: null,
+        price: 300000
     },
     {
         name: "HK-416",
@@ -702,7 +738,8 @@ var guns = [
         wood: null,
         maple: null,
         willow: null,
-        steel: null
+        steel: null,
+        price: 600000
     },
     {
         name: "BMG-50",
@@ -721,7 +758,8 @@ var guns = [
         wood: null,
         maple: null,
         willow: null,
-        steel: null
+        steel: null,
+        price: null
     },
     {
         name: "Gas Mask",
@@ -740,7 +778,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 4
+        steel: 4,
+        price: 2500
     },
     {
         name: "Gas Filter",
@@ -759,7 +798,8 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 2
+        steel: 2,
+        price: 1500
     },
     {
         name: "Door Charge",
@@ -778,7 +818,128 @@ var guns = [
         wood: 0,
         maple: 0,
         willow: 0,
-        steel: 3
+        steel: 3,
+        price: 4000
+    },
+    {
+        name: "Copper Ingot",
+        class: "Item",
+        amount: 0,
+        level: 1,
+        mag: "Doesn't accept ammo",
+        firemodes: "Doesn't fire ammo",
+        legal: true,
+        copper: 1.5,
+        iron: 0,
+        silver: 0,
+        gold: 0,
+        titanium: 0,
+        coal: 2,
+        wood: 0,
+        maple: 0,
+        willow: 0,
+        steel: 0,
+        price: 150
+    },
+    {
+        name: "Iron Ingot",
+        class: "Item",
+        amount: 0,
+        level: 14,
+        mag: "Doesn't accept ammo",
+        firemodes: "Doesn't fire ammo",
+        legal: true,
+        copper: 0,
+        iron: 1.5,
+        silver: 0,
+        gold: 0,
+        titanium: 0,
+        coal: 3,
+        wood: 0,
+        maple: 0,
+        willow: 0,
+        steel: 0,
+        price: 300
+    },
+    {
+        name: "Steel Ingot",
+        class: "Item",
+        amount: 0,
+        level: 25,
+        mag: "Doesn't accept ammo",
+        firemodes: "Doesn't fire ammo",
+        legal: true,
+        copper: 0,
+        iron: 4.5,
+        silver: 0,
+        gold: 0,
+        titanium: 0,
+        coal: 12,
+        wood: 0,
+        maple: 0,
+        willow: 0,
+        steel: 1,
+        price: 1100
+    },
+    {
+        name: "Silver Ingot",
+        class: "Item",
+        amount: 0,
+        level: 48,
+        mag: "Doesn't accept ammo",
+        firemodes: "Doesn't fire ammo",
+        legal: true,
+        copper: 0,
+        iron: 0,
+        silver: 1.5,
+        gold: 0,
+        titanium: 0,
+        coal: 4,
+        wood: 0,
+        maple: 0,
+        willow: 0,
+        steel: 0,
+        price: 400
+    },
+    {
+        name: "Gold Ingot",
+        class: "Item",
+        amount: 0,
+        level: 62,
+        mag: "Doesn't accept ammo",
+        firemodes: "Doesn't fire ammo",
+        legal: true,
+        copper: 0,
+        iron: 0,
+        silver: 0,
+        gold: 0,
+        titanium: 0,
+        coal: 4,
+        wood: 0,
+        maple: 0,
+        willow: 0,
+        steel: 0,
+        price: 550
+    },
+    {
+        name: "Titanium Ingot",
+        class: "Item",
+        amount: 0,
+        level: 73,
+        mag: "Doesn't accept ammo",
+        firemodes: "Doesn't fire ammo",
+        legal: true,
+        copper: 0,
+        iron: 0,
+        silver: 0,
+        gold: 0,
+        titanium: 1.5,
+        coal: 4,
+        wood: 0,
+        maple: 0,
+        willow: 0,
+        steel: 0,
+        price: 850
     }
 ];
 
@@ -842,6 +1003,13 @@ var materials = [
     {
         name: "Willow Log",
         image: "images/ores/log.png",
+        amount: 0,
+        stacks: 0,
+        remainder: 0
+    },
+    {
+        name: "Money",
+        image: "images/ores/cash.png",
         amount: 0,
         stacks: 0,
         remainder: 0
@@ -966,6 +1134,9 @@ function loadGuns() {
         } else if(guns[i].class == "Door Charge") {
             itemImage.style.border = "1px solid #41006d";
             itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(108, 0, 181, 1), rgba(65, 0, 109, 0.25))";
+        } else if(guns[i].class == "Item") {
+            itemImage.style.border = "1px solid #333333";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
         }
 
         var itemName = document.createElement("div");
@@ -982,7 +1153,7 @@ function loadGuns() {
         var itemLevel = document.createElement("div");
         itemLevel.id = "item-level" + i;
         if(guns[i].level != 0) {
-            if(guns[i].name == "Gas Mask" || guns[i].name == "Gas Filter") {
+            if(guns[i].name == "Gas Mask" || guns[i].name == "Gas Filter" || i == 41 || i == 42 || i == 43 || i == 44 || i == 45 || i == 46) {
                 itemLevel.innerHTML = "Metalworking Level: " + guns[i].level;
             } else {
                 itemLevel.innerHTML = "Crafting Level: " + guns[i].level;
@@ -1059,11 +1230,18 @@ function loadGuns() {
         itemInputBox.style.lineHeight = "5vw";
         itemInputBox.style.verticalAlign = "middle";
         itemInputBox.setAttribute("type", "number");
-        if(guns[i].class == "Police" || guns[i].class == "Exotic") {
+        if(guns[i].class == "Police") {
+            itemInputBox.style.backgroundColor = "red";
+            itemInputBox.style.color = "darkred";
+            itemInputBox.setAttribute("min", "0");
+            itemInputBox.setAttribute("max", "0");
+        } else if(guns[i].class == "Exotic") {
             itemInputBox.style.backgroundColor = "salmon";
             itemInputBox.style.color = "red";
             itemInputBox.setAttribute("min", "0");
-            itemInputBox.setAttribute("max", "0");
+            itemInputBox.setAttribute("max", "99");
+            itemInputBox.setAttribute("onchange", "inputChange()");
+            itemInputBox.setAttribute("onInput", "inputChange()");
         } else {
             itemInputBox.style.backgroundColor = "white";
             itemInputBox.style.color = "black";
@@ -1154,7 +1332,11 @@ function loadMaterials() {
 
         var materialAmount = document.createElement("div");
         materialAmount.id = "material-amount" + i;
-        materialAmount.innerHTML = "Amount: " + materials[i].amount;
+        if(i == 9) {
+            materialAmount.innerHTML = "Amount: $" + materials[i].amount;
+        } else {
+            materialAmount.innerHTML = "Amount: " + materials[i].amount;
+        }
         materialAmount.style.display = "block";
         materialAmount.style.position = "relative";
         materialAmount.style.top = "-4.5vw";
@@ -1203,42 +1385,46 @@ function inputChange() {
     for(x = 0; x < guns.length; x++) {
         //Copper
         materials[0].amount += (guns[x].copper * list[x]);
-        document.getElementById("material-amount0").innerHTML = "Amount: " + materials[0].amount;
+        document.getElementById("material-amount0").innerHTML = "Amount: " + numberWithCommas(materials[0].amount);
 
         //Coal
         materials[1].amount += (guns[x].coal * list[x]);
-        document.getElementById("material-amount1").innerHTML = "Amount: " + materials[1].amount;
+        document.getElementById("material-amount1").innerHTML = "Amount: " + numberWithCommas(materials[1].amount);
 
         //Iron
         materials[2].amount += (guns[x].iron * list[x]);
-        document.getElementById("material-amount2").innerHTML = "Amount: " + materials[2].amount;
+        document.getElementById("material-amount2").innerHTML = "Amount: " + numberWithCommas(materials[2].amount);
 
         //Silver
         materials[3].amount += (guns[x].silver * list[x]);
-        document.getElementById("material-amount3").innerHTML = "Amount: " + materials[3].amount;
+        document.getElementById("material-amount3").innerHTML = "Amount: " + numberWithCommas(materials[3].amount);
 
         //Gold
         materials[4].amount += (guns[x].gold * list[x]);
-        document.getElementById("material-amount4").innerHTML = "Amount: " + materials[4].amount;
+        document.getElementById("material-amount4").innerHTML = "Amount: " + numberWithCommas(materials[4].amount);
 
         //Titanium
         materials[5].amount += (guns[x].titanium * list[x]);
-        document.getElementById("material-amount5").innerHTML = "Amount: " + materials[5].amount;
+        document.getElementById("material-amount5").innerHTML = "Amount: " + numberWithCommas(materials[5].amount);
 
         //Wood
         materials[6].amount += (guns[x].wood * list[x]);
-        document.getElementById("material-amount6").innerHTML = "Amount: " + materials[6].amount;
+        document.getElementById("material-amount6").innerHTML = "Amount: " + numberWithCommas(materials[6].amount);
 
         //Maple
         materials[7].amount += (guns[x].maple * list[x]);
-        document.getElementById("material-amount7").innerHTML = "Amount: " + materials[7].amount;
+        document.getElementById("material-amount7").innerHTML = "Amount: " + numberWithCommas(materials[7].amount);
 
         //Willow
         materials[8].amount += (guns[x].willow * list[x]);
-        document.getElementById("material-amount8").innerHTML = "Amount: " + materials[8].amount;
+        document.getElementById("material-amount8").innerHTML = "Amount: " + numberWithCommas(materials[8].amount);
 
         //Steel
         steel += guns[x].steel * list[x];
+
+        //Cash
+        materials[9].amount += (guns[x].price * list[x]);
+        document.getElementById("material-amount9").innerHTML = "Amount: $" + numberWithCommas(materials[9].amount);
     }
     extendedAmount();
 
@@ -1263,7 +1449,7 @@ var woodClicked = false;
 var mapleClicked = false;
 var willowClicked = false;
 
-var heights = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+var heights = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 function materialClick(id) {
     if(id == 0) {
@@ -2290,9 +2476,11 @@ function time(param) {
             presentable_seconds = seconds;
         }
 
-        console.log(hours, minutes, seconds, crushers);
-
         document.getElementById("time").innerHTML = presentable_hours + ":" + presentable_minutes + ":" + presentable_seconds;
         document.getElementById("time2").innerHTML = presentable_hours + ":" + presentable_minutes + ":" + presentable_seconds;
     }
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
