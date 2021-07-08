@@ -9,6 +9,7 @@ var guns = [
         mag: 8,
         firemodes: "Semi-Automatic",
         legal: true,
+        ammo: "pistol",
         copper: 15,
         iron: 10.5,
         silver: 0,
@@ -29,6 +30,7 @@ var guns = [
         mag: 7,
         firemodes: "Semi-Automatic",
         legal: true,
+        ammo: "pistol",
         copper: 16.5,
         iron: 12,
         silver: 0,
@@ -49,6 +51,7 @@ var guns = [
         mag: 15,
         firemodes: "Semi-Automatic",
         legal: true,
+        ammo: "pistol",
         copper: 15,
         iron: 11.5,
         silver: 0,
@@ -69,6 +72,7 @@ var guns = [
         mag: 20,
         firemodes: "Semi-Automatic",
         legal: true,
+        ammo: "pistol",
         copper: 13,
         iron: 25.5,
         silver: 0,
@@ -89,6 +93,7 @@ var guns = [
         mag: 32,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "pistol",
         copper: 16.5,
         iron: 12,
         silver: 0,
@@ -109,6 +114,7 @@ var guns = [
         mag: 6,
         firemodes: "Semi-Automatic",
         legal: true,
+        ammo: "pistol",
         copper: 15,
         iron: 33,
         silver: 0,
@@ -129,6 +135,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Burst, Semi-Automatic",
         legal: false,
+        ammo: "pistol",
         copper: 18,
         iron: 30,
         silver: 0,
@@ -149,6 +156,7 @@ var guns = [
         mag: "Doesn't accept ammo",
         firemodes: "Doesn't fire ammo",
         legal: true,
+        ammo: "Doesn't accept ammo",
         copper: 12,
         iron: 7.5,
         silver: 0,
@@ -169,6 +177,7 @@ var guns = [
         mag: 25,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "pistol",
         copper: 24,
         iron: 27,
         silver: 0,
@@ -189,6 +198,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 24,
         iron: 28.5,
         silver: 0,
@@ -209,6 +219,7 @@ var guns = [
         mag: 17,
         firemodes: "Automatic",
         legal: false,
+        ammo: "pistol",
         copper: 15,
         iron: 48,
         silver: 0,
@@ -229,6 +240,7 @@ var guns = [
         mag: 30,
         firemodes: "Semi-Automatic",
         legal: true,
+        ammo: "rifle",
         copper: 24,
         iron: 37.5,
         silver: 0,
@@ -249,6 +261,7 @@ var guns = [
         mag: 20,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "pistol",
         copper: 25.5,
         iron: 37.5,
         silver: 0,
@@ -269,6 +282,7 @@ var guns = [
         mag: 14,
         firemodes: "Semi-Automatic",
         legal: true,
+        ammo: "pistol",
         copper: 15,
         iron: 28.5,
         silver: 1.5,
@@ -289,6 +303,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Burst, Semi-Automatic",
         legal: false,
+        ammo: "pistol",
         copper: 3,
         iron: 61.5,
         silver: 9,
@@ -309,6 +324,7 @@ var guns = [
         mag: 7,
         firemodes: "Semi-Automatic",
         legal: true,
+        ammo: "pistol",
         copper: 15,
         iron: 31.5,
         silver: 3,
@@ -329,6 +345,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 24,
         iron: 46.5,
         silver: 3,
@@ -349,6 +366,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 24,
         iron: 55.5,
         silver: 6,
@@ -369,6 +387,7 @@ var guns = [
         mag: 47,
         firemodes: "Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 25.5,
         iron: 52.5,
         silver: 7.5,
@@ -389,6 +408,7 @@ var guns = [
         mag: 2,
         firemodes: "Pump-Action",
         legal: false,
+        ammo: "shotgun",
         copper: 10.5,
         iron: 63,
         silver: 4.5,
@@ -409,6 +429,7 @@ var guns = [
         mag: 20,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 21,
         iron: 57,
         silver: 13.5,
@@ -429,6 +450,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 22.5,
         iron: 87,
         silver: 0,
@@ -449,6 +471,7 @@ var guns = [
         mag: 20,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 24,
         iron: 69,
         silver: 0,
@@ -469,6 +492,7 @@ var guns = [
         mag: 100,
         firemodes: "Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 21,
         iron: 87,
         silver: 0,
@@ -489,6 +513,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "pistol",
         copper: 3,
         iron: 45,
         silver: 12,
@@ -509,6 +534,7 @@ var guns = [
         mag: 5,
         firemodes: "Bolt-Action",
         legal: false,
+        ammo: "sniper",
         copper: 12,
         iron: 111,
         silver: 33,
@@ -529,6 +555,7 @@ var guns = [
         mag: 20,
         firemodes: "Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 97.5,
         iron: 43.5,
         silver: 0,
@@ -549,6 +576,7 @@ var guns = [
         mag: 5,
         firemodes: "Pump-Action",
         legal: false,
+        ammo: "shotgun",
         copper: 0,
         iron: 55.5,
         silver: 15,
@@ -569,6 +597,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Burst, Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 22.5,
         iron: 78,
         silver: 12,
@@ -589,6 +618,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 7.5,
         iron: 78,
         silver: 12,
@@ -609,6 +639,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 25.5,
         iron: 81,
         silver: 0,
@@ -629,6 +660,7 @@ var guns = [
         mag: 14,
         firemodes: "Pump-Action",
         legal: false,
+        ammo: "shotgun",
         copper: 0,
         iron: 90,
         silver: 15,
@@ -649,6 +681,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 25.5,
         iron: 96,
         silver: 12,
@@ -669,6 +702,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: 16.5,
         iron: 88.5,
         silver: 30,
@@ -689,6 +723,7 @@ var guns = [
         mag: 5,
         firemodes: "Bolt-Action",
         legal: false,
+        ammo: "sniper",
         copper: null,
         iron: null,
         silver: null,
@@ -709,6 +744,7 @@ var guns = [
         mag: 7,
         firemodes: "Semi-Automatic",
         legal: true,
+        ammo: "pistol",
         copper: null,
         iron: null,
         silver: null,
@@ -729,6 +765,7 @@ var guns = [
         mag: 30,
         firemodes: "Automatic, Burst, Semi-Automatic",
         legal: false,
+        ammo: "rifle",
         copper: null,
         iron: null,
         silver: null,
@@ -749,6 +786,7 @@ var guns = [
         mag: 3,
         firemodes: "Semi-Automatic",
         legal: false,
+        ammo: "sniper",
         copper: null,
         iron: null,
         silver: null,
@@ -769,6 +807,7 @@ var guns = [
         mag: "Doesn't accept ammo",
         firemodes: "Doesn't fire ammo",
         legal: true,
+        ammo: "Doesn't accept ammo",
         copper: 6,
         iron: 24,
         silver: 0,
@@ -789,6 +828,7 @@ var guns = [
         mag: "Doesn't accept ammo",
         firemodes: "Doesn't fire ammo",
         legal: true,
+        ammo: "Doesn't accept ammo",
         copper: 6,
         iron: 15,
         silver: 0,
@@ -809,6 +849,7 @@ var guns = [
         mag: "Doesn't accept ammo",
         firemodes: "Doesn't fire ammo",
         legal: false,
+        ammo: "Doesn't accept ammo",
         copper: 9,
         iron: 25.5,
         silver: 0,
@@ -829,6 +870,7 @@ var guns = [
         mag: "Doesn't accept ammo",
         firemodes: "Doesn't fire ammo",
         legal: true,
+        ammo: "Doesn't accept ammo",
         copper: 1.5,
         iron: 0,
         silver: 0,
@@ -849,6 +891,7 @@ var guns = [
         mag: "Doesn't accept ammo",
         firemodes: "Doesn't fire ammo",
         legal: true,
+        ammo: "Doesn't accept ammo",
         copper: 0,
         iron: 1.5,
         silver: 0,
@@ -869,6 +912,7 @@ var guns = [
         mag: "Doesn't accept ammo",
         firemodes: "Doesn't fire ammo",
         legal: true,
+        ammo: "Doesn't accept ammo",
         copper: 0,
         iron: 4.5,
         silver: 0,
@@ -879,7 +923,7 @@ var guns = [
         maple: 0,
         willow: 0,
         steel: 1,
-        price: 1100
+        price: 1000
     },
     {
         name: "Silver Ingot",
@@ -889,6 +933,7 @@ var guns = [
         mag: "Doesn't accept ammo",
         firemodes: "Doesn't fire ammo",
         legal: true,
+        ammo: "Doesn't accept ammo",
         copper: 0,
         iron: 0,
         silver: 1.5,
@@ -909,6 +954,7 @@ var guns = [
         mag: "Doesn't accept ammo",
         firemodes: "Doesn't fire ammo",
         legal: true,
+        ammo: "Doesn't accept ammo",
         copper: 0,
         iron: 0,
         silver: 0,
@@ -929,6 +975,7 @@ var guns = [
         mag: "Doesn't accept ammo",
         firemodes: "Doesn't fire ammo",
         legal: true,
+        ammo: "Doesn't accept ammo",
         copper: 0,
         iron: 0,
         silver: 0,
@@ -940,7 +987,7 @@ var guns = [
         willow: 0,
         steel: 0,
         price: 850
-    }
+    }//Attachments 1.7
 ];
 
 var materials = [
@@ -1100,6 +1147,10 @@ function loadGuns() {
         itemContainer.id = "item-container" + i;
         itemContainer.style.border = "1px solid gray";
         itemContainer.style.height = "5vw";
+        //Fix FOR 1.7
+        if(i == guns.length) {
+            itemContainer.style.cursor = "pointer";
+        }
 
         var itemImage = document.createElement("img");
         itemImage.id = "item-image" + i;
@@ -1197,7 +1248,7 @@ function loadGuns() {
         }
         itemMag.style.display = "block";
         itemMag.style.position = "relative";
-        itemMag.style.top = "-8.75vw";
+        itemMag.style.top = "-9vw";
         itemMag.style.left = "20vw";
         itemMag.style.fontSize = "1vw";
         itemMag.style.fontWeight = "600";
@@ -1207,11 +1258,32 @@ function loadGuns() {
         itemFiremodes.innerHTML = "Fire Modes: " + guns[i].firemodes;
         itemFiremodes.style.display = "block";
         itemFiremodes.style.position = "relative";
-        itemFiremodes.style.top = "-8vw";
+        itemFiremodes.style.top = "-8.85vw";
         itemFiremodes.style.left = "20vw";
         itemFiremodes.style.fontSize = "1vw";
         itemFiremodes.style.fontWeight = "600";
         itemFiremodes.style.color = "white";
+
+        var itemAmmo = document.createElement("div");
+        itemAmmo.id = "item-ammo" + i;
+        if(guns[i].ammo == "pistol") {
+            itemAmmo.innerHTML = "Ammo Type: Pistol Ammo";
+        } else if(guns[i].ammo == "rifle") {
+            itemAmmo.innerHTML = "Ammo Type: Rifle Ammo";
+        } else if(guns[i].ammo == "shotgun") {
+            itemAmmo.innerHTML = "Ammo Type: Shotgun Ammo";
+        } else if(guns[i].ammo == "sniper") {
+            itemAmmo.innerHTML = "Ammo Type: Sniper Ammo";
+        } else {
+            itemAmmo.innerHTML = "Ammo Type: Doesn't accept ammo";
+        }
+        itemAmmo.style.display = "block";
+        itemAmmo.style.position = "relative";
+        itemAmmo.style.top = "-8.75vw";
+        itemAmmo.style.left = "20vw";
+        itemAmmo.style.fontSize = "1vw";
+        itemAmmo.style.fontWeight = "600";
+        itemAmmo.style.color = "white";
 
         itemInputBox = document.createElement("input");
         itemInputBox.id = "item-input-box" + i;
@@ -1224,7 +1296,7 @@ function loadGuns() {
         itemInputBox.style.border = "1px black solid";
         itemInputBox.style.display = "block";
         itemInputBox.style.position = "relative";
-        itemInputBox.style.top = "-12vw";
+        itemInputBox.style.top = "-13.5vw";
         itemInputBox.style.left = "44vw";
         itemInputBox.style.textAlign = "center";
         itemInputBox.style.lineHeight = "5vw";
@@ -1259,6 +1331,7 @@ function loadGuns() {
         itemContainer.appendChild(itemLegal);
         itemContainer.appendChild(itemMag);
         itemContainer.appendChild(itemFiremodes);
+        itemContainer.appendChild(itemAmmo);
         itemContainer.appendChild(itemInputBox)
     }
 }

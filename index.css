@@ -142,10 +142,11 @@ body {
 
 #credits {
     position: absolute;
-    bottom: 5px;
-    left: 5px;
+    bottom: 0.25vw;
+    left: 0.25vw;
     z-index: 100;
     color: black;
+    font-size: 0.905vw;
 }
 
 .link {
@@ -154,16 +155,18 @@ body {
 
 #warning {
     position: absolute;
-    bottom: 2px;
-    right: 530px;
+    bottom: 0.05vw;
+    right: 30vw;
     user-select: none;
+    font-size: 1.25vw;
 }
 
 #warning-text {
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    bottom: 0.15vw;
+    right: 0.25vw;
     color: black;
+    font-size: 0.905vw;
 }
 
 #dim-warning-container {
