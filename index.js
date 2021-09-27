@@ -632,6 +632,27 @@ var guns = [
         price: 18000
     },
     {
+        name: "HK MP7A1",
+        class: "Rifle",
+        amount: 0,
+        level: 70,
+        mag: 30,
+        firemodes: "Automatic, Semi-Automatic",
+        legal: false,
+        ammo: "pistol",
+        copper: 2,
+        iron: 12,
+        silver: 8,
+        gold: 5,
+        titanium: 3,
+        wood: 8,
+        maple: 0,
+        willow: 0,
+        steel: 7,
+        coal: 0,
+        price: 30000
+    },
+    {
         name: "ACR-E",
         class: "Rifle",
         amount: 0,
@@ -651,6 +672,27 @@ var guns = [
         steel: 12,
         coal: 0,
         price: 23000
+    },
+    {
+        name: "FAMAS F1",
+        class: "Rifle",
+        amount: 0,
+        level: 75,
+        mag: 30,
+        firemodes: "Automatic, Burst, Semi-Automatic",
+        legal: false,
+        ammo: "rifle",
+        copper: 5,
+        iron: 17,
+        silver: 8,
+        gold: 0,
+        titanium: 2,
+        wood: 0,
+        maple: 0,
+        willow: 0,
+        steel: 12,
+        coal: 0,
+        price: 37500
     },
     {
         name: "KSG-12",
@@ -716,6 +758,27 @@ var guns = [
         price: 28000
     },
     {
+        name: "TAC-338",
+        class: "Rifle",
+        amount: 0,
+        level: "Undiscovered",
+        mag: 5,
+        firemodes: "Bolt-Action",
+        legal: false,
+        ammo: "sniper",
+        copper: null,
+        iron: null,
+        silver: null,
+        gold: null,
+        titanium: null,
+        wood: null,
+        maple: null,
+        willow: null,
+        steel: null,
+        coal: null,
+        price: 75000
+    },
+    {
         name: "L115",
         class: "Exotic",
         amount: 0,
@@ -734,7 +797,7 @@ var guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 250000
+        price: 125000
     },
     {
         name: "Silver Baller",
@@ -755,7 +818,28 @@ var guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 110000
+        price: 80000
+    },
+    {
+        name: "Magnum .357",
+        class: "Exotic",
+        amount: 0,
+        level: 0,
+        mag: 6,
+        firemodes: "Semi-Automatic",
+        legal: true,
+        ammo: "pistol",
+        copper: null,
+        iron: null,
+        silver: null,
+        gold: null,
+        titanium: null,
+        wood: null,
+        maple: null,
+        willow: null,
+        steel: null,
+        coal: null,
+        price: 250000
     },
     {
         name: "HK-416",
@@ -776,7 +860,91 @@ var guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 300000
+        price: 200000
+    },
+    {
+        name: "L85A2",
+        class: "Exotic",
+        amount: 0,
+        level: 0,
+        mag: 30,
+        firemodes: "Automatic, Burst, Semi-Automatic",
+        legal: false,
+        ammo: "rifle",
+        copper: null,
+        iron: null,
+        silver: null,
+        gold: null,
+        titanium: null,
+        wood: null,
+        maple: null,
+        willow: null,
+        steel: null,
+        coal: null,
+        price: 150000
+    },
+    {
+        name: "M1 Carbine",
+        class: "Exotic",
+        amount: 0,
+        level: 0,
+        mag: 15,
+        firemodes: "Semi-Automatic",
+        legal: false,
+        ammo: "rifle",
+        copper: null,
+        iron: null,
+        silver: null,
+        gold: null,
+        titanium: null,
+        wood: null,
+        maple: null,
+        willow: null,
+        steel: null,
+        coal: null,
+        price: 200000
+    },
+    {
+        name: "M1 Garand",
+        class: "Exotic",
+        amount: 0,
+        level: 0,
+        mag: 8,
+        firemodes: "Semi-Automatic",
+        legal: false,
+        ammo: "rifle",
+        copper: null,
+        iron: null,
+        silver: null,
+        gold: null,
+        titanium: null,
+        wood: null,
+        maple: null,
+        willow: null,
+        steel: null,
+        coal: null,
+        price: 200000
+    },
+    {
+        name: "MP-40",
+        class: "Exotic",
+        amount: 0,
+        level: 0,
+        mag: 32,
+        firemodes: "Automatic",
+        legal: false,
+        ammo: "pistol",
+        copper: null,
+        iron: null,
+        silver: null,
+        gold: null,
+        titanium: null,
+        wood: null,
+        maple: null,
+        willow: null,
+        steel: null,
+        coal: null,
+        price: 150000
     },
     {
         name: "BMG-50",
@@ -987,7 +1155,7 @@ var guns = [
         steel: 0,
         coal: 0,
         price: 850
-    }//Attachments 1.8
+    }//Attachments 2.0
 ];
 
 for(i = 0; i < guns.length; i++) {
@@ -1164,7 +1332,7 @@ function loadGuns() {
 
         var itemImage = document.createElement("img");
         itemImage.id = "item-image" + i;
-        itemImage.setAttribute("src", "images/weapons/" + i + ".png");
+        itemImage.setAttribute("src", "images/weapons/" + guns[i].name + ".png");
         itemImage.style.width = "4.5vw";
         itemImage.setAttribute("title", guns[i].name);
         itemImage.style.display = "block";
@@ -1214,7 +1382,7 @@ function loadGuns() {
         var itemLevel = document.createElement("div");
         itemLevel.id = "item-level" + i;
         if(guns[i].level != 0) {
-            if(guns[i].name == "Gas Mask" || guns[i].name == "Gas Filter" || i == 41 || i == 42 || i == 43 || i == 44 || i == 45 || i == 46) {
+            if(guns[i].name == "Gas Mask" || guns[i].name == "Gas Filter" || guns[i].name == "Door Charge" || guns[i].name == "Copper Ingot" || guns[i].name == "Iron Ingot" || guns[i].name == "Steel Ingot" || guns[i].name == "Silver Ingot" || guns[i].name == "Gold Ingot" || guns[i].name == "Titanium Ingot") {
                 itemLevel.innerHTML = "Metalworking Level: " + guns[i].level;
             } else {
                 itemLevel.innerHTML = "Crafting Level: " + guns[i].level;
@@ -1317,7 +1485,7 @@ function loadGuns() {
             itemInputBox.style.color = "darkred";
             itemInputBox.setAttribute("min", "0");
             itemInputBox.setAttribute("max", "0");
-        } else if(guns[i].class == "Exotic") {
+        } else if(guns[i].class == "Exotic" || guns[i].name == "TAC-338") {
             itemInputBox.style.backgroundColor = "salmon";
             itemInputBox.style.color = "red";
             itemInputBox.setAttribute("min", "0");
@@ -1331,6 +1499,10 @@ function loadGuns() {
             itemInputBox.setAttribute("max", "99");
             itemInputBox.setAttribute("onchange", "inputChange()");
             itemInputBox.setAttribute("onInput", "inputChange()");
+        }
+
+        if(guns[i].name == "FAMAS F1" || guns[i].name == "HK MP7A1" || guns[i].name == "TAC-338") {
+            itemContainer.style.backgroundImage = "url('images/blueprint.png')";
         }
         
         var mainContainer = document.getElementById("guns-container");
@@ -2440,10 +2612,10 @@ function extendedAmount() {
     }
 }
 
-var background = "monoford";
+var background = "autumn";
 
 function changeBG() {
-    if(background == "monoford") {
+    if(background == "autumn") {
         document.getElementById("background-img").style.backgroundImage = "linear-gradient(#181818, #070707)";
         document.getElementById("background-img").style.filter = "blur(0px)";
         document.getElementById("warning-text").style.color = "white";
@@ -2451,14 +2623,16 @@ function changeBG() {
         document.getElementById("credits").style.color = "white";
         document.getElementById("bg-type").innerHTML = "Background: Simple";
         background = "simple";
+        localStorage.setItem("theme", "Simple");
     } else if(background == "simple") {
-        document.getElementById("background-img").style.backgroundImage = "url(images/background.jpg)";
-        document.getElementById("background-img").style.filter = "blur(2px)";
-        document.getElementById("warning-text").style.color = "black";
-        document.getElementById("warning").style.color = "black";
-        document.getElementById("credits").style.color = "black";
-        document.getElementById("bg-type").innerHTML = "Background: Monoford";
-        background = "monoford";
+        document.getElementById("background-img").style.backgroundImage = "url(images/background-fall.jpg)";
+        document.getElementById("background-img").style.filter = "blur(0px)";
+        document.getElementById("warning-text").style.color = "white";
+        document.getElementById("warning").style.color = "white";
+        document.getElementById("credits").style.color = "white";
+        document.getElementById("bg-type").innerHTML = "Background: Autumn";
+        background = "autumn";
+        localStorage.setItem("theme", "Autumn");
     }
 }
 
@@ -2573,4 +2747,339 @@ function time(param) {
 
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+var helpOpacity = 0;
+var infoType2 = "white";
+var infoType3 = "white";
+var infoType4 = "white";
+var infoType5 = "white";
+var infoType6 = "white";
+var infoType7 = "white";
+var infoType8 = "white";
+var infoType9 = "white";
+var infoType10 = "white";
+var infoType11 = "white";
+var infoType12 = "white";
+var infoType13 = "white";
+var infoType14 = "white";
+var infoType15 = "white";
+var infoType16 = "white";
+var infoType17 = "white";
+var infoType18 = "white";
+var infoType19 = "white";
+function help(action) {
+    document.getElementById("info-icon").style.visibility = "hidden";
+    document.getElementById("help").style.visibility = "hidden";
+    if(action == 1) {
+        //Open tutorial
+        document.getElementById("help-container").style.visibility = "visible";
+        const tutorialInterval = setInterval(function() {
+            if(helpOpacity < 80) {
+                helpOpacity++;
+                document.getElementById("help-container").style.opacity = helpOpacity + "%";
+            } else {
+                clearInterval(tutorialInterval);
+            }
+        }, 15);
+        //Fix later (reguarding localStorage)
+        clearInterval(tutorialInterval3);
+        localStorage.setItem("tutorial", true);
+        document.getElementById("info-icon").style.color = "white";
+    } else if(action == 2) {
+        //Continue tutorial | Close greet menu
+        const tutorialInterval2 = setInterval(function() {
+            if(helpOpacity == 0) {
+                document.getElementById("help-container").style.visibility = "hidden";
+                clearInterval(tutorialInterval2);
+                //Continue other tutorial elements
+                document.getElementById("help-box1").style.visibility = "visible";
+                tutorialInterval4 = setInterval(function() {
+                    if(infoType2 == "white") {
+                        document.getElementById("help-box1").style.borderColor = "#ff4444";
+                        infoType2 = "red";
+                    } else if(infoType2 == "red") {
+                        document.getElementById("help-box1").style.borderColor = "white";
+                        infoType2 = "white";
+                    }
+                }, 1000);
+                document.getElementById("help-text1").style.visibility = "visible";
+                tutorialInterval5 = setInterval(function() {
+                    if(infoType3 == "white") {
+                        document.getElementById("help-text1").style.borderColor = "#ff4444";
+                        infoType3 = "red";
+                    } else if(infoType3 == "red") {
+                        document.getElementById("help-text1").style.borderColor = "white";
+                        infoType3 = "white";
+                    }
+                }, 1000);
+            } else {
+                helpOpacity--;
+                document.getElementById("help-container").style.opacity = helpOpacity + "%";
+            }
+        }, 15);
+    } else if(action == 3) {
+        //Continue tutorial | Close first tutorial element
+        clearInterval(tutorialInterval4);
+        clearInterval(tutorialInterval5);
+        document.getElementById("help-box1").style.visibility = "hidden";
+        document.getElementById("help-text1").style.visibility = "hidden";
+        document.getElementById("help-box2").style.visibility = "visible";
+                tutorialInterval6 = setInterval(function() {
+                    if(infoType4 == "white") {
+                        document.getElementById("help-box2").style.borderColor = "#ff4444";
+                        infoType4 = "red";
+                    } else if(infoType4 == "red") {
+                        document.getElementById("help-box2").style.borderColor = "white";
+                        infoType4 = "white";
+                    }
+                }, 1000);
+                document.getElementById("help-text2").style.visibility = "visible";
+                tutorialInterval7 = setInterval(function() {
+                    if(infoType5 == "white") {
+                        document.getElementById("help-text2").style.borderColor = "#ff4444";
+                        infoType5 = "red";
+                    } else if(infoType5 == "red") {
+                        document.getElementById("help-text2").style.borderColor = "white";
+                        infoType5 = "white";
+                    }
+                }, 1000);
+    }  else if(action == 4) {
+        //Continue tutorial | Close second tutorial element
+        clearInterval(tutorialInterval6);
+        clearInterval(tutorialInterval7);
+        document.getElementById("help-box2").style.visibility = "hidden";
+        document.getElementById("help-text2").style.visibility = "hidden";
+        document.getElementById("help-box3").style.visibility = "visible";
+                tutorialInterval8 = setInterval(function() {
+                    if(infoType6 == "white") {
+                        document.getElementById("help-box3").style.borderColor = "#ff4444";
+                        infoType6 = "red";
+                    } else if(infoType6 == "red") {
+                        document.getElementById("help-box3").style.borderColor = "white";
+                        infoType6 = "white";
+                    }
+                }, 1000);
+                document.getElementById("help-text3").style.visibility = "visible";
+                tutorialInterval9 = setInterval(function() {
+                    if(infoType7 == "white") {
+                        document.getElementById("help-text3").style.borderColor = "#ff4444";
+                        infoType7 = "red";
+                    } else if(infoType7 == "red") {
+                        document.getElementById("help-text3").style.borderColor = "white";
+                        infoType7 = "white";
+                    }
+                }, 1000);
+            document.getElementById("material-item-container0").setAttribute("onclick", "help(5)");
+    } else if(action == 5) {
+        materialClick(0);
+        //Continue tutorial | Close third tutorial element
+        clearInterval(tutorialInterval8);
+        clearInterval(tutorialInterval9);
+        document.getElementById("help-box3").style.visibility = "hidden";
+        document.getElementById("help-text3").style.visibility = "hidden";
+        document.getElementById("help-box4").style.visibility = "visible";
+                tutorialInterval10 = setInterval(function() {
+                    if(infoType8 == "white") {
+                        document.getElementById("help-box4").style.borderColor = "#ff4444";
+                        infoType8 = "red";
+                    } else if(infoType8 == "red") {
+                        document.getElementById("help-box4").style.borderColor = "white";
+                        infoType8 = "white";
+                    }
+                }, 1000);
+                document.getElementById("help-text4").style.visibility = "visible";
+                tutorialInterval11 = setInterval(function() {
+                    if(infoType9 == "white") {
+                        document.getElementById("help-text4").style.borderColor = "#ff4444";
+                        infoType9 = "red";
+                    } else if(infoType9 == "red") {
+                        document.getElementById("help-text4").style.borderColor = "white";
+                        infoType9 = "white";
+                    }
+                }, 1000);
+            document.getElementById("material-item-container0").setAttribute("onclick", "help(6)");
+    } else if(action == 6) {
+        materialClick(0);
+        //Continue tutorial | Close forth tutorial element
+        clearInterval(tutorialInterval10);
+        clearInterval(tutorialInterval11);
+        document.getElementById("help-box4").style.visibility = "hidden";
+        document.getElementById("help-text4").style.visibility = "hidden";
+        document.getElementById("help-box5").style.visibility = "visible";
+                tutorialInterval12 = setInterval(function() {
+                    if(infoType10 == "white") {
+                        document.getElementById("help-box5").style.borderColor = "#ff4444";
+                        infoType10 = "red";
+                    } else if(infoType10 == "red") {
+                        document.getElementById("help-box5").style.borderColor = "white";
+                        infoType10 = "white";
+                    }
+                }, 1000);
+                document.getElementById("help-text5").style.visibility = "visible";
+                tutorialInterval13 = setInterval(function() {
+                    if(infoType11 == "white") {
+                        document.getElementById("help-text5").style.borderColor = "#ff4444";
+                        infoType11 = "red";
+                    } else if(infoType11 == "red") {
+                        document.getElementById("help-text5").style.borderColor = "white";
+                        infoType11 = "white";
+                    }
+                }, 1000);
+            document.getElementById("material-item-container0").setAttribute("onclick", "materialClick(0)");
+    } else if(action == 7) {
+        //Continue tutorial | Close fifth tutorial element
+        clearInterval(tutorialInterval12);
+        clearInterval(tutorialInterval13);
+        document.getElementById("help-box5").style.visibility = "hidden";
+        document.getElementById("help-text5").style.visibility = "hidden";
+        document.getElementById("help-box6").style.visibility = "visible";
+                tutorialInterval14 = setInterval(function() {
+                    if(infoType12 == "white") {
+                        document.getElementById("help-box6").style.borderColor = "#ff4444";
+                        infoType12 = "red";
+                    } else if(infoType12 == "red") {
+                        document.getElementById("help-box6").style.borderColor = "white";
+                        infoType12 = "white";
+                    }
+                }, 1000);
+                document.getElementById("help-text6").style.visibility = "visible";
+                tutorialInterval15 = setInterval(function() {
+                    if(infoType13 == "white") {
+                        document.getElementById("help-text6").style.borderColor = "#ff4444";
+                        infoType13 = "red";
+                    } else if(infoType13 == "red") {
+                        document.getElementById("help-text6").style.borderColor = "white";
+                        infoType13 = "white";
+                    }
+                }, 1000);
+    } else if(action == 8) {
+        //Continue tutorial | Close sixth tutorial element
+        clearInterval(tutorialInterval14);
+        clearInterval(tutorialInterval15);
+        document.getElementById("help-box6").style.visibility = "hidden";
+        document.getElementById("help-text6").style.visibility = "hidden";
+        document.getElementById("help-box7").style.visibility = "visible";
+                tutorialInterval16 = setInterval(function() {
+                    if(infoType14 == "white") {
+                        document.getElementById("help-box7").style.borderColor = "#ff4444";
+                        infoType14 = "red";
+                    } else if(infoType14 == "red") {
+                        document.getElementById("help-box7").style.borderColor = "white";
+                        infoType14 = "white";
+                    }
+                }, 1000);
+                document.getElementById("help-text7").style.visibility = "visible";
+                tutorialInterval17 = setInterval(function() {
+                    if(infoType15 == "white") {
+                        document.getElementById("help-text7").style.borderColor = "#ff4444";
+                        infoType15 = "red";
+                    } else if(infoType15 == "red") {
+                        document.getElementById("help-text7").style.borderColor = "white";
+                        infoType15 = "white";
+                    }
+                }, 1000);
+    } else if(action == 9) {
+        //Continue tutorial | Close seventh tutorial element
+        clearInterval(tutorialInterval16);
+        clearInterval(tutorialInterval17);
+        document.getElementById("help-box7").style.visibility = "hidden";
+        document.getElementById("help-text7").style.visibility = "hidden";
+        document.getElementById("help-box8").style.visibility = "visible";
+                tutorialInterval18 = setInterval(function() {
+                    if(infoType16 == "white") {
+                        document.getElementById("help-box8").style.borderColor = "#ff4444";
+                        infoType16 = "red";
+                    } else if(infoType16 == "red") {
+                        document.getElementById("help-box8").style.borderColor = "white";
+                        infoType16 = "white";
+                    }
+                }, 1000);
+                document.getElementById("help-text8").style.visibility = "visible";
+                tutorialInterval19 = setInterval(function() {
+                    if(infoType17 == "white") {
+                        document.getElementById("help-text8").style.borderColor = "#ff4444";
+                        infoType17 = "red";
+                    } else if(infoType17 == "red") {
+                        document.getElementById("help-text8").style.borderColor = "white";
+                        infoType17 = "white";
+                    }
+                }, 1000);
+    } else if(action == 10) {
+        //Continue tutorial | Close eighth tutorial element
+        clearInterval(tutorialInterval18);
+        clearInterval(tutorialInterval19);
+        document.getElementById("help-box8").style.visibility = "hidden";
+        document.getElementById("help-text8").style.visibility = "hidden";
+        document.getElementById("help-box9").style.visibility = "visible";
+                tutorialInterval20 = setInterval(function() {
+                    if(infoType18 == "white") {
+                        document.getElementById("help-box9").style.borderColor = "#ff4444";
+                        infoType18 = "red";
+                    } else if(infoType18 == "red") {
+                        document.getElementById("help-box9").style.borderColor = "white";
+                        infoType18 = "white";
+                    }
+                }, 1000);
+                document.getElementById("help-text9").style.visibility = "visible";
+                tutorialInterval21 = setInterval(function() {
+                    if(infoType19 == "white") {
+                        document.getElementById("help-text9").style.borderColor = "#ff4444";
+                        infoType19 = "red";
+                    } else if(infoType19 == "red") {
+                        document.getElementById("help-text9").style.borderColor = "white";
+                        infoType19 = "white";
+                    }
+                }, 1000);
+    } else if(action == 11) {
+        //Close tutorial | Close ninth tutorial element
+        clearInterval(tutorialInterval20);
+        clearInterval(tutorialInterval21);
+        document.getElementById("help-box9").style.visibility = "hidden";
+        document.getElementById("help-text9").style.visibility = "hidden";
+
+        document.getElementById("info-icon").style.visibility = "visible";
+        document.getElementById("help").style.visibility = "visible";
+    }
+}
+
+//Check if user is brand new, if so, flash the help icon to encourage new users to use the tutorial
+var infoType = "white";
+if(localStorage.getItem("tutorial") == null) {
+    localStorage.setItem("tutorial", false);
+    tutorialInterval3 = setInterval(function() {
+        if(infoType == "white") {
+            document.getElementById("info-icon").style.color = "#ff4444";
+            infoType = "red";
+        } else if(infoType == "red") {
+            document.getElementById("info-icon").style.color = "white";
+            infoType = "white";
+        }
+    }, 1000);
+} else if(localStorage.getItem("tutorial") == "false") {
+    tutorialInterval3 = setInterval(function() {
+        if(infoType == "white") {
+            document.getElementById("info-icon").style.color = "#ff4444";
+            infoType = "red";
+        } else if(infoType == "red") {
+            document.getElementById("info-icon").style.color = "white";
+            infoType = "white";
+        }
+    }, 1000);
+}
+
+//LOCAL STORAGE FOR THEME
+if(localStorage.getItem("theme") == null){
+    localStorage.setItem("theme", "Autumn");
+}
+
+if(localStorage.getItem("theme") == "Autumn") {
+    background = "autumn";
+    document.getElementById("background-img").style.backgroundImage = "url(images/background-fall.jpg)";
+    document.getElementById("bg-type").innerHTML = "Background: Autumn";
+} else if(localStorage.getItem("theme") == "Simple") {
+    background = "simple";
+    document.getElementById("background-img").style.backgroundImage = "linear-gradient(#181818, #070707)";
+    document.getElementById("bg-type").innerHTML = "Background: Simple";
+    document.getElementById("checkbox").setAttribute("checked", true);
 }

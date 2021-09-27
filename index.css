@@ -50,10 +50,10 @@ body {
 }
 
 #background-img {
-    background-image: url("images/background.jpg");
+    background-image: url("images/background-fall.jpg");
     background-size: cover;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -145,12 +145,12 @@ body {
     bottom: 0.25vw;
     left: 0.25vw;
     z-index: 100;
-    color: black;
+    color: white;
     font-size: 0.905vw;
 }
 
 .link {
-    color: blue;
+    color: gray;
 }
 
 #warning {
@@ -159,13 +159,14 @@ body {
     right: 30vw;
     user-select: none;
     font-size: 1.25vw;
+    color: white;
 }
 
 #warning-text {
     position: absolute;
     bottom: 0.15vw;
     right: 0.25vw;
-    color: black;
+    color: white;
     font-size: 0.905vw;
 }
 
@@ -520,4 +521,507 @@ input:checked + .slider:before {
     font-weight: 500;
     text-align: center;
     margin-top: -0.15vw;
+}
+
+#help {
+    position: absolute;
+    top: 0.5vw;
+    right: 0.5vw;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+}
+
+.material-icons.info {
+    font-size: 2.25vw;
+}
+
+.material-icons.info:hover {
+    font-size: 2.35vw;
+    transition-duration: 0.25s;
+    position: absolute;
+    top: -0.05vw;
+    right: 0vw;
+}
+
+/*Help Section*/
+
+#help-container {
+    background-image: linear-gradient(160deg,lime, green);
+    opacity: 0%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    z-index: 100;
+    visibility: hidden;
+}
+
+#help-icon {
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    width: 100%;
+    user-select: none;
+    margin-top: 5%;
+}
+
+#help-title {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -1%;
+}
+
+#help-text {
+    color: white;
+    font-size: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+#help-proceed {
+    border: white solid 5px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#help-proceed:hover {
+    box-shadow: 0px 0px 10px black;
+    transition: box-shadow ease-in-out 0.25s;
+}
+
+#help-box1 {
+    width: 50.25vw;
+    height: 82.6%;
+    border: 0.4vw white solid;
+    position: absolute;
+    top: 5.5vw;
+    left: 4.5vw;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#help-text1 {
+    color: #ff4444;
+    background-color: white;
+    border: 0.25vw white solid;
+    font-size: 1vw;
+    width: 16vw;
+    height: 10vw;
+    position: absolute;
+    top: 5.5vw;
+    left: 56.25vw;
+    text-align: center;
+    padding: 0.25vw;
+    visibility: hidden;
+}
+
+#help-proceed1 {
+    border: #ff4444 solid 3px;
+    width: 5vw;
+    height: 2vw;
+    text-align: center;
+    line-height: 2vw;
+    color: #ff4444;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    position: relative;
+    margin-top: 0.5vw;
+}
+
+#help-proceed1:hover {
+    box-shadow: 0px 0px 5px black;
+    transition: box-shadow ease-in-out 0.25s;
+}
+
+#help-box2 {
+    width: 37.75vw;
+    height: 82.6%;
+    border: 0.4vw white solid;
+    position: absolute;
+    top: 5.5vw;
+    left: 57vw;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#help-text2 {
+    color: #ff4444;
+    background-color: white;
+    border: 0.25vw white solid;
+    font-size: 1vw;
+    width: 16vw;
+    height: 11vw;
+    position: absolute;
+    top: 5.5vw;
+    left: 39.5vw;
+    text-align: center;
+    padding: 0.25vw;
+    visibility: hidden;
+}
+
+#help-proceed2 {
+    border: #ff4444 solid 3px;
+    width: 5vw;
+    height: 2vw;
+    text-align: center;
+    line-height: 2vw;
+    color: #ff4444;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    position: relative;
+    margin-top: 0.5vw;
+}
+
+#help-proceed2:hover {
+    box-shadow: 0px 0px 5px black;
+    transition: box-shadow ease-in-out 0.25s;
+}
+
+#help-box3 {
+    width: 37.75vw;
+    height: 5.3vw;
+    border: 0.4vw white solid;
+    position: absolute;
+    top: 5.5vw;
+    left: 57vw;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#help-text3 {
+    color: #ff4444;
+    background-color: white;
+    border: 0.25vw white solid;
+    font-size: 1vw;
+    width: 16vw;
+    height: 8.25vw;
+    position: absolute;
+    top: 5.5vw;
+    left: 39.5vw;
+    text-align: center;
+    padding: 0.25vw;
+    visibility: hidden;
+}
+
+#help-proceed3 {
+    border: #ff4444 solid 3px;
+    width: 5vw;
+    height: 2vw;
+    text-align: center;
+    line-height: 2vw;
+    color: #ff4444;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    position: relative;
+    margin-top: 0.5vw;
+}
+
+#help-proceed3:hover {
+    box-shadow: 0px 0px 5px black;
+    transition: box-shadow ease-in-out 0.25s;
+}
+
+#help-box4 {
+    width: 37.75vw;
+    height: 11.35vw;
+    border: 0.4vw white solid;
+    position: absolute;
+    top: 5.5vw;
+    left: 57vw;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#help-text4 {
+    color: #ff4444;
+    background-color: white;
+    border: 0.25vw white solid;
+    font-size: 1vw;
+    width: 16vw;
+    height: 5.5vw;
+    position: absolute;
+    top: 5.5vw;
+    left: 39.5vw;
+    text-align: center;
+    padding: 0.25vw;
+    visibility: hidden;
+}
+
+#help-proceed4 {
+    border: #ff4444 solid 3px;
+    width: 5vw;
+    height: 2vw;
+    text-align: center;
+    line-height: 2vw;
+    color: #ff4444;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    position: relative;
+    margin-top: 0.5vw;
+}
+
+#help-proceed4:hover {
+    box-shadow: 0px 0px 5px black;
+    transition: box-shadow ease-in-out 0.25s;
+}
+
+#help-box5 {
+    width: 11.25vw;
+    height: 2.1vw;
+    border: 0.25vw white solid;
+    position: absolute;
+    bottom: 0vw;
+    left: 26.7vw;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#help-text5 {
+    color: #ff4444;
+    background-color: white;
+    border: 0.25vw white solid;
+    font-size: 1vw;
+    width: 26vw;
+    height: 11vw;
+    position: absolute;
+    bottom: 3vw;
+    left: 19vw;
+    text-align: center;
+    padding: 0.25vw;
+    visibility: hidden;
+}
+
+#help-proceed5 {
+    border: #ff4444 solid 3px;
+    width: 5vw;
+    height: 2vw;
+    text-align: center;
+    line-height: 2vw;
+    color: #ff4444;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    position: relative;
+    margin-top: 0.5vw;
+}
+
+#help-proceed5:hover {
+    box-shadow: 0px 0px 5px black;
+    transition: box-shadow ease-in-out 0.25s;
+}
+
+#help-box6 {
+    width: 5.75vw;
+    height: 4.7%;
+    border: 0.25vw white solid;
+    position: absolute;
+    bottom: 0vw;
+    left: 38.5vw;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#help-text6 {
+    color: #ff4444;
+    background-color: white;
+    border: 0.25vw white solid;
+    font-size: 1vw;
+    width: 15vw;
+    height: 9.75vw;
+    position: absolute;
+    bottom: 3vw;
+    left: 33.6vw;
+    text-align: center;
+    padding: 0.25vw;
+    visibility: hidden;
+}
+
+#help-proceed6 {
+    border: #ff4444 solid 3px;
+    width: 5vw;
+    height: 2vw;
+    text-align: center;
+    line-height: 2vw;
+    color: #ff4444;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    position: relative;
+    margin-top: 0.5vw;
+}
+
+#help-proceed6:hover {
+    box-shadow: 0px 0px 5px black;
+    transition: box-shadow ease-in-out 0.25s;
+}
+
+#help-box7 {
+    width: 10.3vw;
+    height: 4.5%;
+    border: 0.25vw white solid;
+    position: absolute;
+    bottom: 0vw;
+    left: 44.6vw;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#help-text7 {
+    color: #ff4444;
+    background-color: white;
+    border: 0.25vw white solid;
+    font-size: 1vw;
+    width: 17vw;
+    height: 9.75vw;
+    position: absolute;
+    bottom: 3vw;
+    left: 41vw;
+    text-align: center;
+    padding: 0.25vw;
+    visibility: hidden;
+}
+
+#help-proceed7 {
+    border: #ff4444 solid 3px;
+    width: 5vw;
+    height: 2vw;
+    text-align: center;
+    line-height: 2vw;
+    color: #ff4444;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    position: relative;
+    margin-top: 0.5vw;
+}
+
+#help-proceed7:hover {
+    box-shadow: 0px 0px 5px black;
+    transition: box-shadow ease-in-out 0.25s;
+}
+
+#help-box8 {
+    width: 10vw;
+    height: 4.7%;
+    border: 0.25vw white solid;
+    position: absolute;
+    bottom: 0vw;
+    left: 57.1vw;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#help-text8 {
+    color: #ff4444;
+    background-color: white;
+    border: 0.25vw white solid;
+    font-size: 1vw;
+    width: 22vw;
+    height: 9.75vw;
+    position: absolute;
+    bottom: 3vw;
+    left: 51vw;
+    text-align: center;
+    padding: 0.25vw;
+    visibility: hidden;
+}
+
+#help-proceed8 {
+    border: #ff4444 solid 3px;
+    width: 5vw;
+    height: 2vw;
+    text-align: center;
+    line-height: 2vw;
+    color: #ff4444;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    position: relative;
+    margin-top: 0.5vw;
+}
+
+#help-proceed8:hover {
+    box-shadow: 0px 0px 5px black;
+    transition: box-shadow ease-in-out 0.25s;
+}
+
+#help-box9 {
+    width: 31.15vw;
+    height: 2.25%;
+    border: 0.15vw white solid;
+    position: absolute;
+    bottom: 0vw;
+    left: 68.5vw;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#help-text9 {
+    color: #ff4444;
+    background-color: white;
+    border: 0.25vw white solid;
+    font-size: 1vw;
+    width: 22vw;
+    height: 6.9vw;
+    position: absolute;
+    bottom: 1.9vw;
+    left: 72.5vw;
+    text-align: center;
+    padding: 0.25vw;
+    visibility: hidden;
+}
+
+#help-proceed9 {
+    border: #ff4444 solid 3px;
+    width: 5vw;
+    height: 2vw;
+    text-align: center;
+    line-height: 2vw;
+    color: #ff4444;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    position: relative;
+    margin-top: 0.5vw;
+}
+
+#help-proceed9:hover {
+    box-shadow: 0px 0px 5px black;
+    transition: box-shadow ease-in-out 0.25s;
 }

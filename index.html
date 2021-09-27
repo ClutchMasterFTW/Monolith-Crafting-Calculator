@@ -4,7 +4,7 @@
     <head>
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="shortcut icon" type="image/jpg" href="images/logo.png"/>
+        <link rel="shortcut icon" type="image/jpg" href="images/logo-autumn.png"/>
     </head>
     <body>
         <div id="header">
@@ -20,7 +20,7 @@
         <div id="material-container"></div>
         <div id="reset" onclick="location.reload()">RESET QUANTITY</div>
 
-        <div id="bg-type">Background: Monoford</div>
+        <div id="bg-type">Background: Autumn</div>
         <label class="switch" id="switch1">
             <input type="checkbox" id="checkbox" onclick="changeBG()">
             <span class="slider"></span>
@@ -60,14 +60,61 @@
         <div id="dim-warning-container">
             <span class="material-icons" id="dim-warning-icon">report_problem</span>
             <div id="dim-warning-title">ATTENTION:</div>
-            <div id="dim-warning-text">We have detected that your browser window is below the recommended size (1920px x 1400px). If you would like to view this webpage without any resolution issues, we suggest to resize your browser to a 16:9 ratio size. Thanks!</div>
+            <div id="dim-warning-text">We have detected that your browser window is below the recommended size (1920px x 1080px). If you would like to view this webpage without any resolution issues, we suggest to resize your browser to a 16:9 ratio size. Thanks!</div>
             <div id="proceed" onclick="closeWarning()">Proceed</div>
         </div>
 
         <span class="material-icons" id="warning">report_problem</span>
         <div id="warning-text">If you experience any bugs, please post them on the <a href="https://github.com/ClutchMasterFTW/Monolith-Crafting-Calculator/issues" target="_blank" class="link">GitHub issues</a> page.</div>
     
-        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class">ClutchMasterFTW</a> | v.1.7</div>
+        <div id="help" onclick="help(1)">
+            <span class="material-icons info" title="Help" id="info-icon">info</span>
+        </div>
+        <!--Help Section-->
+        <div id="help-container">
+            <span class="material-icons" id="help-icon">emoji_people</span>
+            <div id="help-title">Welcome</div>
+            <div id="help-text">To the Unofficial Crafting Calculator for Monolith Roleplay!</div>
+            <div id="help-proceed" onclick="help(2)">Continue Tutorial</div>
+        </div>
+        <div id="help-box1"></div>
+        <div id="help-text1">This is the Weapons & Items section of the calculator. You can change the amount of items you would like to craft using the arrows next to the quantity.
+            <div id="help-proceed1" onclick="help(3)">Continue</div>
+        </div>
+        <div id="help-box2"></div>
+        <div id="help-text2">This is the Crafting Ingredients section of the calculator. You can view the amount of materials you need in order to craft a certain set of weapons/items here (and the price all of them will cost).
+            <div id="help-proceed2" onclick="help(4)">Continue</div>
+        </div>
+        <div id="help-box3"></div>
+        <div id="help-text3">Click on the Copper Chunk material. A drop down menu of the refined varieties of the material will pop up below the material. 
+            <div id="help-proceed3" onclick="help(5)">Continue</div>
+        </div>
+        <div id="help-box4"></div>
+        <div id="help-text4">You can click it again to hide the drop down.
+            <div id="help-proceed4" onclick="help(6)">Continue</div>
+        </div>
+        <div id="help-box5"></div>
+        <div id="help-text5">Nice! Over here is the Estimated Time it will take to craft your set of weapons/items. The system takes into account the time it takes to mine, driving back and forth, the time it takes to crush (using the amount of crushers you set by clicking over the element and inputting however many you have), and to smelt.
+            <div id="help-proceed5" onclick="help(7)">Continue</div>
+        </div>
+        <div id="help-box6"></div>
+        <div id="help-text6">Turn this switch on when you are mining for materials, it makes calculating however many materials you need inside your inventory 100 times easier!
+            <div id="help-proceed6" onclick="help(8)">Continue</div>
+        </div>
+        <div id="help-box7"></div>
+        <div id="help-text7">Click this button whenever you want to quickly reset the quantity of all items under the the Weapons & Items section back to 0. Don't click this button until the tutorial is over! :)
+            <div id="help-proceed7" onclick="help(9)">Continue</div>
+        </div>
+        <div id="help-box8"></div>
+        <div id="help-text8">This switch changes the background of the calculator from Autumn (this background changes seasonally), to a simple gray gradient. The background will now save in your browsers cookies whenever it is changed!
+            <div id="help-proceed8" onclick="help(10)">Continue</div>
+        </div>
+        <div id="help-box9"></div>
+        <div id="help-text9">Lastly, report any bugs you find by visiting my GitHub Issues page, and sumbit the bug under issues. That's all, Enjoy!
+            <div id="help-proceed9" onclick="help(11)">Finish</div>
+        </div>
+
+        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class" class="link">ClutchMasterFTW</a> | v.1.8</div>
         <script src="index.js"></script>
     </body>
 </html>
