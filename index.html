@@ -43,7 +43,7 @@
                 <img src="images/close.png" id="close" onclick="time(0)">
                 <div id="crushers"># of Crushers:</div>
                 <img src="images/crusher.png" id="crusher">
-                <input type="range" min="1" max="6" value="1" id="slider" onchange="time(2)">
+                <input type="range" min="1" max="10" value="1" id="slider" onchange="time(2)">
                 <div id="numbers-container">
                     <div class="number">1</div>
                     <div class="number">2</div>
@@ -51,6 +51,10 @@
                     <div class="number">4</div>
                     <div class="number">5</div>
                     <div class="number">6</div>
+                    <div class="number">7</div>
+                    <div class="number">8</div>
+                    <div class="number">9</div>
+                    <div class="number">10</div>
                 </div>
                 <div id="estimated">Estimated Time To Craft:</div>
                 <div id="time2">00:00:00</div>
@@ -114,7 +118,20 @@
             <div id="help-proceed9" onclick="help(11)">Finish</div>
         </div>
 
-        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class" class="link">ClutchMasterFTW</a> | v.1.8</div>
+        <span class="material-icons" id="beta-icon" onclick="betaMenu(1)" title="Beta">new_releases</span>
+
+        <div id="beta-container">
+            <div id="beta-title">Active Betas</div>
+            <p id="beta-text">Welcome to the Betas Menu. Here you can switch from 'slightly' unstable/unfinished betas, to stable releases of this calculator. Your current selected version will save in your browsers cookie data.</p>
+            <div id="beta-version">Current Version: v.1.9 (BETA)</div>
+            <label class="switch" id="switch3">
+                <input type="checkbox" id="checkbox3" onclick="changeBeta()">
+                <span class="slider"></span>
+            </label>
+            <img src="images/close.png" id="beta-close" onclick="betaMenu(0)">
+        </div>
+
+        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class" class="link">ClutchMasterFTW</a> | v.1.9 (BETA)</div>
         <script src="index.js"></script>
     </body>
 </html>

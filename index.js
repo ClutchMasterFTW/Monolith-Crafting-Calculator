@@ -1337,35 +1337,42 @@ function loadGuns() {
         itemImage.setAttribute("title", guns[i].name);
         itemImage.style.display = "block";
         itemImage.style.position = "relative";
-        itemImage.style.top = "0.2vw";
+        itemImage.style.top = "0.075vw";
         itemImage.style.left = "0.2vw";
+        //Halloween Event rounded icons
+        itemImage.style.borderRadius = "0.35vw";
+        //Version 1.9
+        itemImage.style.cursor = "pointer";
+        itemImage.setAttribute("onmouseover", "imageHover(" + i + ")");
+        itemImage.setAttribute("onmouseout", "imageUNHover(" + i + ")");
+        itemImage.setAttribute("onclick", "itemInfo(" + i + ")");
         if(guns[i].class == "Pistol") {
-            itemImage.style.border = "1px solid #006eff";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(87, 142, 214, 1), rgba(0, 110, 225, 0.25))";
+            itemImage.style.border = "0.175vw solid #006eff";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(87, 142, 214, 0.1), rgba(87, 142, 214, 1))";
         } else if(guns[i].class == "Rifle") {
-            itemImage.style.border = "1px solid #ff8c00";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(252, 182, 95, 1), rgba(255, 140, 0, 0.25))";
+            itemImage.style.border = "0.175vw solid #ff8c00";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(252, 182, 95, 0.1), rgba(252, 182, 95, 1))";
         } else if(guns[i].class == "Knife") {
-            itemImage.style.border = "1px solid #ff0000";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(249, 122, 122, 1), rgba(255, 0, 0, 0.25))";
+            itemImage.style.border = "0.175vw solid #ff0000";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(249, 122, 122, 0.1), rgba(249, 122, 122, 1))";
         } else if(guns[i].class == "Shotgun") {
-            itemImage.style.border = "1px solid #7f00ff";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(183, 112, 255, 1), rgba(127, 0, 255, 0.25))";
+            itemImage.style.border = "0.175vw solid #7f00ff";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(183, 112, 255, 0.1), rgba(183, 112, 255, 1))";
         } else if(guns[i].class == "Exotic") {
-            itemImage.style.border = "1px solid #eeff00";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(245, 255, 117, 1), rgba(238, 255, 0, 0.25))";
+            itemImage.style.border = "0.175vw solid #eeff00";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(245, 255, 117, 0.1), rgba(245, 255, 117, 1))";
         } else if(guns[i].class == "Police") {
-            itemImage.style.border = "1px solid #0015ff";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(124, 135, 255, 1), rgba(0, 21, 255, 0.25))";
+            itemImage.style.border = "0.175vw solid #0015ff";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(124, 135, 255, 0.1), rgba(124, 135, 255, 1))";
         } else if(guns[i].class == "Equipable") {
-            itemImage.style.border = "1px solid #46d300";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(135, 209, 98, 1), rgba(70, 211, 0, 0.25))";
+            itemImage.style.border = "0.175vw solid #46d300";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(135, 209, 98, 0.1), rgba(135, 209, 98, 1))";
         } else if(guns[i].class == "Door Charge") {
-            itemImage.style.border = "1px solid #41006d";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(108, 0, 181, 1), rgba(65, 0, 109, 0.25))";
+            itemImage.style.border = "0.175vw solid #41006d";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(108, 0, 181, 0.1), rgba(108, 0, 181, 1))";
         } else if(guns[i].class == "Item") {
-            itemImage.style.border = "1px solid #333333";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
+            itemImage.style.border = "0.175vw solid #333333";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1))";
         }
 
         var itemName = document.createElement("div");
@@ -1373,8 +1380,8 @@ function loadGuns() {
         itemName.innerHTML = guns[i].name;
         itemName.style.display = "block";
         itemName.style.position = "relative";
-        itemName.style.top = "-4.5vw";
-        itemName.style.left = "5.25vw";
+        itemName.style.top = "-4.75vw";
+        itemName.style.left = "5.5vw";
         itemName.style.fontSize = "1.5vw";
         itemName.style.color = "white";
         itemName.style.fontWeight = "bold";
@@ -1394,8 +1401,8 @@ function loadGuns() {
         }
         itemLevel.style.display = "block";
         itemLevel.style.position = "relative";
-        itemLevel.style.top = "-4.5vw";
-        itemLevel.style.left = "5.25vw";
+        itemLevel.style.top = "-4.75vw";
+        itemLevel.style.left = "5.5vw";
         itemLevel.style.fontSize = "1vw";
         itemLevel.style.fontWeight = "600";
 
@@ -1410,8 +1417,8 @@ function loadGuns() {
         }
         itemLegal.style.display = "block";
         itemLegal.style.position = "relative";
-        itemLegal.style.top = "-4.5vw";
-        itemLegal.style.left = "5.25vw";
+        itemLegal.style.top = "-4.75vw";
+        itemLegal.style.left = "5.5vw";
         itemLegal.style.fontSize = "1vw";
         itemLegal.style.fontWeight = "600";
 
@@ -1426,7 +1433,7 @@ function loadGuns() {
         }
         itemMag.style.display = "block";
         itemMag.style.position = "relative";
-        itemMag.style.top = "-9vw";
+        itemMag.style.top = "-9.25vw";
         itemMag.style.left = "20vw";
         itemMag.style.fontSize = "1vw";
         itemMag.style.fontWeight = "600";
@@ -1436,7 +1443,7 @@ function loadGuns() {
         itemFiremodes.innerHTML = "Fire Modes: " + guns[i].firemodes;
         itemFiremodes.style.display = "block";
         itemFiremodes.style.position = "relative";
-        itemFiremodes.style.top = "-8.85vw";
+        itemFiremodes.style.top = "-9.1vw";
         itemFiremodes.style.left = "20vw";
         itemFiremodes.style.fontSize = "1vw";
         itemFiremodes.style.fontWeight = "600";
@@ -1457,7 +1464,7 @@ function loadGuns() {
         }
         itemAmmo.style.display = "block";
         itemAmmo.style.position = "relative";
-        itemAmmo.style.top = "-8.75vw";
+        itemAmmo.style.top = "-9vw";
         itemAmmo.style.left = "20vw";
         itemAmmo.style.fontSize = "1vw";
         itemAmmo.style.fontWeight = "600";
@@ -1474,7 +1481,7 @@ function loadGuns() {
         itemInputBox.style.border = "1px black solid";
         itemInputBox.style.display = "block";
         itemInputBox.style.position = "relative";
-        itemInputBox.style.top = "-13.5vw";
+        itemInputBox.style.top = "-13.65vw";
         itemInputBox.style.left = "44vw";
         itemInputBox.style.textAlign = "center";
         itemInputBox.style.lineHeight = "5vw";
@@ -1569,10 +1576,11 @@ function loadMaterials() {
         materialImage.setAttribute("title", materials[i].name);
         materialImage.style.display = "block";
         materialImage.style.position = "relative";
-        materialImage.style.top = "0.2vw";
-        materialImage.style.left = "0.2vw";
-        materialImage.style.border = "1px solid #333333";
-        materialImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
+        materialImage.style.top = "0.1vw";
+        materialImage.style.left = "0.1vw";
+        materialImage.style.border = "0.175vw solid #333333";
+        materialImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1))";
+        materialImage.style.borderRadius = "0.35vw";
 
         var materialName = document.createElement("div");
         materialName.id = "material-name" + i;
@@ -1580,7 +1588,7 @@ function loadMaterials() {
         materialName.style.display = "block";
         materialName.style.position = "relative";
         materialName.style.top = "-4.5vw";
-        materialName.style.left = "5.25vw";
+        materialName.style.left = "5.5vw";
         materialName.style.fontSize = "1.5vw";
         materialName.style.color = "white";
         materialName.style.fontWeight = "bold";
@@ -1595,7 +1603,7 @@ function loadMaterials() {
         materialAmount.style.display = "block";
         materialAmount.style.position = "relative";
         materialAmount.style.top = "-4.5vw";
-        materialAmount.style.left = "5.25vw";
+        materialAmount.style.left = "5.5vw";
         materialAmount.style.fontSize = "1.25vw";
         materialAmount.style.color = "white";
         materialAmount.style.fontWeight = "600";
@@ -1684,8 +1692,8 @@ function inputChange() {
     extendedAmount();
 
     for(z = 0; z < 6; z++) {
-        materials[z].remainder = (materials[z].amount % 16);
-        materials[z].stacks = ((materials[z].amount - materials[z].remainder) / 16);
+        materials[z].remainder = (materials[z].amount % 24);
+        materials[z].stacks = ((materials[z].amount - materials[z].remainder) / 24);
         if(stacks == true) {
             document.getElementById("material-amount" + z).innerHTML = "Stacks: " + materials[z].stacks + "; Remainder: " + materials[z].remainder;
         }
@@ -1721,9 +1729,9 @@ function materialClick(id) {
             extendedMaterialCrushedCopperImage.id = "extended-material-crushed-copper-image";
             extendedMaterialCrushedCopperImage.style.height = "2.5vw";
             extendedMaterialCrushedCopperImage.style.position = "relative";
-            extendedMaterialCrushedCopperImage.style.top = "0.25vw";
-            extendedMaterialCrushedCopperImage.style.left = "0.25vw";
-            extendedMaterialCrushedCopperImage.style.border = "1px solid #333333";
+            extendedMaterialCrushedCopperImage.style.top = "-0.05vw";
+            extendedMaterialCrushedCopperImage.style.left = "0.1vw";
+            extendedMaterialCrushedCopperImage.style.border = "0.2vw solid #333333";
             extendedMaterialCrushedCopperImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
             extendedMaterialCrushedCopperImage.setAttribute("src", extendedMaterials[0].image);
             extendedMaterialCrushedCopperImage.setAttribute("title", extendedMaterials[0].name);
@@ -1734,8 +1742,8 @@ function materialClick(id) {
             extendedMaterialCrushedCopperName.style.fontSize = "1vw";
             extendedMaterialCrushedCopperName.style.fontWeight = "bold";
             extendedMaterialCrushedCopperName.style.position = "relative";
-            extendedMaterialCrushedCopperName.style.top = "-2.7vw";
-            extendedMaterialCrushedCopperName.style.left = "3.1vw";
+            extendedMaterialCrushedCopperName.style.top = "-3.2vw";
+            extendedMaterialCrushedCopperName.style.left = "3.2vw";
             extendedMaterialCrushedCopperName.innerHTML = extendedMaterials[0].name;
 
             extendedMaterialCrushedCopperAmount = document.createElement("div");
@@ -1763,9 +1771,9 @@ function materialClick(id) {
             extendedMaterialCopperIngotImage.id = "extended-material-copper-ingot-image";
             extendedMaterialCopperIngotImage.style.height = "2.5vw";
             extendedMaterialCopperIngotImage.style.position = "relative";
-            extendedMaterialCopperIngotImage.style.top = "0.25vw";
+            extendedMaterialCopperIngotImage.style.top = "0.15vw";
             extendedMaterialCopperIngotImage.style.left = "0.25vw";
-            extendedMaterialCopperIngotImage.style.border = "1px solid #333333";
+            extendedMaterialCopperIngotImage.style.border = "0.2vw solid #333333";
             extendedMaterialCopperIngotImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
             extendedMaterialCopperIngotImage.setAttribute("src", extendedMaterials[1].image);
             extendedMaterialCopperIngotImage.setAttribute("title", extendedMaterials[1].name);
@@ -3068,6 +3076,31 @@ if(localStorage.getItem("tutorial") == null) {
     }, 1000);
 }
 
+//Check if user is brand new, if so, flash the beta icon to tell new users there is an active beta version
+var betaType = "white";
+if(localStorage.getItem("beta") == null) {
+    localStorage.setItem("beta", false);
+    betaInterval = setInterval(function() {
+        if(betaType == "white") {
+            document.getElementById("beta-icon").style.color = "#ff4444";
+            betaType = "red";
+        } else if(betaType == "red") {
+            document.getElementById("beta-icon").style.color = "white";
+            betaType = "white";
+        }
+    }, 1000);
+} else if(localStorage.getItem("beta") == "false") {
+    betaInterval = setInterval(function() {
+        if(betaType == "white") {
+            document.getElementById("beta-icon").style.color = "#ff4444";
+            betaType = "red";
+        } else if(betaType == "red") {
+            document.getElementById("beta-icon").style.color = "white";
+            betaType = "white";
+        }
+    }, 1000);
+}
+
 //LOCAL STORAGE FOR THEME
 if(localStorage.getItem("theme") == null){
     localStorage.setItem("theme", "Autumn");
@@ -3082,4 +3115,375 @@ if(localStorage.getItem("theme") == "Autumn") {
     document.getElementById("background-img").style.backgroundImage = "linear-gradient(#181818, #070707)";
     document.getElementById("bg-type").innerHTML = "Background: Simple";
     document.getElementById("checkbox").setAttribute("checked", true);
+}
+
+//LOCAL STORAGE FOR VERSION
+if(localStorage.getItem("version") == null){
+    localStorage.setItem("version", "1.9");
+    document.getElementById("credits").innerHTML = "Tool Created by <a href='https://github.com/ClutchMasterFTW' target='_blank' id='class' class='link'>ClutchMasterFTW</a> | v.1.9 (BETA)";
+}
+
+if(localStorage.getItem("version") == "1.9") {
+    version = "1.9";
+    document.getElementById("beta-version").innerHTML = "Current Version: v.1.9 (BETA)";
+    document.getElementById("credits").innerHTML = "Tool Created by <a href='https://github.com/ClutchMasterFTW' target='_blank' id='class' class='link'>ClutchMasterFTW</a> | v.1.9 (BETA)";
+    v19();
+} else if(localStorage.getItem("version") == "1.8") {
+    version = "1.8";
+    document.getElementById("beta-version").innerHTML = "Current Version: v.1.8";
+    document.getElementById("checkbox3").setAttribute("checked", true);
+    document.getElementById("credits").innerHTML = "Tool Created by <a href='https://github.com/ClutchMasterFTW' target='_blank' id='class' class='link'>ClutchMasterFTW</a> | v.1.8";
+    v18();
+}
+
+//Version 1.9 (Item Info)
+function imageHover(element) {
+    if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338") {
+        document.getElementById("item-container" + element).style.backgroundImage = "url('images/blueprint.png'), gray";
+        document.getElementById("item-container" + element).style.background = "gray";
+    } else {
+        document.getElementById("item-container" + element).style.backgroundColor = "gray";
+        document.getElementById("item-container" + element).style.transitionDuration = "1s";
+    }
+}
+
+function imageUNHover(element) {
+    if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338") {
+        document.getElementById("item-container" + element).style.backgroundImage = "url('images/blueprint.png')";
+    } else {
+        document.getElementById("item-container" + element).style.backgroundColor = "";
+        document.getElementById("item-container" + element).style.transitionDuration = "1s";
+    }
+}
+
+function itemInfo(element) {
+    itemInfoContainer = document.createElement("div");
+    itemInfoContainer.id = "item-info-container";
+    itemInfoContainer.style.width = "99.5vw";
+    itemInfoContainer.style.height = "92.5vh";
+    itemInfoContainer.style.position = "fixed";
+    itemInfoContainer.style.top = "60px";
+    itemInfoContainer.style.left = "0vw";
+    itemInfoContainer.style.opacity = "0%";
+    itemInfoContainer.style.lineHeight = "70vh";
+    itemInfoContainer.style.userSelect = "none";
+    if(guns[element].class == "Pistol") {
+        itemInfoContainer.style.border = "0.25vw solid #006eff";
+        itemInfoContainer.style.backgroundImage = "linear-gradient(135deg, rgba(87, 142, 214, 1), rgba(0, 110, 225, 0.25))";
+    } else if(guns[element].class == "Rifle") {
+        itemInfoContainer.style.border = "0.25vw solid #ff8c00";
+        itemInfoContainer.style.backgroundImage = "linear-gradient(135deg, rgba(252, 182, 95, 1), rgba(255, 140, 0, 0.25))";
+    } else if(guns[element].class == "Knife") {
+        itemInfoContainer.style.border = "0.25vw solid #ff0000";
+        itemInfoContainer.style.backgroundImage = "linear-gradient(135deg, rgba(249, 122, 122, 1), rgba(255, 0, 0, 0.25))";
+    } else if(guns[element].class == "Shotgun") {
+        itemInfoContainer.style.border = "0.25vw solid #7f00ff";
+        itemInfoContainer.style.backgroundImage = "linear-gradient(135deg, rgba(183, 112, 255, 1), rgba(127, 0, 255, 0.25))";
+    } else if(guns[element].class == "Exotic") {
+        itemInfoContainer.style.border = "0.25vw solid #eeff00";
+        itemInfoContainer.style.backgroundImage = "linear-gradient(135deg, rgba(245, 255, 117, 1), rgba(238, 255, 0, 0.25))";
+    } else if(guns[element].class == "Police") {
+        itemInfoContainer.style.border = "0.25vw solid #0015ff";
+        itemInfoContainer.style.backgroundImage = "linear-gradient(135deg, rgba(124, 135, 255, 1), rgba(0, 21, 255, 0.25))";
+    } else if(guns[element].class == "Equipable") {
+        itemInfoContainer.style.border = "0.25vw solid #46d300";
+        itemInfoContainer.style.backgroundImage = "linear-gradient(135deg, rgba(135, 209, 98, 1), rgba(70, 211, 0, 0.25))";
+    } else if(guns[element].class == "Door Charge") {
+        itemInfoContainer.style.border = "0.25vw solid #41006d";
+        itemInfoContainer.style.backgroundImage = "linear-gradient(135deg, rgba(108, 0, 181, 1), rgba(65, 0, 109, 0.25))";
+    } else if(guns[element].class == "Item") {
+        itemInfoContainer.style.border = "0.25vw solid #333333";
+        itemInfoContainer.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
+    }
+    
+    if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338") {
+        itemInfoContainer.style.backgroundImage = "url('images/blueprint.png')";
+        itemInfoContainer.style.border = "0.25vw solid rgb(0, 0, 50)";
+    }
+
+    const itemInfoImage = document.createElement("img");
+    itemInfoImage.id = "item-info-image";
+    itemInfoImage.style.width = "30vw";
+    itemInfoImage.style.margin = "auto";
+    itemInfoImage.style.verticalAlign = "middle";
+    itemInfoImage.setAttribute("src", "images/weapons/" + guns[element].name + ".png");
+
+    const itemInfoTitle = document.createElement("div");
+    itemInfoTitle.id = "item-info-title";
+    itemInfoTitle.style.color = "white";
+    itemInfoTitle.style.fontSize = "5vw";
+    itemInfoTitle.style.fontWeight = "bold";
+    itemInfoTitle.style.textShadow = "0.25vw 0.25vw 0.25vw black"
+    itemInfoTitle.style.marginTop = "-90vh";
+    itemInfoTitle.style.marginLeft = "32vw";
+    itemInfoTitle.style.verticalAlign = "middle";
+    itemInfoTitle.innerHTML = guns[element].name;
+
+    const itemInfoLevel = document.createElement("div");
+    itemInfoLevel.id = "item-info-level";
+    itemInfoLevel.style.color = "white";
+    itemInfoLevel.style.fontSize = "3.5vw";
+    itemInfoLevel.style.fontWeight = "600";
+    itemInfoLevel.style.marginTop = "-60vh";
+    itemInfoLevel.style.marginLeft = "32vw";
+    itemInfoLevel.style.verticalAlign = "middle";
+    if(guns[element].level != 0) {
+        if(guns[element].name == "Gas Mask" || guns[element].name == "Gas Filter" || guns[element].name == "Door Charge" || guns[element].name == "Copper Ingot" || guns[element].name == "Iron Ingot" || guns[element].name == "Steel Ingot" || guns[element].name == "Silver Ingot" || guns[element].name == "Gold Ingot" || guns[element].name == "Titanium Ingot") {
+            itemInfoLevel.innerHTML = "Metalworking Level: " + guns[element].level;
+            itemInfoLevel.style.color = "black";
+        } else {
+            itemInfoLevel.innerHTML = "Crafting Level: " + guns[element].level;
+            itemInfoLevel.style.color = "white";
+        }
+    } else if(guns[element].level == 0) {
+        itemInfoLevel.innerHTML = "Uncraftable Item";
+        itemInfoLevel.style.color = "red";
+    }
+
+    const itemInfoLegal = document.createElement("div");
+    itemInfoLegal.id = "item-info-legal";
+    itemInfoLegal.style.color = "white";
+    itemInfoLegal.style.fontSize = "3.5vw";
+    itemInfoLegal.style.fontWeight = "600";
+    itemInfoLegal.style.marginTop = "-60vh";
+    itemInfoLegal.style.marginLeft = "32vw";
+    itemInfoLegal.style.verticalAlign = "middle";
+    if(guns[element].legal == true) {
+        itemInfoLegal.innerHTML = "Legal";
+        itemInfoLegal.style.color = "darkgreen";
+    } else if(guns[element].legal == false) {
+        itemInfoLegal.innerHTML = "Illegal";
+        itemInfoLegal.style.color = "red";
+    }
+
+    const itemInfoMag = document.createElement("div");
+    itemInfoMag.id = "item-info-mag";
+    itemInfoMag.style.color = "white";
+    itemInfoMag.style.fontSize = "2vw";
+    itemInfoMag.style.fontWeight = "600";
+    itemInfoMag.style.marginTop = "-60vh";
+    itemInfoMag.style.marginLeft = "32vw";
+    itemInfoMag.style.verticalAlign = "middle";
+    if(guns[element].mag != "Doesn't accept ammo") {
+        itemInfoMag.innerHTML = "Magazine Size: " + guns[element].mag;
+        itemInfoMag.style.color = "white";
+    } else if(guns[element].mag == "Doesn't accept ammo") {
+        itemInfoMag.innerHTML = "Doesn't accept ammo";
+        itemInfoMag.style.color = "red";
+    }
+
+    const itemInfoFiremodes = document.createElement("div");
+    itemInfoFiremodes.id = "item-info-firemodes";
+    itemInfoFiremodes.style.color = "white";
+    itemInfoFiremodes.style.fontSize = "2vw";
+    itemInfoFiremodes.style.fontWeight = "600";
+    itemInfoFiremodes.style.marginTop = "-65vh";
+    itemInfoFiremodes.style.marginLeft = "32vw";
+    itemInfoFiremodes.style.verticalAlign = "middle";
+    itemInfoFiremodes.innerHTML = "Fire Modes: " + guns[element].firemodes;
+
+    const itemInfoAmmo = document.createElement("div");
+    itemInfoAmmo.id = "item-info-ammo";
+    itemInfoAmmo.style.color = "white";
+    itemInfoAmmo.style.fontSize = "2vw";
+    itemInfoAmmo.style.fontWeight = "600";
+    itemInfoAmmo.style.marginTop = "-65vh";
+    itemInfoAmmo.style.marginLeft = "32vw";
+    itemInfoAmmo.style.verticalAlign = "middle";
+    if(guns[element].ammo == "pistol") {
+        itemInfoAmmo.innerHTML = "Ammo Type: Pistol Ammo";
+    } else if(guns[element].ammo == "rifle") {
+        itemInfoAmmo.innerHTML = "Ammo Type: Rifle Ammo";
+    } else if(guns[element].ammo == "shotgun") {
+        itemInfoAmmo.innerHTML = "Ammo Type: Shotgun Ammo";
+    } else if(guns[element].ammo == "sniper") {
+        itemInfoAmmo.innerHTML = "Ammo Type: Sniper Ammo";
+    } else {
+        itemInfoAmmo.innerHTML = "Ammo Type: Doesn't accept ammo";
+    }
+
+    const itemInfoDamageTitle = document.createElement("div");
+    itemInfoDamageTitle.id = "item-info-damage-title";
+    itemInfoDamageTitle.style.color = "white";
+    itemInfoDamageTitle.style.fontSize = "1.25vw";
+    itemInfoDamageTitle.style.fontWeight = "bold";
+    itemInfoDamageTitle.style.marginTop = "-57vh";
+    itemInfoDamageTitle.style.marginLeft = "1vw";
+    itemInfoDamageTitle.style.verticalAlign = "left";
+    itemInfoDamageTitle.innerHTML = "Weapon Damage:"
+
+    const itemInfoClose = document.createElement("img");
+    itemInfoClose.id = "item-info-close";
+    itemInfoClose.style.position = "absolute";
+    itemInfoClose.style.top = "1vw";
+    itemInfoClose.style.right = "1vw";
+    itemInfoClose.style.filter ="invert(1)";
+    itemInfoClose.style.width = "1.75vw";
+    itemInfoClose.style.cursor = "pointer";
+    itemInfoClose.setAttribute("src", "images/close.png");
+    itemInfoClose.setAttribute("onclick", "itemInfoClose()");
+
+    //Append all created elements
+    document.body.appendChild(itemInfoContainer);
+    itemInfoContainer.appendChild(itemInfoImage);
+    itemInfoContainer.appendChild(itemInfoTitle);
+    itemInfoContainer.appendChild(itemInfoLevel);
+    itemInfoContainer.appendChild(itemInfoLegal);
+    itemInfoContainer.appendChild(itemInfoMag);
+    itemInfoContainer.appendChild(itemInfoFiremodes);
+    itemInfoContainer.appendChild(itemInfoAmmo);
+    itemInfoContainer.appendChild(itemInfoDamageTitle);
+    itemInfoContainer.appendChild(itemInfoClose);
+
+    var itemInfoOpacity = 1;
+    itemInfoInterval = setInterval(function() {
+        itemInfoContainer.style.opacity = itemInfoOpacity + "%";
+        if(itemInfoOpacity == 100) {
+            clearInterval(itemInfoInterval);
+        } else {
+            itemInfoOpacity++;
+        }
+    }, 7.5);
+}
+
+//Close Item Info Menu
+function itemInfoClose() {
+    var itemInfoOpacity = 100;
+    itemInfoCloseInterval = setInterval(function() {
+        itemInfoContainer.style.opacity = itemInfoOpacity + "%";
+        if(itemInfoOpacity == 0) {
+            clearInterval(itemInfoCloseInterval);
+            itemInfoContainer.remove();
+        } else {
+            itemInfoOpacity--;
+        }
+    }, 7.5);
+}
+
+function betaMenu(param) {
+    if(localStorage.getItem("beta") == "false") {
+        localStorage.setItem("beta", true);
+        clearInterval(betaInterval);
+    }
+    if(param == 1) {
+        document.getElementById("beta-container").style.visibility = "visible";
+    } else if(param == 0) {
+        document.getElementById("beta-container").style.visibility = "hidden";
+    }
+}
+
+function changeBeta() {
+    version = localStorage.getItem("version");
+    if(version == "1.9") {
+        localStorage.setItem("version", "1.8");
+        document.getElementById("beta-version").innerHTML = "Current Version: v.1.8";
+        document.getElementById("credits").innerHTML = "Tool Created by <a href='https://github.com/ClutchMasterFTW' target='_blank' id='class' class='link'>ClutchMasterFTW</a> | v.1.8";
+        v18();
+    } else if(version == "1.8") {
+        localStorage.setItem("version", "1.9");
+        document.getElementById("beta-version").innerHTML = "Current Version: v.1.9 (BETA)";
+        document.getElementById("credits").innerHTML = "Tool Created by <a href='https://github.com/ClutchMasterFTW' target='_blank' id='class' class='link'>ClutchMasterFTW</a> | v.1.9 (BETA)";
+        v19();
+    }
+}
+
+function v19() {
+    for(i = 0; i < guns.length; i++) {
+        var itemImage = document.getElementById("item-image" + i);
+        //Halloween Event rounded icons
+        itemImage.style.borderRadius = "0.35vw";
+        //Version 1.9
+        itemImage.style.cursor = "pointer";
+        itemImage.setAttribute("onmouseover", "imageHover(" + i + ")");
+        itemImage.setAttribute("onmouseout", "imageUNHover(" + i + ")");
+        itemImage.setAttribute("onclick", "itemInfo(" + i + ")");
+        if(guns[i].class == "Pistol") {
+            itemImage.style.border = "0.175vw solid #006eff";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(87, 142, 214, 0.1), rgba(87, 142, 214, 1))";
+        } else if(guns[i].class == "Rifle") {
+            itemImage.style.border = "0.175vw solid #ff8c00";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(252, 182, 95, 0.1), rgba(252, 182, 95, 1))";
+        } else if(guns[i].class == "Knife") {
+            itemImage.style.border = "0.175vw solid #ff0000";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(249, 122, 122, 0.1), rgba(249, 122, 122, 1))";
+        } else if(guns[i].class == "Shotgun") {
+            itemImage.style.border = "0.175vw solid #7f00ff";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(183, 112, 255, 0.1), rgba(183, 112, 255, 1))";
+        } else if(guns[i].class == "Exotic") {
+            itemImage.style.border = "0.175vw solid #eeff00";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(245, 255, 117, 0.1), rgba(245, 255, 117, 1))";
+        } else if(guns[i].class == "Police") {
+            itemImage.style.border = "0.175vw solid #0015ff";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(124, 135, 255, 0.1), rgba(124, 135, 255, 1))";
+        } else if(guns[i].class == "Equipable") {
+            itemImage.style.border = "0.175vw solid #46d300";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(135, 209, 98, 0.1), rgba(135, 209, 98, 1))";
+        } else if(guns[i].class == "Door Charge") {
+            itemImage.style.border = "0.175vw solid #41006d";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(108, 0, 181, 0.1), rgba(108, 0, 181, 1))";
+        } else if(guns[i].class == "Item") {
+            itemImage.style.border = "0.175vw solid #333333";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1))";
+        }
+    }
+
+    for(i = 0; i < materials.length; i++) {
+        var materialImage = document.getElementById("material-image" + i);
+        materialImage.style.top = "0.1vw";
+        materialImage.style.left = "0.1vw";
+        materialImage.style.border = "0.175vw solid #333333";
+        materialImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1))";
+        materialImage.style.borderRadius = "0.35vw";
+    }
+}
+
+function v18() {
+    for(i = 0; i < guns.length; i++) {
+        var itemImage = document.getElementById("item-image" + i);
+        itemImage.style.cursor = "default";
+        itemImage.setAttribute("onmouseover", "");
+        itemImage.setAttribute("onmouseout", "");
+        itemImage.setAttribute("onclick", "");
+
+        itemImage.style.top = "0.075vw";
+        itemImage.style.left = "0.2vw";
+        itemImage.style.borderRadius = "0vw";
+        if(guns[i].class == "Pistol") {
+            itemImage.style.border = "2px solid #006eff";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(87, 142, 214, 1), rgba(0, 110, 225, 0.25))";
+        } else if(guns[i].class == "Rifle") {
+            itemImage.style.border = "2px solid #ff8c00";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(252, 182, 95, 1), rgba(255, 140, 0, 0.25))";
+        } else if(guns[i].class == "Knife") {
+            itemImage.style.border = "2px solid #ff0000";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(249, 122, 122, 1), rgba(255, 0, 0, 0.25))";
+        } else if(guns[i].class == "Shotgun") {
+            itemImage.style.border = "2px solid #7f00ff";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(183, 112, 255, 1), rgba(127, 0, 255, 0.25))";
+        } else if(guns[i].class == "Exotic") {
+            itemImage.style.border = "2px solid #eeff00";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(245, 255, 117, 1), rgba(238, 255, 0, 0.25))";
+        } else if(guns[i].class == "Police") {
+            itemImage.style.border = "2px solid #0015ff";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(124, 135, 255, 1), rgba(0, 21, 255, 0.25))";
+        } else if(guns[i].class == "Equipable") {
+            itemImage.style.border = "2px solid #46d300";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(135, 209, 98, 1), rgba(70, 211, 0, 0.25))";
+        } else if(guns[i].class == "Door Charge") {
+            itemImage.style.border = "2px solid #41006d";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(108, 0, 181, 1), rgba(65, 0, 109, 0.25))";
+        } else if(guns[i].class == "Item") {
+            itemImage.style.border = "2px solid #333333";
+            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
+        }
+    }
+
+    for(i = 0; i < materials.length; i++) {
+        var materialImage = document.getElementById("material-image" + i);
+        materialImage.style.borderRadius = "0vw";
+        materialImage.style.top = "0.2vw";
+        materialImage.style.left = "0.2vw";
+        materialImage.style.border = "2px solid #333333";
+        materialImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
+    }
 }
