@@ -3487,3 +3487,26 @@ function v18() {
         materialImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
     }
 }
+
+var versionAlert = 0;
+function deprecated() {
+    if(versionAlert == 0) {
+        versionInterval = setInterval(deprecatedFadeIn, 10);
+        versionAlert = 1;
+    }
+}
+
+var opacity = 0;
+function deprecatedFadeIn() {
+    if(opacity <= 90) {
+        document.getElementById("version-warning-container").style.visibility = "visible";
+        document.getElementById("version-warning-container").style.opacity = opacity + "%";
+        opacity++;
+    } else {
+        clearInterval(versionInterval);
+    }
+}
+
+function versionCloseWarning() {
+    document.getElementById("version-warning-container").style.visibility = "hidden";
+}

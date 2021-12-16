@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="shortcut icon" type="image/jpg" href="images/logo-autumn.png"/>
     </head>
-    <body>
+    <body onload="deprecated()">
         <div id="header">
             <img src="images/gun.png" id="logo">
             <div id="logo-text">Monolith Crafting Calculator</div>
@@ -66,6 +66,13 @@
             <div id="dim-warning-title">ATTENTION:</div>
             <div id="dim-warning-text">We have detected that your browser window is below the recommended size (1920px x 1080px). If you would like to view this webpage without any resolution issues, we suggest to resize your browser to a 16:9 ratio size. Thanks!</div>
             <div id="proceed" onclick="closeWarning()">Proceed</div>
+        </div>
+
+        <div id="version-warning-container">
+            <span class="material-icons" id="version-warning-icon">pan_tool</span>
+            <div id="version-warning-title">TOOL DEPRECATED!</div>
+            <div id="version-warning-text">As of the new Monolith Update <b>2.0.12</b>, the crafting system as a whole has had a total overhaul. I will try to create a fully new system for calculating crafting recipes as soon as possible, but as of December 15th, this tool is nearly useless.</div>
+            <div id="version-proceed" onclick="versionCloseWarning()">Proceed</div>
         </div>
 
         <span class="material-icons" id="warning">report_problem</span>
