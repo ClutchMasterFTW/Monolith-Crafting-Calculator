@@ -41,7 +41,7 @@ var guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 1250
+        price: 1100
     },
     {
         name: "P99",
@@ -83,7 +83,7 @@ var guns = [
         willow: 0,
         steel: 2,
         coal: 0,
-        price: 2500
+        price: 2250
     },
     {
         name: "Mac-11",
@@ -104,7 +104,7 @@ var guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 4000
+        price: 3750
     },
     {
         name: "MR96",
@@ -112,7 +112,7 @@ var guns = [
         amount: 0,
         level: 20,
         mag: 6,
-        firemodes: "Semi-Automatic",
+        firemodes: "Double-Action",
         legal: true,
         ammo: "pistol",
         copper: 10,
@@ -188,7 +188,7 @@ var guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 5500
+        price: 5000
     },
     {
         name: "AK-74",
@@ -209,7 +209,7 @@ var guns = [
         willow: 0,
         steel: 1,
         coal: 0,
-        price: 7500
+        price: 6250
     },
     {
         name: "Glock 18",
@@ -230,7 +230,7 @@ var guns = [
         willow: 0,
         steel: 6,
         coal: 0,
-        price: 4500
+        price: 5000
     },
     {
         name: "AR-15",
@@ -272,7 +272,7 @@ var guns = [
         willow: 0,
         steel: 2,
         coal: 0,
-        price: 8000
+        price: 7500
     },
     {
         name: "Glock 17",
@@ -293,7 +293,7 @@ var guns = [
         willow: 0,
         steel: 3,
         coal: 0,
-        price: 3000
+        price: 2750
     },
     {
         name: "Kriss Vector",
@@ -314,7 +314,7 @@ var guns = [
         willow: 0,
         steel: 9,
         coal: 0,
-        price: 10000
+        price: 8250
     },
     {
         name: "Desert Eagle",
@@ -335,7 +335,7 @@ var guns = [
         willow: 0,
         steel: 3,
         coal: 0,
-        price: 5000
+        price: 5500
     },
     {
         name: "G36C",
@@ -356,7 +356,7 @@ var guns = [
         willow: 0,
         steel: 5,
         coal: 0,
-        price: 10000
+        price: 9500
     },
     {
         name: "LR-300",
@@ -377,7 +377,7 @@ var guns = [
         willow: 0,
         steel: 7,
         coal: 0,
-        price: 11000
+        price: 10500
     },
     {
         name: "DP-28",
@@ -398,7 +398,7 @@ var guns = [
         willow: 0,
         steel: 6,
         coal: 0,
-        price: 12000
+        price: 11000
     },
     {
         name: "Serbu Shorty",
@@ -440,7 +440,7 @@ var guns = [
         willow: 0,
         steel: 14,
         coal: 0,
-        price: 16000
+        price: 14500
     },
     {
         name: "Honey Badger",
@@ -461,7 +461,7 @@ var guns = [
         willow: 0,
         steel: 13,
         coal: 0,
-        price: 15000
+        price: 13000
     },
     {
         name: "SCAR-H",
@@ -482,7 +482,7 @@ var guns = [
         willow: 0,
         steel: 10,
         coal: 0,
-        price: 15000
+        price: 14000
     },
     {
         name: "M249",
@@ -503,7 +503,7 @@ var guns = [
         willow: 0,
         steel: 10,
         coal: 0,
-        price: 18000
+        price: 17000
     },
     {
         name: "BT MP9",
@@ -524,7 +524,7 @@ var guns = [
         willow: 0,
         steel: 5,
         coal: 0,
-        price: 15000
+        price: 11500
     },
     {
         name: "Mosin Nagant",
@@ -545,7 +545,7 @@ var guns = [
         willow: 12,
         steel: 20,
         coal: 0,
-        price: 22000
+        price: 18000
     },
     {
         name: "M14",
@@ -566,7 +566,7 @@ var guns = [
         willow: 12,
         steel: 17,
         coal: 0,
-        price: 24000
+        price: 19000
     },
     {
         name: "M3 Super 90",
@@ -587,7 +587,7 @@ var guns = [
         willow: 0,
         steel: 7,
         coal: 0,
-        price: 17000
+        price: 14000
     },
     {
         name: "M4 Carbine",
@@ -608,7 +608,7 @@ var guns = [
         willow: 0,
         steel: 12,
         coal: 0,
-        price: 20000
+        price: 16000
     },
     {
         name: "IMI Galil",
@@ -629,7 +629,7 @@ var guns = [
         willow: 0,
         steel: 11,
         coal: 0,
-        price: 18000
+        price: 17000
     },
     {
         name: "HK MP7A1",
@@ -650,7 +650,7 @@ var guns = [
         willow: 0,
         steel: 7,
         coal: 0,
-        price: 30000
+        price: 22000
     },
     {
         name: "ACR-E",
@@ -671,7 +671,7 @@ var guns = [
         willow: 0,
         steel: 12,
         coal: 0,
-        price: 23000
+        price: 18500
     },
     {
         name: "FAMAS F1",
@@ -692,7 +692,7 @@ var guns = [
         willow: 0,
         steel: 12,
         coal: 0,
-        price: 37500
+        price: 30000
     },
     {
         name: "KSG-12",
@@ -713,7 +713,7 @@ var guns = [
         willow: 0,
         steel: 14,
         coal: 0,
-        price: 25000
+        price: 19000
     },
     {
         name: "AUG A3",
@@ -734,7 +734,7 @@ var guns = [
         willow: 0,
         steel: 16,
         coal: 0,
-        price: 25000
+        price: 19000
     },
     {
         name: "XM8",
@@ -755,7 +755,7 @@ var guns = [
         willow: 0,
         steel: 16,
         coal: 0,
-        price: 28000
+        price: 20000
     },
     {
         name: "TAC-338",
@@ -776,7 +776,7 @@ var guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 75000
+        price: 45000
     },
     {
         name: "L115",
@@ -797,7 +797,7 @@ var guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 125000
+        price: 110000
     },
     {
         name: "Silver Baller",
@@ -818,7 +818,7 @@ var guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 80000
+        price: 75000
     },
     {
         name: "Magnum .357",
@@ -826,7 +826,7 @@ var guns = [
         amount: 0,
         level: 0,
         mag: 6,
-        firemodes: "Semi-Automatic",
+        firemodes: "Double-Action",
         legal: true,
         ammo: "pistol",
         copper: null,
@@ -839,7 +839,7 @@ var guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 250000
+        price: 300000
     },
     {
         name: "HK-416",
@@ -860,7 +860,7 @@ var guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 200000
+        price: 180000
     },
     {
         name: "L85A2",
@@ -902,7 +902,7 @@ var guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 200000
+        price: 150000
     },
     {
         name: "M1 Garand",
@@ -923,7 +923,7 @@ var guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 200000
+        price: 150000
     },
     {
         name: "MP-40",
@@ -944,7 +944,7 @@ var guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 150000
+        price: 90000
     },
     {
         name: "BMG-50",
@@ -1049,7 +1049,7 @@ var guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 150
+        price: 125
     },
     {
         name: "Iron Ingot",
@@ -1070,7 +1070,7 @@ var guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 300
+        price: 200
     },
     {
         name: "Steel Ingot",
@@ -1091,7 +1091,7 @@ var guns = [
         willow: 0,
         steel: 1,
         coal: 0,
-        price: 1000
+        price: 650
     },
     {
         name: "Silver Ingot",
@@ -1112,7 +1112,7 @@ var guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 400
+        price: 250
     },
     {
         name: "Gold Ingot",
@@ -1133,7 +1133,7 @@ var guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 550
+        price: 300
     },
     {
         name: "Titanium Ingot",
@@ -1154,58 +1154,58 @@ var guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 850
+        price: 375
     }//Attachments 2.0
 ];
 
 for(i = 0; i < guns.length; i++) {
-    guns[i].coal = ((guns[i].copper * 0.5) + (guns[i].iron * 0.75) + ((guns[i].steel * 3) * 0.75) + (guns[i].steel * 0.75) + (guns[i].silver * 1) + (guns[i].gold * 1) + (guns[i].titanium * 1));
-    guns[i].copper = (guns[i].copper * 1.5);
-    guns[i].iron = (guns[i].iron * 1.5);
-    guns[i].iron += (guns[i].steel * 4.5);
-    guns[i].silver = (guns[i].silver * 1.5);
-    guns[i].gold = (guns[i].gold * 1.5);
-    guns[i].titanium = (guns[i].titanium * 1.5);
+    guns[i].coal = ((guns[i].copper * 1) + (guns[i].iron * 1) + ((guns[i].steel * 3) * 1) + (guns[i].steel * 1) + (guns[i].silver * 1) + (guns[i].gold * 1) + (guns[i].titanium * 1));
+    guns[i].copper = (guns[i].copper * 2);
+    guns[i].iron = (guns[i].iron * 2);
+    guns[i].iron += (guns[i].steel * 6);
+    guns[i].silver = (guns[i].silver * 2);
+    guns[i].gold = (guns[i].gold * 2);
+    guns[i].titanium = (guns[i].titanium * 2);
 }
 
 var materials = [
     {
-        name: "Copper Chunk",
+        name: "Copper Ore",
         image: "images/ores/copper.png",
         amount: 0,
         stacks: 0,
         remainder: 0
     },
     {
-        name: "Coal Chunk",
+        name: "Coal Ore",
         image: "images/ores/coal.png",
         amount: 0,
         stacks: 0,
         remainder: 0
     },
     {
-        name: "Iron Chunk",
+        name: "Iron Ore",
         image: "images/ores/iron.png",
         amount: 0,
         stacks: 0,
         remainder: 0
     },
     {
-        name: "Silver Chunk",
+        name: "Silver Ore",
         image: "images/ores/silver.png",
         amount: 0,
         stacks: 0,
         remainder: 0
     },
     {
-        name: "Gold Chunk",
+        name: "Gold Ore",
         image: "images/ores/gold.png",
         amount: 0,
         stacks: 0,
         remainder: 0
     },
     {
-        name: "Titanium Chunk",
+        name: "Titanium Ore",
         image: "images/ores/titanium.png",
         amount: 0,
         stacks: 0,
@@ -1243,81 +1243,71 @@ var materials = [
 
 var extendedMaterials = [
     {
-        name: "Crushed Copper",
-        image: "images/ores/c_copper.png",
-        amount: 0
-    },
-    {
         name: "Copper Bar",
-        image: "images/ores/i_copper.png",
-        amount: 0
-    },
-    {
-        name: "Crushed Coal",
-        image: "images/ores/c_coal.png",
-        amount: 0
-    },
-    {
-        name: "Crushed Iron",
-        image: "images/ores/c_iron.png",
-        amount: 0
+        image: "images/ores/i_copper_new.png",
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Iron Bar",
-        image: "images/ores/i_iron.png",
-        amount: 0
+        image: "images/ores/i_iron_new.png",
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Steel Bar",
-        image: "images/ores/i_steel.png",
-        amount: 0
-    },
-    {
-        name: "Crushed Silver",
-        image: "images/ores/c_silver.png",
-        amount: 0
+        image: "images/ores/i_steel_new.png",
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Silver Bar",
-        image: "images/ores/i_silver.png",
-        amount: 0
-    },
-    {
-        name: "Crushed Gold",
-        image: "images/ores/c_gold.png",
-        amount: 0
+        image: "images/ores/i_silver_new.png",
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Gold Bar",
-        image: "images/ores/i_gold.png",
-        amount: 0
-    },
-    {
-        name: "Crushed Titanium",
-        image: "images/ores/c_titanium.png",
-        amount: 0
+        image: "images/ores/i_gold_new.png",
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Titanium Bar",
-        image: "images/ores/i_titanium.png",
-        amount: 0
+        image: "images/ores/i_titanium_new.png",
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Wood Plank",
         image: "images/ores/plank.png",
-        amount: 0
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Maple Plank",
         image: "images/ores/plank.png",
-        amount: 0
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     },
     {
         name: "Willow Plank",
         image: "images/ores/plank.png",
-        amount: 0
+        amount: 0,
+        stacks: 0,
+        remainder: 0
     }
 ];
+
+let version = "2.0";
 
 function loadGuns() {
     for(i = 0; i < guns.length; i++) {
@@ -1478,7 +1468,7 @@ function loadGuns() {
         itemInputBox.style.opacity = "75%";
         itemInputBox.style.width = "5vw";
         itemInputBox.style.height = "5vw";
-        itemInputBox.style.border = "1px black solid";
+        itemInputBox.style.border = "1px white solid";
         itemInputBox.style.display = "block";
         itemInputBox.style.position = "relative";
         itemInputBox.style.top = "-13.65vw";
@@ -1489,7 +1479,7 @@ function loadGuns() {
         itemInputBox.setAttribute("type", "number");
         if(guns[i].class == "Police") {
             itemInputBox.style.backgroundColor = "red";
-            itemInputBox.style.color = "darkred";
+            itemInputBox.style.color = "white";
             itemInputBox.setAttribute("min", "0");
             itemInputBox.setAttribute("max", "0");
         } else if(guns[i].class == "Exotic" || guns[i].name == "TAC-338") {
@@ -1497,15 +1487,11 @@ function loadGuns() {
             itemInputBox.style.color = "red";
             itemInputBox.setAttribute("min", "0");
             itemInputBox.setAttribute("max", "99");
-            itemInputBox.setAttribute("onchange", "inputChange()");
-            itemInputBox.setAttribute("onInput", "inputChange()");
         } else {
-            itemInputBox.style.backgroundColor = "white";
-            itemInputBox.style.color = "black";
+            itemInputBox.style.backgroundColor = "#5a5a5a";
+            itemInputBox.style.color = "white";
             itemInputBox.setAttribute("min", "0");
             itemInputBox.setAttribute("max", "99");
-            itemInputBox.setAttribute("onchange", "inputChange()");
-            itemInputBox.setAttribute("onInput", "inputChange()");
         }
 
         if(guns[i].name == "FAMAS F1" || guns[i].name == "HK MP7A1" || guns[i].name == "TAC-338") {
@@ -1567,7 +1553,6 @@ function loadMaterials() {
         materialItemContainer.style.height = "5vw";
         materialItemContainer.style.cursor = "pointer";
         materialItemContainer.style.userSelect = "none";
-        materialItemContainer.setAttribute("onclick", "materialClick(" + i + ")");
 
         var materialImage = document.createElement("img");
         materialImage.id = "material-image" + i;
@@ -1618,1008 +1603,6 @@ function loadMaterials() {
 
 loadMaterials();
 
-var list = [];
-var steel = 0;
-
-function inputChange() {
-    list = [];
-    for(j = 0; j < materials.length; j++) {
-        materials[j].amount = 0;
-        steel = 0;
-
-        materials[j].stacks = 0;
-        materials[j].remainder = 0;
-    }
-    for(k = 0; k < extendedMaterials.length; k++) {
-        extendedMaterials[k].amount = 0;
-    }
-
-    for(i = 0; i < guns.length; i++) {
-        var currentAmount = document.getElementById("item-input-box" + i).value;
-
-        if(currentAmount == "") {
-            guns[i].amount = "0";
-        } else {
-            guns[i].amount = currentAmount;
-        }
-        list.push(guns[i].amount);
-    }
-    //console.log(list);
-    for(x = 0; x < guns.length; x++) {
-        //Copper
-        materials[0].amount += (guns[x].copper * list[x]);
-        document.getElementById("material-amount0").innerHTML = "Amount: " + numberWithCommas(materials[0].amount);
-
-        //Coal
-        materials[1].amount += (guns[x].coal * list[x]);
-        document.getElementById("material-amount1").innerHTML = "Amount: " + numberWithCommas(materials[1].amount);
-
-        //Iron
-        materials[2].amount += (guns[x].iron * list[x]);
-        document.getElementById("material-amount2").innerHTML = "Amount: " + numberWithCommas(materials[2].amount);
-
-        //Silver
-        materials[3].amount += (guns[x].silver * list[x]);
-        document.getElementById("material-amount3").innerHTML = "Amount: " + numberWithCommas(materials[3].amount);
-
-        //Gold
-        materials[4].amount += (guns[x].gold * list[x]);
-        document.getElementById("material-amount4").innerHTML = "Amount: " + numberWithCommas(materials[4].amount);
-
-        //Titanium
-        materials[5].amount += (guns[x].titanium * list[x]);
-        document.getElementById("material-amount5").innerHTML = "Amount: " + numberWithCommas(materials[5].amount);
-
-        //Wood
-        materials[6].amount += (guns[x].wood * list[x]);
-        document.getElementById("material-amount6").innerHTML = "Amount: " + numberWithCommas(materials[6].amount);
-
-        //Maple
-        materials[7].amount += (guns[x].maple * list[x]);
-        document.getElementById("material-amount7").innerHTML = "Amount: " + numberWithCommas(materials[7].amount);
-
-        //Willow
-        materials[8].amount += (guns[x].willow * list[x]);
-        document.getElementById("material-amount8").innerHTML = "Amount: " + numberWithCommas(materials[8].amount);
-
-        //Steel
-        steel += guns[x].steel * list[x];
-
-        //Cash
-        materials[9].amount += (guns[x].price * list[x]);
-        document.getElementById("material-amount9").innerHTML = "Amount: $" + numberWithCommas(materials[9].amount);
-    }
-    extendedAmount();
-
-    for(z = 0; z < 6; z++) {
-        materials[z].remainder = (materials[z].amount % 24);
-        materials[z].stacks = ((materials[z].amount - materials[z].remainder) / 24);
-        if(stacks == true) {
-            document.getElementById("material-amount" + z).innerHTML = "Stacks: " + materials[z].stacks + "; Remainder: " + materials[z].remainder;
-        }
-    }
-
-    time(2);
-}
-
-var copperClicked = false;
-var coalClicked = false;
-var ironClicked = false;
-var silverClicked = false;
-var goldClicked = false;
-var titaniumClicked = false;
-var woodClicked = false;
-var mapleClicked = false;
-var willowClicked = false;
-
-var heights = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-
-function materialClick(id) {
-    if(id == 0) {
-        //Copper
-        if(copperClicked == false) {
-            extendedMaterialContainerCrushedCopper = document.createElement("div");
-            extendedMaterialContainerCrushedCopper.id = "extended-material-container-crushed-copper";
-            extendedMaterialContainerCrushedCopper.style.borderBottom = "1px solid gray";
-            extendedMaterialContainerCrushedCopper.style.height = "3vw";
-            extendedMaterialContainerCrushedCopper.style.position = "relative";
-            extendedMaterialContainerCrushedCopper.style.top = "-3.25vw";
-
-            extendedMaterialCrushedCopperImage = document.createElement("img");
-            extendedMaterialCrushedCopperImage.id = "extended-material-crushed-copper-image";
-            extendedMaterialCrushedCopperImage.style.height = "2.5vw";
-            extendedMaterialCrushedCopperImage.style.position = "relative";
-            extendedMaterialCrushedCopperImage.style.top = "-0.05vw";
-            extendedMaterialCrushedCopperImage.style.left = "0.1vw";
-            extendedMaterialCrushedCopperImage.style.border = "0.2vw solid #333333";
-            extendedMaterialCrushedCopperImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialCrushedCopperImage.setAttribute("src", extendedMaterials[0].image);
-            extendedMaterialCrushedCopperImage.setAttribute("title", extendedMaterials[0].name);
-            
-            extendedMaterialCrushedCopperName = document.createElement("div");
-            extendedMaterialCrushedCopperName.id = "extended-material-crushed-copper-name";
-            extendedMaterialCrushedCopperName.style.color = "white";
-            extendedMaterialCrushedCopperName.style.fontSize = "1vw";
-            extendedMaterialCrushedCopperName.style.fontWeight = "bold";
-            extendedMaterialCrushedCopperName.style.position = "relative";
-            extendedMaterialCrushedCopperName.style.top = "-3.2vw";
-            extendedMaterialCrushedCopperName.style.left = "3.2vw";
-            extendedMaterialCrushedCopperName.innerHTML = extendedMaterials[0].name;
-
-            extendedMaterialCrushedCopperAmount = document.createElement("div");
-            extendedMaterialCrushedCopperAmount.id = "extended-material-crushed-copper-amount";
-            extendedMaterialCrushedCopperAmount.style.color = "white";
-            extendedMaterialCrushedCopperAmount.style.fontSize = "1vw";
-            extendedMaterialCrushedCopperAmount.style.fontWeight = "500";
-            extendedMaterialCrushedCopperAmount.style.position = "relative";
-            extendedMaterialCrushedCopperAmount.style.top = "-2.9vw";
-            extendedMaterialCrushedCopperAmount.style.left = "3.1vw";
-            extendedMaterialCrushedCopperAmount.innerHTML = "Amount: " + extendedMaterials[0].amount;
-
-            document.getElementById("material-item-container0").appendChild(extendedMaterialContainerCrushedCopper);
-            extendedMaterialContainerCrushedCopper.appendChild(extendedMaterialCrushedCopperImage);
-            extendedMaterialContainerCrushedCopper.appendChild(extendedMaterialCrushedCopperName);
-            extendedMaterialContainerCrushedCopper.appendChild(extendedMaterialCrushedCopperAmount);
-
-            extendedMaterialContainerCopperIngot = document.createElement("div");
-            extendedMaterialContainerCopperIngot.id = "extended-material-container-copper-ingot";
-            extendedMaterialContainerCopperIngot.style.height = "3vw";
-            extendedMaterialContainerCopperIngot.style.position = "relative";
-            extendedMaterialContainerCopperIngot.style.top = "-3.25vw";
-
-            extendedMaterialCopperIngotImage = document.createElement("img");
-            extendedMaterialCopperIngotImage.id = "extended-material-copper-ingot-image";
-            extendedMaterialCopperIngotImage.style.height = "2.5vw";
-            extendedMaterialCopperIngotImage.style.position = "relative";
-            extendedMaterialCopperIngotImage.style.top = "0.15vw";
-            extendedMaterialCopperIngotImage.style.left = "0.25vw";
-            extendedMaterialCopperIngotImage.style.border = "0.2vw solid #333333";
-            extendedMaterialCopperIngotImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialCopperIngotImage.setAttribute("src", extendedMaterials[1].image);
-            extendedMaterialCopperIngotImage.setAttribute("title", extendedMaterials[1].name);
-            
-            extendedMaterialCopperIngotName = document.createElement("div");
-            extendedMaterialCopperIngotName.id = "extended-material-copper-ingot-name";
-            extendedMaterialCopperIngotName.style.color = "white";
-            extendedMaterialCopperIngotName.style.fontSize = "1vw";
-            extendedMaterialCopperIngotName.style.fontWeight = "bold";
-            extendedMaterialCopperIngotName.style.position = "relative";
-            extendedMaterialCopperIngotName.style.top = "-2.7vw";
-            extendedMaterialCopperIngotName.style.left = "3.1vw";
-            extendedMaterialCopperIngotName.innerHTML = extendedMaterials[1].name;
-
-            extendedMaterialCopperIngotAmount = document.createElement("div");
-            extendedMaterialCopperIngotAmount.id = "extended-material-copper-ingot-amount";
-            extendedMaterialCopperIngotAmount.style.color = "white";
-            extendedMaterialCopperIngotAmount.style.fontSize = "1vw";
-            extendedMaterialCopperIngotAmount.style.fontWeight = "500";
-            extendedMaterialCopperIngotAmount.style.position = "relative";
-            extendedMaterialCopperIngotAmount.style.top = "-2.9vw";
-            extendedMaterialCopperIngotAmount.style.left = "3.1vw";
-            extendedMaterialCopperIngotAmount.innerHTML = "Amount: " + extendedMaterials[1].amount;
-
-            document.getElementById("material-item-container0").appendChild(extendedMaterialContainerCopperIngot);
-            extendedMaterialContainerCopperIngot.appendChild(extendedMaterialCopperIngotImage);
-            extendedMaterialContainerCopperIngot.appendChild(extendedMaterialCopperIngotName);
-            extendedMaterialContainerCopperIngot.appendChild(extendedMaterialCopperIngotAmount);
-            
-            /*for(i = 1; i < materials.length; i++) {
-                document.getElementById("material-item-container" + i).style.position = "relative";
-                document.getElementById("material-item-container" + i).style.top = "6vw";
-            }*/
-
-            for(i = 1; i < heights.length; i++) {
-                heights[i] += 6;
-                document.getElementById("material-item-container" + i).style.position = "relative";
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            copperClicked = true;
-        } else if(copperClicked == true) {
-            extendedMaterialContainerCrushedCopper.remove();
-            extendedMaterialContainerCopperIngot.remove();
-
-            /*for(i = 1; i < materials.length; i++) {
-                document.getElementById("material-item-container" + i).style.top = "0vw";
-            }*/
-
-            for(i = 1; i < heights.length; i++) {
-                heights[i] -= 6;
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            copperClicked = false;
-        }
-    } else if(id == 1) {
-        //Coal
-        if(coalClicked == false) {
-            extendedMaterialContainerCrushedCoal = document.createElement("div");
-            extendedMaterialContainerCrushedCoal.id = "extended-material-container-crushed-coal";
-            extendedMaterialContainerCrushedCoal.style.borderBottom = "1px solid gray";
-            extendedMaterialContainerCrushedCoal.style.height = "3vw";
-            extendedMaterialContainerCrushedCoal.style.position = "relative";
-            extendedMaterialContainerCrushedCoal.style.top = "-3.25vw";
-
-            extendedMaterialCrushedCoalImage = document.createElement("img");
-            extendedMaterialCrushedCoalImage.id = "extended-material-crushed-coal-image";
-            extendedMaterialCrushedCoalImage.style.height = "2.5vw";
-            extendedMaterialCrushedCoalImage.style.position = "relative";
-            extendedMaterialCrushedCoalImage.style.top = "0.25vw";
-            extendedMaterialCrushedCoalImage.style.left = "0.25vw";
-            extendedMaterialCrushedCoalImage.style.border = "1px solid #333333";
-            extendedMaterialCrushedCoalImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialCrushedCoalImage.setAttribute("src", extendedMaterials[2].image);
-            extendedMaterialCrushedCoalImage.setAttribute("title", extendedMaterials[2].name);
-            
-            extendedMaterialCrushedCoalName = document.createElement("div");
-            extendedMaterialCrushedCoalName.id = "extended-material-crushed-coal-name";
-            extendedMaterialCrushedCoalName.style.color = "white";
-            extendedMaterialCrushedCoalName.style.fontSize = "1vw";
-            extendedMaterialCrushedCoalName.style.fontWeight = "bold";
-            extendedMaterialCrushedCoalName.style.position = "relative";
-            extendedMaterialCrushedCoalName.style.top = "-2.7vw";
-            extendedMaterialCrushedCoalName.style.left = "3.1vw";
-            extendedMaterialCrushedCoalName.innerHTML = extendedMaterials[2].name;
-
-            extendedMaterialCrushedCoalAmount = document.createElement("div");
-            extendedMaterialCrushedCoalAmount.id = "extended-material-crushed-coal-amount";
-            extendedMaterialCrushedCoalAmount.style.color = "white";
-            extendedMaterialCrushedCoalAmount.style.fontSize = "1vw";
-            extendedMaterialCrushedCoalAmount.style.fontWeight = "500";
-            extendedMaterialCrushedCoalAmount.style.position = "relative";
-            extendedMaterialCrushedCoalAmount.style.top = "-2.9vw";
-            extendedMaterialCrushedCoalAmount.style.left = "3.1vw";
-            extendedMaterialCrushedCoalAmount.innerHTML = "Amount: " + extendedMaterials[2].amount;
-
-            document.getElementById("material-item-container1").appendChild(extendedMaterialContainerCrushedCoal);
-            extendedMaterialContainerCrushedCoal.appendChild(extendedMaterialCrushedCoalImage);
-            extendedMaterialContainerCrushedCoal.appendChild(extendedMaterialCrushedCoalName);
-            extendedMaterialContainerCrushedCoal.appendChild(extendedMaterialCrushedCoalAmount);
-
-            for(i = 2; i < heights.length; i++) {
-                heights[i] += 3;
-                document.getElementById("material-item-container" + i).style.position = "relative";
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            coalClicked = true;
-        } else if(coalClicked == true) {
-            extendedMaterialContainerCrushedCoal.remove();
-
-            for(i = 2; i < heights.length; i++) {
-                heights[i] -= 3;
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            coalClicked = false;
-        }
-    } else if(id == 2) {
-        //Iron
-        if(ironClicked == false) {
-            extendedMaterialContainerCrushedIron = document.createElement("div");
-            extendedMaterialContainerCrushedIron.id = "extended-material-container-crushed-iron";
-            extendedMaterialContainerCrushedIron.style.borderBottom = "1px solid gray";
-            extendedMaterialContainerCrushedIron.style.height = "3vw";
-            extendedMaterialContainerCrushedIron.style.position = "relative";
-            extendedMaterialContainerCrushedIron.style.top = "-3.25vw";
-
-            extendedMaterialCrushedIronImage = document.createElement("img");
-            extendedMaterialCrushedIronImage.id = "extended-material-crushed-iron-image";
-            extendedMaterialCrushedIronImage.style.height = "2.5vw";
-            extendedMaterialCrushedIronImage.style.position = "relative";
-            extendedMaterialCrushedIronImage.style.top = "0.25vw";
-            extendedMaterialCrushedIronImage.style.left = "0.25vw";
-            extendedMaterialCrushedIronImage.style.border = "1px solid #333333";
-            extendedMaterialCrushedIronImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialCrushedIronImage.setAttribute("src", extendedMaterials[3].image);
-            extendedMaterialCrushedIronImage.setAttribute("title", extendedMaterials[3].name);
-            
-            extendedMaterialCrushedIronName = document.createElement("div");
-            extendedMaterialCrushedIronName.id = "extended-material-crushed-iron-name";
-            extendedMaterialCrushedIronName.style.color = "white";
-            extendedMaterialCrushedIronName.style.fontSize = "1vw";
-            extendedMaterialCrushedIronName.style.fontWeight = "bold";
-            extendedMaterialCrushedIronName.style.position = "relative";
-            extendedMaterialCrushedIronName.style.top = "-2.7vw";
-            extendedMaterialCrushedIronName.style.left = "3.1vw";
-            extendedMaterialCrushedIronName.innerHTML = extendedMaterials[3].name;
-
-            extendedMaterialCrushedIronAmount = document.createElement("div");
-            extendedMaterialCrushedIronAmount.id = "extended-material-crushed-iron-amount";
-            extendedMaterialCrushedIronAmount.style.color = "white";
-            extendedMaterialCrushedIronAmount.style.fontSize = "1vw";
-            extendedMaterialCrushedIronAmount.style.fontWeight = "500";
-            extendedMaterialCrushedIronAmount.style.position = "relative";
-            extendedMaterialCrushedIronAmount.style.top = "-2.9vw";
-            extendedMaterialCrushedIronAmount.style.left = "3.1vw";
-            extendedMaterialCrushedIronAmount.innerHTML = "Amount: " + extendedMaterials[3].amount;
-
-            document.getElementById("material-item-container2").appendChild(extendedMaterialContainerCrushedIron);
-            extendedMaterialContainerCrushedIron.appendChild(extendedMaterialCrushedIronImage);
-            extendedMaterialContainerCrushedIron.appendChild(extendedMaterialCrushedIronName);
-            extendedMaterialContainerCrushedIron.appendChild(extendedMaterialCrushedIronAmount);
-
-            extendedMaterialContainerIronIngot = document.createElement("div");
-            extendedMaterialContainerIronIngot.id = "extended-material-container-iron-ingot";
-            extendedMaterialContainerIronIngot.style.borderBottom = "1px solid gray";
-            extendedMaterialContainerIronIngot.style.height = "3vw";
-            extendedMaterialContainerIronIngot.style.position = "relative";
-            extendedMaterialContainerIronIngot.style.top = "-3.25vw";
-
-            extendedMaterialIronIngotImage = document.createElement("img");
-            extendedMaterialIronIngotImage.id = "extended-material-iron-ingot-image";
-            extendedMaterialIronIngotImage.style.height = "2.5vw";
-            extendedMaterialIronIngotImage.style.position = "relative";
-            extendedMaterialIronIngotImage.style.top = "0.25vw";
-            extendedMaterialIronIngotImage.style.left = "0.25vw";
-            extendedMaterialIronIngotImage.style.border = "1px solid #333333";
-            extendedMaterialIronIngotImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialIronIngotImage.setAttribute("src", extendedMaterials[4].image);
-            extendedMaterialIronIngotImage.setAttribute("title", extendedMaterials[4].name);
-            
-            extendedMaterialIronIngotName = document.createElement("div");
-            extendedMaterialIronIngotName.id = "extended-material-iron-ingot-name";
-            extendedMaterialIronIngotName.style.color = "white";
-            extendedMaterialIronIngotName.style.fontSize = "1vw";
-            extendedMaterialIronIngotName.style.fontWeight = "bold";
-            extendedMaterialIronIngotName.style.position = "relative";
-            extendedMaterialIronIngotName.style.top = "-2.7vw";
-            extendedMaterialIronIngotName.style.left = "3.1vw";
-            extendedMaterialIronIngotName.innerHTML = extendedMaterials[4].name;
-
-            extendedMaterialIronIngotAmount = document.createElement("div");
-            extendedMaterialIronIngotAmount.id = "extended-material-iron-ingot-amount";
-            extendedMaterialIronIngotAmount.style.color = "white";
-            extendedMaterialIronIngotAmount.style.fontSize = "1vw";
-            extendedMaterialIronIngotAmount.style.fontWeight = "500";
-            extendedMaterialIronIngotAmount.style.position = "relative";
-            extendedMaterialIronIngotAmount.style.top = "-2.9vw";
-            extendedMaterialIronIngotAmount.style.left = "3.1vw";
-            extendedMaterialIronIngotAmount.innerHTML = "Amount: " + fixedIron;
-
-            document.getElementById("material-item-container2").appendChild(extendedMaterialContainerIronIngot);
-            extendedMaterialContainerIronIngot.appendChild(extendedMaterialIronIngotImage);
-            extendedMaterialContainerIronIngot.appendChild(extendedMaterialIronIngotName);
-            extendedMaterialContainerIronIngot.appendChild(extendedMaterialIronIngotAmount);
-
-            extendedMaterialContainerSteelIngot = document.createElement("div");
-            extendedMaterialContainerSteelIngot.id = "extended-material-container-steel-ingot";
-            extendedMaterialContainerSteelIngot.style.height = "3vw";
-            extendedMaterialContainerSteelIngot.style.position = "relative";
-            extendedMaterialContainerSteelIngot.style.top = "-3.25vw";
-
-            extendedMaterialSteelIngotImage = document.createElement("img");
-            extendedMaterialSteelIngotImage.id = "extended-material-steel-ingot-image";
-            extendedMaterialSteelIngotImage.style.height = "2.5vw";
-            extendedMaterialSteelIngotImage.style.position = "relative";
-            extendedMaterialSteelIngotImage.style.top = "0.25vw";
-            extendedMaterialSteelIngotImage.style.left = "0.25vw";
-            extendedMaterialSteelIngotImage.style.border = "1px solid #333333";
-            extendedMaterialSteelIngotImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialSteelIngotImage.setAttribute("src", extendedMaterials[5].image);
-            extendedMaterialSteelIngotImage.setAttribute("title", extendedMaterials[5].name);
-            
-            extendedMaterialSteelIngotName = document.createElement("div");
-            extendedMaterialSteelIngotName.id = "extended-material-steel-ingot-name";
-            extendedMaterialSteelIngotName.style.color = "white";
-            extendedMaterialSteelIngotName.style.fontSize = "1vw";
-            extendedMaterialSteelIngotName.style.fontWeight = "bold";
-            extendedMaterialSteelIngotName.style.position = "relative";
-            extendedMaterialSteelIngotName.style.top = "-2.7vw";
-            extendedMaterialSteelIngotName.style.left = "3.1vw";
-            extendedMaterialSteelIngotName.innerHTML = extendedMaterials[5].name;
-
-            extendedMaterialSteelIngotAmount = document.createElement("div");
-            extendedMaterialSteelIngotAmount.id = "extended-material-steel-ingot-amount";
-            extendedMaterialSteelIngotAmount.style.color = "white";
-            extendedMaterialSteelIngotAmount.style.fontSize = "1vw";
-            extendedMaterialSteelIngotAmount.style.fontWeight = "500";
-            extendedMaterialSteelIngotAmount.style.position = "relative";
-            extendedMaterialSteelIngotAmount.style.top = "-2.9vw";
-            extendedMaterialSteelIngotAmount.style.left = "3.1vw";
-            extendedMaterialSteelIngotAmount.innerHTML = "Amount: " + extendedMaterials[5].amount;
-
-            document.getElementById("material-item-container2").appendChild(extendedMaterialContainerSteelIngot);
-            extendedMaterialContainerSteelIngot.appendChild(extendedMaterialSteelIngotImage);
-            extendedMaterialContainerSteelIngot.appendChild(extendedMaterialSteelIngotName);
-            extendedMaterialContainerSteelIngot.appendChild(extendedMaterialSteelIngotAmount);
-
-            for(i = 3; i < heights.length; i++) {
-                heights[i] += 9;
-                document.getElementById("material-item-container" + i).style.position = "relative";
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            ironClicked = true;
-        } else if(ironClicked == true) {
-            extendedMaterialContainerCrushedIron.remove();
-            extendedMaterialContainerIronIngot.remove();
-            extendedMaterialContainerSteelIngot.remove();
-
-            for(i = 3; i < heights.length; i++) {
-                heights[i] -= 9;
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            ironClicked = false;
-        }
-    } else if(id == 3) {
-        //Silver
-        if(silverClicked == false) {
-            extendedMaterialContainerCrushedSilver = document.createElement("div");
-            extendedMaterialContainerCrushedSilver.id = "extended-material-container-crushed-silver";
-            extendedMaterialContainerCrushedSilver.style.borderBottom = "1px solid gray";
-            extendedMaterialContainerCrushedSilver.style.height = "3vw";
-            extendedMaterialContainerCrushedSilver.style.position = "relative";
-            extendedMaterialContainerCrushedSilver.style.top = "-3.25vw";
-
-            extendedMaterialCrushedSilverImage = document.createElement("img");
-            extendedMaterialCrushedSilverImage.id = "extended-material-crushed-silver-image";
-            extendedMaterialCrushedSilverImage.style.height = "2.5vw";
-            extendedMaterialCrushedSilverImage.style.position = "relative";
-            extendedMaterialCrushedSilverImage.style.top = "0.25vw";
-            extendedMaterialCrushedSilverImage.style.left = "0.25vw";
-            extendedMaterialCrushedSilverImage.style.border = "1px solid #333333";
-            extendedMaterialCrushedSilverImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialCrushedSilverImage.setAttribute("src", extendedMaterials[6].image);
-            extendedMaterialCrushedSilverImage.setAttribute("title", extendedMaterials[6].name);
-            
-            extendedMaterialCrushedSilverName = document.createElement("div");
-            extendedMaterialCrushedSilverName.id = "extended-material-crushed-silver-name";
-            extendedMaterialCrushedSilverName.style.color = "white";
-            extendedMaterialCrushedSilverName.style.fontSize = "1vw";
-            extendedMaterialCrushedSilverName.style.fontWeight = "bold";
-            extendedMaterialCrushedSilverName.style.position = "relative";
-            extendedMaterialCrushedSilverName.style.top = "-2.7vw";
-            extendedMaterialCrushedSilverName.style.left = "3.1vw";
-            extendedMaterialCrushedSilverName.innerHTML = extendedMaterials[6].name;
-
-            extendedMaterialCrushedSilverAmount = document.createElement("div");
-            extendedMaterialCrushedSilverAmount.id = "extended-material-crushed-silver-amount";
-            extendedMaterialCrushedSilverAmount.style.color = "white";
-            extendedMaterialCrushedSilverAmount.style.fontSize = "1vw";
-            extendedMaterialCrushedSilverAmount.style.fontWeight = "500";
-            extendedMaterialCrushedSilverAmount.style.position = "relative";
-            extendedMaterialCrushedSilverAmount.style.top = "-2.9vw";
-            extendedMaterialCrushedSilverAmount.style.left = "3.1vw";
-            extendedMaterialCrushedSilverAmount.innerHTML = "Amount: " + extendedMaterials[6].amount;
-
-            document.getElementById("material-item-container3").appendChild(extendedMaterialContainerCrushedSilver);
-            extendedMaterialContainerCrushedSilver.appendChild(extendedMaterialCrushedSilverImage);
-            extendedMaterialContainerCrushedSilver.appendChild(extendedMaterialCrushedSilverName);
-            extendedMaterialContainerCrushedSilver.appendChild(extendedMaterialCrushedSilverAmount);
-
-            extendedMaterialContainerSilverIngot = document.createElement("div");
-            extendedMaterialContainerSilverIngot.id = "extended-material-container-silver-ingot";
-            extendedMaterialContainerSilverIngot.style.height = "3vw";
-            extendedMaterialContainerSilverIngot.style.position = "relative";
-            extendedMaterialContainerSilverIngot.style.top = "-3.25vw";
-
-            extendedMaterialSilverIngotImage = document.createElement("img");
-            extendedMaterialSilverIngotImage.id = "extended-material-silver-ingot-image";
-            extendedMaterialSilverIngotImage.style.height = "2.5vw";
-            extendedMaterialSilverIngotImage.style.position = "relative";
-            extendedMaterialSilverIngotImage.style.top = "0.25vw";
-            extendedMaterialSilverIngotImage.style.left = "0.25vw";
-            extendedMaterialSilverIngotImage.style.border = "1px solid #333333";
-            extendedMaterialSilverIngotImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialSilverIngotImage.setAttribute("src", extendedMaterials[7].image);
-            extendedMaterialSilverIngotImage.setAttribute("title", extendedMaterials[7].name);
-            
-            extendedMaterialSilverIngotName = document.createElement("div");
-            extendedMaterialSilverIngotName.id = "extended-material-silver-ingot-name";
-            extendedMaterialSilverIngotName.style.color = "white";
-            extendedMaterialSilverIngotName.style.fontSize = "1vw";
-            extendedMaterialSilverIngotName.style.fontWeight = "bold";
-            extendedMaterialSilverIngotName.style.position = "relative";
-            extendedMaterialSilverIngotName.style.top = "-2.7vw";
-            extendedMaterialSilverIngotName.style.left = "3.1vw";
-            extendedMaterialSilverIngotName.innerHTML = extendedMaterials[7].name;
-
-            extendedMaterialSilverIngotAmount = document.createElement("div");
-            extendedMaterialSilverIngotAmount.id = "extended-material-silver-ingot-amount";
-            extendedMaterialSilverIngotAmount.style.color = "white";
-            extendedMaterialSilverIngotAmount.style.fontSize = "1vw";
-            extendedMaterialSilverIngotAmount.style.fontWeight = "500";
-            extendedMaterialSilverIngotAmount.style.position = "relative";
-            extendedMaterialSilverIngotAmount.style.top = "-2.9vw";
-            extendedMaterialSilverIngotAmount.style.left = "3.1vw";
-            extendedMaterialSilverIngotAmount.innerHTML = "Amount: " + extendedMaterials[7].amount;
-
-            document.getElementById("material-item-container3").appendChild(extendedMaterialContainerSilverIngot);
-            extendedMaterialContainerSilverIngot.appendChild(extendedMaterialSilverIngotImage);
-            extendedMaterialContainerSilverIngot.appendChild(extendedMaterialSilverIngotName);
-            extendedMaterialContainerSilverIngot.appendChild(extendedMaterialSilverIngotAmount);
-
-            for(i = 4; i < heights.length; i++) {
-                heights[i] += 6;
-                document.getElementById("material-item-container" + i).style.position = "relative";
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            silverClicked = true;
-        } else if(silverClicked == true) {
-            extendedMaterialContainerCrushedSilver.remove();
-            extendedMaterialContainerSilverIngot.remove();
-
-            for(i = 4; i < heights.length; i++) {
-                heights[i] -= 6;
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            silverClicked = false;
-        }
-    } else if(id == 4) {
-        //Gold
-        if(goldClicked == false) {
-            extendedMaterialContainerCrushedGold = document.createElement("div");
-            extendedMaterialContainerCrushedGold.id = "extended-material-container-crushed-gold";
-            extendedMaterialContainerCrushedGold.style.borderBottom = "1px solid gray";
-            extendedMaterialContainerCrushedGold.style.height = "3vw";
-            extendedMaterialContainerCrushedGold.style.position = "relative";
-            extendedMaterialContainerCrushedGold.style.top = "-3.25vw";
-
-            extendedMaterialCrushedGoldImage = document.createElement("img");
-            extendedMaterialCrushedGoldImage.id = "extended-material-crushed-gold-image";
-            extendedMaterialCrushedGoldImage.style.height = "2.5vw";
-            extendedMaterialCrushedGoldImage.style.position = "relative";
-            extendedMaterialCrushedGoldImage.style.top = "0.25vw";
-            extendedMaterialCrushedGoldImage.style.left = "0.25vw";
-            extendedMaterialCrushedGoldImage.style.border = "1px solid #333333";
-            extendedMaterialCrushedGoldImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialCrushedGoldImage.setAttribute("src", extendedMaterials[8].image);
-            extendedMaterialCrushedGoldImage.setAttribute("title", extendedMaterials[8].name);
-            
-            extendedMaterialCrushedGoldName = document.createElement("div");
-            extendedMaterialCrushedGoldName.id = "extended-material-crushed-gold-name";
-            extendedMaterialCrushedGoldName.style.color = "white";
-            extendedMaterialCrushedGoldName.style.fontSize = "1vw";
-            extendedMaterialCrushedGoldName.style.fontWeight = "bold";
-            extendedMaterialCrushedGoldName.style.position = "relative";
-            extendedMaterialCrushedGoldName.style.top = "-2.7vw";
-            extendedMaterialCrushedGoldName.style.left = "3.1vw";
-            extendedMaterialCrushedGoldName.innerHTML = extendedMaterials[8].name;
-
-            extendedMaterialCrushedGoldAmount = document.createElement("div");
-            extendedMaterialCrushedGoldAmount.id = "extended-material-crushed-gold-amount";
-            extendedMaterialCrushedGoldAmount.style.color = "white";
-            extendedMaterialCrushedGoldAmount.style.fontSize = "1vw";
-            extendedMaterialCrushedGoldAmount.style.fontWeight = "500";
-            extendedMaterialCrushedGoldAmount.style.position = "relative";
-            extendedMaterialCrushedGoldAmount.style.top = "-2.9vw";
-            extendedMaterialCrushedGoldAmount.style.left = "3.1vw";
-            extendedMaterialCrushedGoldAmount.innerHTML = "Amount: " + extendedMaterials[8].amount;
-
-            document.getElementById("material-item-container4").appendChild(extendedMaterialContainerCrushedGold);
-            extendedMaterialContainerCrushedGold.appendChild(extendedMaterialCrushedGoldImage);
-            extendedMaterialContainerCrushedGold.appendChild(extendedMaterialCrushedGoldName);
-            extendedMaterialContainerCrushedGold.appendChild(extendedMaterialCrushedGoldAmount);
-
-            extendedMaterialContainerGoldIngot = document.createElement("div");
-            extendedMaterialContainerGoldIngot.id = "extended-material-container-gold-ingot";
-            extendedMaterialContainerGoldIngot.style.height = "3vw";
-            extendedMaterialContainerGoldIngot.style.position = "relative";
-            extendedMaterialContainerGoldIngot.style.top = "-3.25vw";
-
-            extendedMaterialGoldIngotImage = document.createElement("img");
-            extendedMaterialGoldIngotImage.id = "extended-material-gold-ingot-image";
-            extendedMaterialGoldIngotImage.style.height = "2.5vw";
-            extendedMaterialGoldIngotImage.style.position = "relative";
-            extendedMaterialGoldIngotImage.style.top = "0.25vw";
-            extendedMaterialGoldIngotImage.style.left = "0.25vw";
-            extendedMaterialGoldIngotImage.style.border = "1px solid #333333";
-            extendedMaterialGoldIngotImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialGoldIngotImage.setAttribute("src", extendedMaterials[9].image);
-            extendedMaterialGoldIngotImage.setAttribute("title", extendedMaterials[9].name);
-            
-            extendedMaterialGoldIngotName = document.createElement("div");
-            extendedMaterialGoldIngotName.id = "extended-material-gold-ingot-name";
-            extendedMaterialGoldIngotName.style.color = "white";
-            extendedMaterialGoldIngotName.style.fontSize = "1vw";
-            extendedMaterialGoldIngotName.style.fontWeight = "bold";
-            extendedMaterialGoldIngotName.style.position = "relative";
-            extendedMaterialGoldIngotName.style.top = "-2.7vw";
-            extendedMaterialGoldIngotName.style.left = "3.1vw";
-            extendedMaterialGoldIngotName.innerHTML = extendedMaterials[9].name;
-
-            extendedMaterialGoldIngotAmount = document.createElement("div");
-            extendedMaterialGoldIngotAmount.id = "extended-material-gold-ingot-amount";
-            extendedMaterialGoldIngotAmount.style.color = "white";
-            extendedMaterialGoldIngotAmount.style.fontSize = "1vw";
-            extendedMaterialGoldIngotAmount.style.fontWeight = "500";
-            extendedMaterialGoldIngotAmount.style.position = "relative";
-            extendedMaterialGoldIngotAmount.style.top = "-2.9vw";
-            extendedMaterialGoldIngotAmount.style.left = "3.1vw";
-            extendedMaterialGoldIngotAmount.innerHTML = "Amount: " + extendedMaterials[9].amount;
-
-            document.getElementById("material-item-container4").appendChild(extendedMaterialContainerGoldIngot);
-            extendedMaterialContainerGoldIngot.appendChild(extendedMaterialGoldIngotImage);
-            extendedMaterialContainerGoldIngot.appendChild(extendedMaterialGoldIngotName);
-            extendedMaterialContainerGoldIngot.appendChild(extendedMaterialGoldIngotAmount);
-
-            for(i = 5; i < heights.length; i++) {
-                heights[i] += 6;
-                document.getElementById("material-item-container" + i).style.position = "relative";
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            goldClicked = true;
-        } else if(goldClicked == true) {
-            extendedMaterialContainerCrushedGold.remove();
-            extendedMaterialContainerGoldIngot.remove();
-
-            for(i = 5; i < heights.length; i++) {
-                heights[i] -= 6;
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            goldClicked = false;
-        }
-    } else if(id == 5) {
-        //Titanium
-        if(titaniumClicked == false) {
-            extendedMaterialContainerCrushedTitanium = document.createElement("div");
-            extendedMaterialContainerCrushedTitanium.id = "extended-material-container-crushed-titanium";
-            extendedMaterialContainerCrushedTitanium.style.borderBottom = "1px solid gray";
-            extendedMaterialContainerCrushedTitanium.style.height = "3vw";
-            extendedMaterialContainerCrushedTitanium.style.position = "relative";
-            extendedMaterialContainerCrushedTitanium.style.top = "-3.25vw";
-
-            extendedMaterialCrushedTitaniumImage = document.createElement("img");
-            extendedMaterialCrushedTitaniumImage.id = "extended-material-crushed-titanium-image";
-            extendedMaterialCrushedTitaniumImage.style.height = "2.5vw";
-            extendedMaterialCrushedTitaniumImage.style.position = "relative";
-            extendedMaterialCrushedTitaniumImage.style.top = "0.25vw";
-            extendedMaterialCrushedTitaniumImage.style.left = "0.25vw";
-            extendedMaterialCrushedTitaniumImage.style.border = "1px solid #333333";
-            extendedMaterialCrushedTitaniumImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialCrushedTitaniumImage.setAttribute("src", extendedMaterials[10].image);
-            extendedMaterialCrushedTitaniumImage.setAttribute("title", extendedMaterials[10].name);
-            
-            extendedMaterialCrushedTitaniumName = document.createElement("div");
-            extendedMaterialCrushedTitaniumName.id = "extended-material-crushed-titanium-name";
-            extendedMaterialCrushedTitaniumName.style.color = "white";
-            extendedMaterialCrushedTitaniumName.style.fontSize = "1vw";
-            extendedMaterialCrushedTitaniumName.style.fontWeight = "bold";
-            extendedMaterialCrushedTitaniumName.style.position = "relative";
-            extendedMaterialCrushedTitaniumName.style.top = "-2.7vw";
-            extendedMaterialCrushedTitaniumName.style.left = "3.1vw";
-            extendedMaterialCrushedTitaniumName.innerHTML = extendedMaterials[10].name;
-
-            extendedMaterialCrushedTitaniumAmount = document.createElement("div");
-            extendedMaterialCrushedTitaniumAmount.id = "extended-material-crushed-titanium-amount";
-            extendedMaterialCrushedTitaniumAmount.style.color = "white";
-            extendedMaterialCrushedTitaniumAmount.style.fontSize = "1vw";
-            extendedMaterialCrushedTitaniumAmount.style.fontWeight = "500";
-            extendedMaterialCrushedTitaniumAmount.style.position = "relative";
-            extendedMaterialCrushedTitaniumAmount.style.top = "-2.9vw";
-            extendedMaterialCrushedTitaniumAmount.style.left = "3.1vw";
-            extendedMaterialCrushedTitaniumAmount.innerHTML = "Amount: " + extendedMaterials[10].amount;
-
-            document.getElementById("material-item-container5").appendChild(extendedMaterialContainerCrushedTitanium);
-            extendedMaterialContainerCrushedTitanium.appendChild(extendedMaterialCrushedTitaniumImage);
-            extendedMaterialContainerCrushedTitanium.appendChild(extendedMaterialCrushedTitaniumName);
-            extendedMaterialContainerCrushedTitanium.appendChild(extendedMaterialCrushedTitaniumAmount);
-
-            extendedMaterialContainerTitaniumIngot = document.createElement("div");
-            extendedMaterialContainerTitaniumIngot.id = "extended-material-container-titanium-ingot";
-            extendedMaterialContainerTitaniumIngot.style.height = "3vw";
-            extendedMaterialContainerTitaniumIngot.style.position = "relative";
-            extendedMaterialContainerTitaniumIngot.style.top = "-3.25vw";
-
-            extendedMaterialTitaniumIngotImage = document.createElement("img");
-            extendedMaterialTitaniumIngotImage.id = "extended-material-titanium-ingot-image";
-            extendedMaterialTitaniumIngotImage.style.height = "2.5vw";
-            extendedMaterialTitaniumIngotImage.style.position = "relative";
-            extendedMaterialTitaniumIngotImage.style.top = "0.25vw";
-            extendedMaterialTitaniumIngotImage.style.left = "0.25vw";
-            extendedMaterialTitaniumIngotImage.style.border = "1px solid #333333";
-            extendedMaterialTitaniumIngotImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialTitaniumIngotImage.setAttribute("src", extendedMaterials[11].image);
-            extendedMaterialTitaniumIngotImage.setAttribute("title", extendedMaterials[11].name);
-            
-            extendedMaterialTitaniumIngotName = document.createElement("div");
-            extendedMaterialTitaniumIngotName.id = "extended-material-titanium-ingot-name";
-            extendedMaterialTitaniumIngotName.style.color = "white";
-            extendedMaterialTitaniumIngotName.style.fontSize = "1vw";
-            extendedMaterialTitaniumIngotName.style.fontWeight = "bold";
-            extendedMaterialTitaniumIngotName.style.position = "relative";
-            extendedMaterialTitaniumIngotName.style.top = "-2.7vw";
-            extendedMaterialTitaniumIngotName.style.left = "3.1vw";
-            extendedMaterialTitaniumIngotName.innerHTML = extendedMaterials[11].name;
-
-            extendedMaterialTitaniumIngotAmount = document.createElement("div");
-            extendedMaterialTitaniumIngotAmount.id = "extended-material-titanium-ingot-amount";
-            extendedMaterialTitaniumIngotAmount.style.color = "white";
-            extendedMaterialTitaniumIngotAmount.style.fontSize = "1vw";
-            extendedMaterialTitaniumIngotAmount.style.fontWeight = "500";
-            extendedMaterialTitaniumIngotAmount.style.position = "relative";
-            extendedMaterialTitaniumIngotAmount.style.top = "-2.9vw";
-            extendedMaterialTitaniumIngotAmount.style.left = "3.1vw";
-            extendedMaterialTitaniumIngotAmount.innerHTML = "Amount: " + extendedMaterials[11].amount;
-
-            document.getElementById("material-item-container5").appendChild(extendedMaterialContainerTitaniumIngot);
-            extendedMaterialContainerTitaniumIngot.appendChild(extendedMaterialTitaniumIngotImage);
-            extendedMaterialContainerTitaniumIngot.appendChild(extendedMaterialTitaniumIngotName);
-            extendedMaterialContainerTitaniumIngot.appendChild(extendedMaterialTitaniumIngotAmount);
-
-            for(i = 6; i < heights.length; i++) {
-                heights[i] += 6;
-                document.getElementById("material-item-container" + i).style.position = "relative";
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            titaniumClicked = true;
-        } else if(titaniumClicked == true) {
-            extendedMaterialContainerCrushedTitanium.remove();
-            extendedMaterialContainerTitaniumIngot.remove();
-
-            for(i = 6; i < heights.length; i++) {
-                heights[i] -= 6;
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            titaniumClicked = false;
-        }
-    } else if(id == 6) {
-        //Wood
-        if(woodClicked == false) {
-            extendedMaterialContainerCrushedWood = document.createElement("div");
-            extendedMaterialContainerCrushedWood.id = "extended-material-container-crushed-wood";
-            extendedMaterialContainerCrushedWood.style.borderBottom = "1px solid gray";
-            extendedMaterialContainerCrushedWood.style.height = "3vw";
-            extendedMaterialContainerCrushedWood.style.position = "relative";
-            extendedMaterialContainerCrushedWood.style.top = "-3.25vw";
-
-            extendedMaterialCrushedWoodImage = document.createElement("img");
-            extendedMaterialCrushedWoodImage.id = "extended-material-crushed-wood-image";
-            extendedMaterialCrushedWoodImage.style.height = "2.5vw";
-            extendedMaterialCrushedWoodImage.style.position = "relative";
-            extendedMaterialCrushedWoodImage.style.top = "0.25vw";
-            extendedMaterialCrushedWoodImage.style.left = "0.25vw";
-            extendedMaterialCrushedWoodImage.style.border = "1px solid #333333";
-            extendedMaterialCrushedWoodImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialCrushedWoodImage.setAttribute("src", extendedMaterials[12].image);
-            extendedMaterialCrushedWoodImage.setAttribute("title", extendedMaterials[12].name);
-            
-            extendedMaterialCrushedWoodName = document.createElement("div");
-            extendedMaterialCrushedWoodName.id = "extended-material-crushed-wood-name";
-            extendedMaterialCrushedWoodName.style.color = "white";
-            extendedMaterialCrushedWoodName.style.fontSize = "1vw";
-            extendedMaterialCrushedWoodName.style.fontWeight = "bold";
-            extendedMaterialCrushedWoodName.style.position = "relative";
-            extendedMaterialCrushedWoodName.style.top = "-2.7vw";
-            extendedMaterialCrushedWoodName.style.left = "3.1vw";
-            extendedMaterialCrushedWoodName.innerHTML = extendedMaterials[12].name;
-
-            extendedMaterialCrushedWoodAmount = document.createElement("div");
-            extendedMaterialCrushedWoodAmount.id = "extended-material-crushed-wood-amount";
-            extendedMaterialCrushedWoodAmount.style.color = "white";
-            extendedMaterialCrushedWoodAmount.style.fontSize = "1vw";
-            extendedMaterialCrushedWoodAmount.style.fontWeight = "500";
-            extendedMaterialCrushedWoodAmount.style.position = "relative";
-            extendedMaterialCrushedWoodAmount.style.top = "-2.9vw";
-            extendedMaterialCrushedWoodAmount.style.left = "3.1vw";
-            extendedMaterialCrushedWoodAmount.innerHTML = "Amount: " + extendedMaterials[12].amount;
-
-            document.getElementById("material-item-container6").appendChild(extendedMaterialContainerCrushedWood);
-            extendedMaterialContainerCrushedWood.appendChild(extendedMaterialCrushedWoodImage);
-            extendedMaterialContainerCrushedWood.appendChild(extendedMaterialCrushedWoodName);
-            extendedMaterialContainerCrushedWood.appendChild(extendedMaterialCrushedWoodAmount);
-
-            for(i = 7; i < heights.length; i++) {
-                heights[i] += 3;
-                document.getElementById("material-item-container" + i).style.position = "relative";
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            woodClicked = true;
-        } else if(woodClicked == true) {
-            extendedMaterialContainerCrushedWood.remove();
-
-            for(i = 7; i < heights.length; i++) {
-                heights[i] -= 3;
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            woodClicked = false;
-        }
-    } else if(id == 7) {
-        //Maple
-        if(mapleClicked == false) {
-            extendedMaterialContainerCrushedMaple = document.createElement("div");
-            extendedMaterialContainerCrushedMaple.id = "extended-material-container-crushed-maple";
-            extendedMaterialContainerCrushedMaple.style.borderBottom = "1px solid gray";
-            extendedMaterialContainerCrushedMaple.style.height = "3vw";
-            extendedMaterialContainerCrushedMaple.style.position = "relative";
-            extendedMaterialContainerCrushedMaple.style.top = "-3.25vw";
-
-            extendedMaterialCrushedMapleImage = document.createElement("img");
-            extendedMaterialCrushedMapleImage.id = "extended-material-crushed-maple-image";
-            extendedMaterialCrushedMapleImage.style.height = "2.5vw";
-            extendedMaterialCrushedMapleImage.style.position = "relative";
-            extendedMaterialCrushedMapleImage.style.top = "0.25vw";
-            extendedMaterialCrushedMapleImage.style.left = "0.25vw";
-            extendedMaterialCrushedMapleImage.style.border = "1px solid #333333";
-            extendedMaterialCrushedMapleImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialCrushedMapleImage.setAttribute("src", extendedMaterials[13].image);
-            extendedMaterialCrushedMapleImage.setAttribute("title", extendedMaterials[13].name);
-            
-            extendedMaterialCrushedMapleName = document.createElement("div");
-            extendedMaterialCrushedMapleName.id = "extended-material-crushed-maple-name";
-            extendedMaterialCrushedMapleName.style.color = "white";
-            extendedMaterialCrushedMapleName.style.fontSize = "1vw";
-            extendedMaterialCrushedMapleName.style.fontWeight = "bold";
-            extendedMaterialCrushedMapleName.style.position = "relative";
-            extendedMaterialCrushedMapleName.style.top = "-2.7vw";
-            extendedMaterialCrushedMapleName.style.left = "3.1vw";
-            extendedMaterialCrushedMapleName.innerHTML = extendedMaterials[13].name;
-
-            extendedMaterialCrushedMapleAmount = document.createElement("div");
-            extendedMaterialCrushedMapleAmount.id = "extended-material-crushed-maple-amount";
-            extendedMaterialCrushedMapleAmount.style.color = "white";
-            extendedMaterialCrushedMapleAmount.style.fontSize = "1vw";
-            extendedMaterialCrushedMapleAmount.style.fontWeight = "500";
-            extendedMaterialCrushedMapleAmount.style.position = "relative";
-            extendedMaterialCrushedMapleAmount.style.top = "-2.9vw";
-            extendedMaterialCrushedMapleAmount.style.left = "3.1vw";
-            extendedMaterialCrushedMapleAmount.innerHTML = "Amount: " + extendedMaterials[13].amount;
-
-            document.getElementById("material-item-container7").appendChild(extendedMaterialContainerCrushedMaple);
-            extendedMaterialContainerCrushedMaple.appendChild(extendedMaterialCrushedMapleImage);
-            extendedMaterialContainerCrushedMaple.appendChild(extendedMaterialCrushedMapleName);
-            extendedMaterialContainerCrushedMaple.appendChild(extendedMaterialCrushedMapleAmount);
-
-            for(i = 8; i < heights.length; i++) {
-                heights[i] += 3;
-                document.getElementById("material-item-container" + i).style.position = "relative";
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            mapleClicked = true;
-        } else if(mapleClicked == true) {
-            extendedMaterialContainerCrushedMaple.remove();
-
-            for(i = 8; i < heights.length; i++) {
-                heights[i] -= 3;
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            mapleClicked = false;
-        }
-    } else if(id == 8) {
-        //Willow
-        if(willowClicked == false) {
-            extendedMaterialContainerCrushedWillow = document.createElement("div");
-            extendedMaterialContainerCrushedWillow.id = "extended-material-container-crushed-willow";
-            extendedMaterialContainerCrushedWillow.style.borderBottom = "1px solid gray";
-            extendedMaterialContainerCrushedWillow.style.height = "3vw";
-            extendedMaterialContainerCrushedWillow.style.position = "relative";
-            extendedMaterialContainerCrushedWillow.style.top = "-3.25vw";
-
-            extendedMaterialCrushedWillowImage = document.createElement("img");
-            extendedMaterialCrushedWillowImage.id = "extended-material-crushed-willow-image";
-            extendedMaterialCrushedWillowImage.style.height = "2.5vw";
-            extendedMaterialCrushedWillowImage.style.position = "relative";
-            extendedMaterialCrushedWillowImage.style.top = "0.25vw";
-            extendedMaterialCrushedWillowImage.style.left = "0.25vw";
-            extendedMaterialCrushedWillowImage.style.border = "1px solid #333333";
-            extendedMaterialCrushedWillowImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
-            extendedMaterialCrushedWillowImage.setAttribute("src", extendedMaterials[14].image);
-            extendedMaterialCrushedWillowImage.setAttribute("title", extendedMaterials[14].name);
-            
-            extendedMaterialCrushedWillowName = document.createElement("div");
-            extendedMaterialCrushedWillowName.id = "extended-material-crushed-willow-name";
-            extendedMaterialCrushedWillowName.style.color = "white";
-            extendedMaterialCrushedWillowName.style.fontSize = "1vw";
-            extendedMaterialCrushedWillowName.style.fontWeight = "bold";
-            extendedMaterialCrushedWillowName.style.position = "relative";
-            extendedMaterialCrushedWillowName.style.top = "-2.7vw";
-            extendedMaterialCrushedWillowName.style.left = "3.1vw";
-            extendedMaterialCrushedWillowName.innerHTML = extendedMaterials[14].name;
-
-            extendedMaterialCrushedWillowAmount = document.createElement("div");
-            extendedMaterialCrushedWillowAmount.id = "extended-material-crushed-willow-amount";
-            extendedMaterialCrushedWillowAmount.style.color = "white";
-            extendedMaterialCrushedWillowAmount.style.fontSize = "1vw";
-            extendedMaterialCrushedWillowAmount.style.fontWeight = "500";
-            extendedMaterialCrushedWillowAmount.style.position = "relative";
-            extendedMaterialCrushedWillowAmount.style.top = "-2.9vw";
-            extendedMaterialCrushedWillowAmount.style.left = "3.1vw";
-            extendedMaterialCrushedWillowAmount.innerHTML = "Amount: " + extendedMaterials[14].amount;
-
-            document.getElementById("material-item-container8").appendChild(extendedMaterialContainerCrushedWillow);
-            extendedMaterialContainerCrushedWillow.appendChild(extendedMaterialCrushedWillowImage);
-            extendedMaterialContainerCrushedWillow.appendChild(extendedMaterialCrushedWillowName);
-            extendedMaterialContainerCrushedWillow.appendChild(extendedMaterialCrushedWillowAmount);
-
-            for(i = 9; i < heights.length; i++) {
-                heights[i] += 3;
-                document.getElementById("material-item-container" + i).style.position = "relative";
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            willowClicked = true;
-        } else if(willowClicked == true) {
-            extendedMaterialContainerCrushedWillow.remove();
-
-            for(i = 9; i < heights.length; i++) {
-                heights[i] -= 3;
-                document.getElementById("material-item-container" + i).style.top = heights[i] + "vw";
-            }
-
-            willowClicked = false;
-        }
-    }
-}
-
-var fixedIron = 0;
-var fixedSteel = 0;
-
-function extendedAmount() {
-    for(i = 0; i < extendedMaterials.length; i++) {
-        extendedMaterials[i].amount = 0;
-        fixedIron = 0;
-        fixedSteel = 0;
-    }
-    extendedMaterials[0].amount = materials[0].amount * 4;
-    extendedMaterials[1].amount = ((materials[0].amount * 4) / 6);
-    extendedMaterials[1].amount = extendedMaterials[1].amount.toFixed(0);
-    extendedMaterials[2].amount = (materials[1].amount * 4);
-    extendedMaterials[3].amount = (materials[2].amount * 4);
-    extendedMaterials[4].amount = ((materials[2].amount * 4) / 6);
-    extendedMaterials[4].amount = extendedMaterials[4].amount.toFixed(0);
-    extendedMaterials[5].amount = steel;
-    fixedSteel = (extendedMaterials[5].amount * 3);
-    fixedIron = (extendedMaterials[4].amount - fixedSteel);
-    //Troubleshooting: console.log("Old Iron: " + extendedMaterials[4].amount, "New Iron: " + fixedIron, "Steel: " + fixedSteel);
-    extendedMaterials[6].amount = (materials[3].amount * 4);
-    extendedMaterials[7].amount = ((materials[3].amount * 4) / 6);
-    extendedMaterials[7].amount = extendedMaterials[7].amount.toFixed(0);
-    extendedMaterials[8].amount = (materials[4].amount * 4);
-    extendedMaterials[9].amount = ((materials[4].amount * 4) / 6);
-    extendedMaterials[9].amount = extendedMaterials[9].amount.toFixed(0);
-    extendedMaterials[10].amount = (materials[5].amount * 4);
-    extendedMaterials[11].amount = ((materials[5].amount * 4) / 6);
-    extendedMaterials[11].amount = extendedMaterials[11].amount.toFixed(0);
-    extendedMaterials[12].amount = (materials[6].amount / 4);
-    extendedMaterials[13].amount = (materials[7].amount / 4);
-    extendedMaterials[14].amount = (materials[8].amount / 4);
-    if(copperClicked == true) {
-        document.getElementById("extended-material-crushed-copper-amount").innerHTML = "Amount: " + extendedMaterials[0].amount;
-        document.getElementById("extended-material-copper-ingot-amount").innerHTML = "Amount: " + extendedMaterials[1].amount;
-    }
-    if(coalClicked == true) {
-        document.getElementById("extended-material-crushed-coal-amount").innerHTML = "Amount: " + extendedMaterials[2].amount;
-    }
-    if(ironClicked == true) {
-        document.getElementById("extended-material-crushed-iron-amount").innerHTML = "Amount: " + extendedMaterials[3].amount;
-        document.getElementById("extended-material-iron-ingot-amount").innerHTML = "Amount: " + fixedIron;
-        document.getElementById("extended-material-steel-ingot-amount").innerHTML = "Amount: " + extendedMaterials[5].amount;
-    }
-    if(silverClicked == true) {
-        document.getElementById("extended-material-crushed-silver-amount").innerHTML = "Amount: " + extendedMaterials[6].amount;
-        document.getElementById("extended-material-silver-ingot-amount").innerHTML = "Amount: " + extendedMaterials[7].amount;
-    }
-    if(goldClicked == true) {
-        document.getElementById("extended-material-crushed-gold-amount").innerHTML = "Amount: " + extendedMaterials[8].amount;
-        document.getElementById("extended-material-gold-ingot-amount").innerHTML = "Amount: " + extendedMaterials[9].amount;
-    }
-    if(titaniumClicked == true) {
-        document.getElementById("extended-material-crushed-titanium-amount").innerHTML = "Amount: " + extendedMaterials[10].amount;
-        document.getElementById("extended-material-titanium-ingot-amount").innerHTML = "Amount: " + extendedMaterials[11].amount;
-    }
-    if(woodClicked == true) {
-        document.getElementById("extended-material-crushed-wood-amount").innerHTML = "Amount: " + extendedMaterials[12].amount;
-    }
-    if(mapleClicked == true) {
-        document.getElementById("extended-material-crushed-maple-amount").innerHTML = "Amount: " + extendedMaterials[13].amount;
-    }
-    if(willowClicked == true) {
-        document.getElementById("extended-material-crushed-willow-amount").innerHTML = "Amount: " + extendedMaterials[14].amount;
-    }
-}
-
 var background = "autumn";
 
 function changeBG() {
@@ -2633,123 +1616,14 @@ function changeBG() {
         background = "simple";
         localStorage.setItem("theme", "Simple");
     } else if(background == "simple") {
-        document.getElementById("background-img").style.backgroundImage = "url(images/background-fall.jpg)";
+        document.getElementById("background-img").style.backgroundImage = "url(images/background-winter.jpg)";
         document.getElementById("background-img").style.filter = "blur(0px)";
         document.getElementById("warning-text").style.color = "white";
         document.getElementById("warning").style.color = "white";
         document.getElementById("credits").style.color = "white";
-        document.getElementById("bg-type").innerHTML = "Background: Autumn";
+        document.getElementById("bg-type").innerHTML = "Background: Winter Monoford";
         background = "autumn";
         localStorage.setItem("theme", "Autumn");
-    }
-}
-
-var stacks = false;
-
-function changeStackType() {
-    if(stacks == false) {
-        for(z = 0; z < 6; z++) {
-            document.getElementById("material-amount" + z).innerHTML = "Stacks: " + materials[z].stacks + "; Remainder: " + materials[z].remainder;
-        }
-        document.getElementById("stack-type").innerHTML = "Stacks: On";
-        stacks = true;
-    } else if(stacks == true) {
-        for(z = 0; z < 6; z++) {
-            document.getElementById("material-amount" + z).innerHTML = "Amount: " + materials[z].amount;
-        }
-        document.getElementById("stack-type").innerHTML = "Stacks: Off";
-        stacks = false;
-    }
-}
-
-var crushers = 1;
-var seconds = 0;
-var minutes = 0;
-var hours = 0;
-var presentable_seconds = "0";
-var presentable_minutes = "0";
-var presentable_hours = "0";
-
-function time(param) {
-    if(param == 1) {
-        //Open Menu
-        document.getElementById("time-menu-container").style.visibility = "visible";
-    } else if(param == 0) {
-        //Close Menu
-        document.getElementById("time-menu-container").style.visibility = "hidden";
-    }
-
-    if(param == 2) {
-        seconds = 0;
-        minutes = 0;
-        hours = 0;
-        presentable_seconds = 0;
-        presentable_minutes = 0;
-        presentable_hours = 0;
-
-        crushers = document.getElementById("slider").value;
-        crushers = parseInt(crushers);
-        
-        //Mining
-        for(i = 0; i < 9; i++) {
-            seconds += (materials[i].amount * 9);
-        }
-        //Crushing
-        for(i = 0; i < 6; i++) {
-            seconds += ((materials[i].amount * 10) / crushers);
-        }
-        //Crafting/Smelting
-        for(i = 0; i < extendedMaterials.length; i++) {
-            if(i == 1 || i == 4 || i == 5 || i == 7 || i == 9 || i == 11 || i == 12 || i == 13 || i == 14) {
-                seconds += (extendedMaterials[i].amount * 6);
-            }
-        }
-
-        seconds = Math.ceil(seconds);
-        minutes = Math.ceil(minutes);
-        hours = Math.ceil(hours);
-
-        if(seconds >= 60) {
-            var secondRem = seconds % 60;
-            minutes = ((seconds / 60) - (secondRem / 60));
-            secondRem = Math.ceil(secondRem);
-            seconds = secondRem;
-        }
-
-        if(minutes >= 60) {
-            var minuteRem = minutes % 60;
-            hours = ((minutes / 60) - (minuteRem / 60));
-            hours = Math.ceil(hours);
-            minuteRem = Math.ceil(minuteRem);
-            minutes = minuteRem;
-        }
-
-        seconds = Math.ceil(seconds);
-        minutes = Math.ceil(minutes);
-        hours = Math.ceil(hours);
-
-        //Fix timestamps
-
-        if(hours < 10) {
-            presentable_hours = "0" + hours;
-        } else if(hours >= 10) {
-            presentable_hours = hours;
-        }
-
-        if(minutes < 10) {
-            presentable_minutes = "0" + minutes;
-        } else if(minutes >= 10) {
-            presentable_minutes = minutes;
-        }
-
-        if(seconds < 10) {
-            presentable_seconds = "0" + seconds;
-        } else if(seconds >= 10) {
-            presentable_seconds = seconds;
-        }
-
-        document.getElementById("time").innerHTML = presentable_hours + ":" + presentable_minutes + ":" + presentable_seconds;
-        document.getElementById("time2").innerHTML = presentable_hours + ":" + presentable_minutes + ":" + presentable_seconds;
     }
 }
 
@@ -2757,301 +1631,8 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-var helpOpacity = 0;
-var infoType2 = "white";
-var infoType3 = "white";
-var infoType4 = "white";
-var infoType5 = "white";
-var infoType6 = "white";
-var infoType7 = "white";
-var infoType8 = "white";
-var infoType9 = "white";
-var infoType10 = "white";
-var infoType11 = "white";
-var infoType12 = "white";
-var infoType13 = "white";
-var infoType14 = "white";
-var infoType15 = "white";
-var infoType16 = "white";
-var infoType17 = "white";
-var infoType18 = "white";
-var infoType19 = "white";
-function help(action) {
-    document.getElementById("info-icon").style.visibility = "hidden";
-    document.getElementById("help").style.visibility = "hidden";
-    if(action == 1) {
-        //Open tutorial
-        document.getElementById("help-container").style.visibility = "visible";
-        const tutorialInterval = setInterval(function() {
-            if(helpOpacity < 80) {
-                helpOpacity++;
-                document.getElementById("help-container").style.opacity = helpOpacity + "%";
-            } else {
-                clearInterval(tutorialInterval);
-            }
-        }, 15);
-        //Fix later (reguarding localStorage)
-        clearInterval(tutorialInterval3);
-        localStorage.setItem("tutorial", true);
-        document.getElementById("info-icon").style.color = "white";
-    } else if(action == 2) {
-        //Continue tutorial | Close greet menu
-        const tutorialInterval2 = setInterval(function() {
-            if(helpOpacity == 0) {
-                document.getElementById("help-container").style.visibility = "hidden";
-                clearInterval(tutorialInterval2);
-                //Continue other tutorial elements
-                document.getElementById("help-box1").style.visibility = "visible";
-                tutorialInterval4 = setInterval(function() {
-                    if(infoType2 == "white") {
-                        document.getElementById("help-box1").style.borderColor = "#ff4444";
-                        infoType2 = "red";
-                    } else if(infoType2 == "red") {
-                        document.getElementById("help-box1").style.borderColor = "white";
-                        infoType2 = "white";
-                    }
-                }, 1000);
-                document.getElementById("help-text1").style.visibility = "visible";
-                tutorialInterval5 = setInterval(function() {
-                    if(infoType3 == "white") {
-                        document.getElementById("help-text1").style.borderColor = "#ff4444";
-                        infoType3 = "red";
-                    } else if(infoType3 == "red") {
-                        document.getElementById("help-text1").style.borderColor = "white";
-                        infoType3 = "white";
-                    }
-                }, 1000);
-            } else {
-                helpOpacity--;
-                document.getElementById("help-container").style.opacity = helpOpacity + "%";
-            }
-        }, 15);
-    } else if(action == 3) {
-        //Continue tutorial | Close first tutorial element
-        clearInterval(tutorialInterval4);
-        clearInterval(tutorialInterval5);
-        document.getElementById("help-box1").style.visibility = "hidden";
-        document.getElementById("help-text1").style.visibility = "hidden";
-        document.getElementById("help-box2").style.visibility = "visible";
-                tutorialInterval6 = setInterval(function() {
-                    if(infoType4 == "white") {
-                        document.getElementById("help-box2").style.borderColor = "#ff4444";
-                        infoType4 = "red";
-                    } else if(infoType4 == "red") {
-                        document.getElementById("help-box2").style.borderColor = "white";
-                        infoType4 = "white";
-                    }
-                }, 1000);
-                document.getElementById("help-text2").style.visibility = "visible";
-                tutorialInterval7 = setInterval(function() {
-                    if(infoType5 == "white") {
-                        document.getElementById("help-text2").style.borderColor = "#ff4444";
-                        infoType5 = "red";
-                    } else if(infoType5 == "red") {
-                        document.getElementById("help-text2").style.borderColor = "white";
-                        infoType5 = "white";
-                    }
-                }, 1000);
-    }  else if(action == 4) {
-        //Continue tutorial | Close second tutorial element
-        clearInterval(tutorialInterval6);
-        clearInterval(tutorialInterval7);
-        document.getElementById("help-box2").style.visibility = "hidden";
-        document.getElementById("help-text2").style.visibility = "hidden";
-        document.getElementById("help-box3").style.visibility = "visible";
-                tutorialInterval8 = setInterval(function() {
-                    if(infoType6 == "white") {
-                        document.getElementById("help-box3").style.borderColor = "#ff4444";
-                        infoType6 = "red";
-                    } else if(infoType6 == "red") {
-                        document.getElementById("help-box3").style.borderColor = "white";
-                        infoType6 = "white";
-                    }
-                }, 1000);
-                document.getElementById("help-text3").style.visibility = "visible";
-                tutorialInterval9 = setInterval(function() {
-                    if(infoType7 == "white") {
-                        document.getElementById("help-text3").style.borderColor = "#ff4444";
-                        infoType7 = "red";
-                    } else if(infoType7 == "red") {
-                        document.getElementById("help-text3").style.borderColor = "white";
-                        infoType7 = "white";
-                    }
-                }, 1000);
-            document.getElementById("material-item-container0").setAttribute("onclick", "help(5)");
-    } else if(action == 5) {
-        materialClick(0);
-        //Continue tutorial | Close third tutorial element
-        clearInterval(tutorialInterval8);
-        clearInterval(tutorialInterval9);
-        document.getElementById("help-box3").style.visibility = "hidden";
-        document.getElementById("help-text3").style.visibility = "hidden";
-        document.getElementById("help-box4").style.visibility = "visible";
-                tutorialInterval10 = setInterval(function() {
-                    if(infoType8 == "white") {
-                        document.getElementById("help-box4").style.borderColor = "#ff4444";
-                        infoType8 = "red";
-                    } else if(infoType8 == "red") {
-                        document.getElementById("help-box4").style.borderColor = "white";
-                        infoType8 = "white";
-                    }
-                }, 1000);
-                document.getElementById("help-text4").style.visibility = "visible";
-                tutorialInterval11 = setInterval(function() {
-                    if(infoType9 == "white") {
-                        document.getElementById("help-text4").style.borderColor = "#ff4444";
-                        infoType9 = "red";
-                    } else if(infoType9 == "red") {
-                        document.getElementById("help-text4").style.borderColor = "white";
-                        infoType9 = "white";
-                    }
-                }, 1000);
-            document.getElementById("material-item-container0").setAttribute("onclick", "help(6)");
-    } else if(action == 6) {
-        materialClick(0);
-        //Continue tutorial | Close forth tutorial element
-        clearInterval(tutorialInterval10);
-        clearInterval(tutorialInterval11);
-        document.getElementById("help-box4").style.visibility = "hidden";
-        document.getElementById("help-text4").style.visibility = "hidden";
-        document.getElementById("help-box5").style.visibility = "visible";
-                tutorialInterval12 = setInterval(function() {
-                    if(infoType10 == "white") {
-                        document.getElementById("help-box5").style.borderColor = "#ff4444";
-                        infoType10 = "red";
-                    } else if(infoType10 == "red") {
-                        document.getElementById("help-box5").style.borderColor = "white";
-                        infoType10 = "white";
-                    }
-                }, 1000);
-                document.getElementById("help-text5").style.visibility = "visible";
-                tutorialInterval13 = setInterval(function() {
-                    if(infoType11 == "white") {
-                        document.getElementById("help-text5").style.borderColor = "#ff4444";
-                        infoType11 = "red";
-                    } else if(infoType11 == "red") {
-                        document.getElementById("help-text5").style.borderColor = "white";
-                        infoType11 = "white";
-                    }
-                }, 1000);
-            document.getElementById("material-item-container0").setAttribute("onclick", "materialClick(0)");
-    } else if(action == 7) {
-        //Continue tutorial | Close fifth tutorial element
-        clearInterval(tutorialInterval12);
-        clearInterval(tutorialInterval13);
-        document.getElementById("help-box5").style.visibility = "hidden";
-        document.getElementById("help-text5").style.visibility = "hidden";
-        document.getElementById("help-box6").style.visibility = "visible";
-                tutorialInterval14 = setInterval(function() {
-                    if(infoType12 == "white") {
-                        document.getElementById("help-box6").style.borderColor = "#ff4444";
-                        infoType12 = "red";
-                    } else if(infoType12 == "red") {
-                        document.getElementById("help-box6").style.borderColor = "white";
-                        infoType12 = "white";
-                    }
-                }, 1000);
-                document.getElementById("help-text6").style.visibility = "visible";
-                tutorialInterval15 = setInterval(function() {
-                    if(infoType13 == "white") {
-                        document.getElementById("help-text6").style.borderColor = "#ff4444";
-                        infoType13 = "red";
-                    } else if(infoType13 == "red") {
-                        document.getElementById("help-text6").style.borderColor = "white";
-                        infoType13 = "white";
-                    }
-                }, 1000);
-    } else if(action == 8) {
-        //Continue tutorial | Close sixth tutorial element
-        clearInterval(tutorialInterval14);
-        clearInterval(tutorialInterval15);
-        document.getElementById("help-box6").style.visibility = "hidden";
-        document.getElementById("help-text6").style.visibility = "hidden";
-        document.getElementById("help-box7").style.visibility = "visible";
-                tutorialInterval16 = setInterval(function() {
-                    if(infoType14 == "white") {
-                        document.getElementById("help-box7").style.borderColor = "#ff4444";
-                        infoType14 = "red";
-                    } else if(infoType14 == "red") {
-                        document.getElementById("help-box7").style.borderColor = "white";
-                        infoType14 = "white";
-                    }
-                }, 1000);
-                document.getElementById("help-text7").style.visibility = "visible";
-                tutorialInterval17 = setInterval(function() {
-                    if(infoType15 == "white") {
-                        document.getElementById("help-text7").style.borderColor = "#ff4444";
-                        infoType15 = "red";
-                    } else if(infoType15 == "red") {
-                        document.getElementById("help-text7").style.borderColor = "white";
-                        infoType15 = "white";
-                    }
-                }, 1000);
-    } else if(action == 9) {
-        //Continue tutorial | Close seventh tutorial element
-        clearInterval(tutorialInterval16);
-        clearInterval(tutorialInterval17);
-        document.getElementById("help-box7").style.visibility = "hidden";
-        document.getElementById("help-text7").style.visibility = "hidden";
-        document.getElementById("help-box8").style.visibility = "visible";
-                tutorialInterval18 = setInterval(function() {
-                    if(infoType16 == "white") {
-                        document.getElementById("help-box8").style.borderColor = "#ff4444";
-                        infoType16 = "red";
-                    } else if(infoType16 == "red") {
-                        document.getElementById("help-box8").style.borderColor = "white";
-                        infoType16 = "white";
-                    }
-                }, 1000);
-                document.getElementById("help-text8").style.visibility = "visible";
-                tutorialInterval19 = setInterval(function() {
-                    if(infoType17 == "white") {
-                        document.getElementById("help-text8").style.borderColor = "#ff4444";
-                        infoType17 = "red";
-                    } else if(infoType17 == "red") {
-                        document.getElementById("help-text8").style.borderColor = "white";
-                        infoType17 = "white";
-                    }
-                }, 1000);
-    } else if(action == 10) {
-        //Continue tutorial | Close eighth tutorial element
-        clearInterval(tutorialInterval18);
-        clearInterval(tutorialInterval19);
-        document.getElementById("help-box8").style.visibility = "hidden";
-        document.getElementById("help-text8").style.visibility = "hidden";
-        document.getElementById("help-box9").style.visibility = "visible";
-                tutorialInterval20 = setInterval(function() {
-                    if(infoType18 == "white") {
-                        document.getElementById("help-box9").style.borderColor = "#ff4444";
-                        infoType18 = "red";
-                    } else if(infoType18 == "red") {
-                        document.getElementById("help-box9").style.borderColor = "white";
-                        infoType18 = "white";
-                    }
-                }, 1000);
-                document.getElementById("help-text9").style.visibility = "visible";
-                tutorialInterval21 = setInterval(function() {
-                    if(infoType19 == "white") {
-                        document.getElementById("help-text9").style.borderColor = "#ff4444";
-                        infoType19 = "red";
-                    } else if(infoType19 == "red") {
-                        document.getElementById("help-text9").style.borderColor = "white";
-                        infoType19 = "white";
-                    }
-                }, 1000);
-    } else if(action == 11) {
-        //Close tutorial | Close ninth tutorial element
-        clearInterval(tutorialInterval20);
-        clearInterval(tutorialInterval21);
-        document.getElementById("help-box9").style.visibility = "hidden";
-        document.getElementById("help-text9").style.visibility = "hidden";
-
-        document.getElementById("info-icon").style.visibility = "visible";
-        document.getElementById("help").style.visibility = "visible";
-    }
-}
-
 //Check if user is brand new, if so, flash the help icon to encourage new users to use the tutorial
+/*
 var infoType = "white";
 if(localStorage.getItem("tutorial") == null) {
     localStorage.setItem("tutorial", false);
@@ -3075,31 +1656,7 @@ if(localStorage.getItem("tutorial") == null) {
         }
     }, 1000);
 }
-
-//Check if user is brand new, if so, flash the beta icon to tell new users there is an active beta version
-var betaType = "white";
-if(localStorage.getItem("beta") == null) {
-    localStorage.setItem("beta", false);
-    betaInterval = setInterval(function() {
-        if(betaType == "white") {
-            document.getElementById("beta-icon").style.color = "#ff4444";
-            betaType = "red";
-        } else if(betaType == "red") {
-            document.getElementById("beta-icon").style.color = "white";
-            betaType = "white";
-        }
-    }, 1000);
-} else if(localStorage.getItem("beta") == "false") {
-    betaInterval = setInterval(function() {
-        if(betaType == "white") {
-            document.getElementById("beta-icon").style.color = "#ff4444";
-            betaType = "red";
-        } else if(betaType == "red") {
-            document.getElementById("beta-icon").style.color = "white";
-            betaType = "white";
-        }
-    }, 1000);
-}
+*/
 
 //LOCAL STORAGE FOR THEME
 if(localStorage.getItem("theme") == null){
@@ -3108,32 +1665,13 @@ if(localStorage.getItem("theme") == null){
 
 if(localStorage.getItem("theme") == "Autumn") {
     background = "autumn";
-    document.getElementById("background-img").style.backgroundImage = "url(images/background-fall.jpg)";
-    document.getElementById("bg-type").innerHTML = "Background: Autumn";
+    document.getElementById("background-img").style.backgroundImage = "url(images/background-winter.jpg)";
+    document.getElementById("bg-type").innerHTML = "Background: Winter Monoford";
 } else if(localStorage.getItem("theme") == "Simple") {
     background = "simple";
     document.getElementById("background-img").style.backgroundImage = "linear-gradient(#181818, #070707)";
     document.getElementById("bg-type").innerHTML = "Background: Simple";
     document.getElementById("checkbox").setAttribute("checked", true);
-}
-
-//LOCAL STORAGE FOR VERSION
-if(localStorage.getItem("version") == null){
-    localStorage.setItem("version", "1.9");
-    document.getElementById("credits").innerHTML = "Tool Created by <a href='https://github.com/ClutchMasterFTW' target='_blank' id='class' class='link'>ClutchMasterFTW</a> | v.1.9 (BETA)";
-}
-
-if(localStorage.getItem("version") == "1.9") {
-    version = "1.9";
-    document.getElementById("beta-version").innerHTML = "Current Version: v.1.9 (BETA)";
-    document.getElementById("credits").innerHTML = "Tool Created by <a href='https://github.com/ClutchMasterFTW' target='_blank' id='class' class='link'>ClutchMasterFTW</a> | v.1.9 (BETA)";
-    v19();
-} else if(localStorage.getItem("version") == "1.8") {
-    version = "1.8";
-    document.getElementById("beta-version").innerHTML = "Current Version: v.1.8";
-    document.getElementById("checkbox3").setAttribute("checked", true);
-    document.getElementById("credits").innerHTML = "Tool Created by <a href='https://github.com/ClutchMasterFTW' target='_blank' id='class' class='link'>ClutchMasterFTW</a> | v.1.8";
-    v18();
 }
 
 //Version 1.9 (Item Info)
@@ -3302,15 +1840,15 @@ function itemInfo(element) {
         itemInfoAmmo.innerHTML = "Ammo Type: Doesn't accept ammo";
     }
 
-    const itemInfoDamageTitle = document.createElement("div");
-    itemInfoDamageTitle.id = "item-info-damage-title";
-    itemInfoDamageTitle.style.color = "white";
-    itemInfoDamageTitle.style.fontSize = "1.25vw";
-    itemInfoDamageTitle.style.fontWeight = "bold";
-    itemInfoDamageTitle.style.marginTop = "-57vh";
-    itemInfoDamageTitle.style.marginLeft = "1vw";
-    itemInfoDamageTitle.style.verticalAlign = "left";
-    itemInfoDamageTitle.innerHTML = "Weapon Damage:"
+    // const itemInfoDamageTitle = document.createElement("div");
+    // itemInfoDamageTitle.id = "item-info-damage-title";
+    // itemInfoDamageTitle.style.color = "white";
+    // itemInfoDamageTitle.style.fontSize = "1.25vw";
+    // itemInfoDamageTitle.style.fontWeight = "bold";
+    // itemInfoDamageTitle.style.marginTop = "-57vh";
+    // itemInfoDamageTitle.style.marginLeft = "1vw";
+    // itemInfoDamageTitle.style.verticalAlign = "left";
+    // itemInfoDamageTitle.innerHTML = "Weapon Damage:"
 
     const itemInfoClose = document.createElement("img");
     itemInfoClose.id = "item-info-close";
@@ -3332,7 +1870,7 @@ function itemInfo(element) {
     itemInfoContainer.appendChild(itemInfoMag);
     itemInfoContainer.appendChild(itemInfoFiremodes);
     itemInfoContainer.appendChild(itemInfoAmmo);
-    itemInfoContainer.appendChild(itemInfoDamageTitle);
+    // itemInfoContainer.appendChild(itemInfoDamageTitle);
     itemInfoContainer.appendChild(itemInfoClose);
 
     var itemInfoOpacity = 1;
@@ -3357,156 +1895,458 @@ function itemInfoClose() {
         } else {
             itemInfoOpacity--;
         }
-    }, 7.5);
+    }, 4);
 }
 
-function betaMenu(param) {
-    if(localStorage.getItem("beta") == "false") {
-        localStorage.setItem("beta", true);
-        clearInterval(betaInterval);
-    }
-    if(param == 1) {
-        document.getElementById("beta-container").style.visibility = "visible";
-    } else if(param == 0) {
-        document.getElementById("beta-container").style.visibility = "hidden";
+//Monolith 2.0.12 Gun Mechanics:
+
+let furnace = "electric";
+document.getElementById("electric-furnace").style.border = "0.175vw solid #19ff00";
+document.getElementById("electric-furnace").style.backgroundImage = "linear-gradient(135deg, rgba(22, 135, 0, 0.1), rgba(22, 135, 0, 1))";
+
+function changeFurnace(type) {
+    furnace = type;
+
+    if(type == "coal") {
+        document.getElementById("coal-furnace").style.border = "0.175vw solid #19ff00";
+        document.getElementById("coal-furnace").style.backgroundImage = "linear-gradient(135deg, rgba(22, 135, 0, 0.1), rgba(22, 135, 0, 1))";
+
+        document.getElementById("electric-furnace").style.border = "0.175vw solid #333333";
+        document.getElementById("electric-furnace").style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1))";
+        calculateMaterials();
+    } else if(type == "electric") {
+        document.getElementById("electric-furnace").style.border = "0.175vw solid #19ff00";
+        document.getElementById("electric-furnace").style.backgroundImage = "linear-gradient(135deg, rgba(22, 135, 0, 0.1), rgba(22, 135, 0, 1))";
+
+        document.getElementById("coal-furnace").style.border = "0.175vw solid #333333";
+        document.getElementById("coal-furnace").style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1))";
+        calculateMaterials();
     }
 }
 
-function changeBeta() {
-    version = localStorage.getItem("version");
-    if(version == "1.9") {
-        localStorage.setItem("version", "1.8");
-        document.getElementById("beta-version").innerHTML = "Current Version: v.1.8";
-        document.getElementById("credits").innerHTML = "Tool Created by <a href='https://github.com/ClutchMasterFTW' target='_blank' id='class' class='link'>ClutchMasterFTW</a> | v.1.8";
-        v18();
-    } else if(version == "1.8") {
-        localStorage.setItem("version", "1.9");
-        document.getElementById("beta-version").innerHTML = "Current Version: v.1.9 (BETA)";
-        document.getElementById("credits").innerHTML = "Tool Created by <a href='https://github.com/ClutchMasterFTW' target='_blank' id='class' class='link'>ClutchMasterFTW</a> | v.1.9 (BETA)";
-        v19();
+for(i = 0; i < guns.length; i++) {
+    document.getElementById("item-input-box" + i).oninput = function() {
+        guns[parseInt(this.id.substring(14))].amount = parseInt(document.getElementById(this.id).value);
+        calculateMaterials();
     }
 }
 
-function v19() {
+function calculateMaterials() {
+    for(i = 0; i < materials.length; i++) {
+        materials[i].amount = 0;
+        materials[i].stacks = 0;
+        materials[i].remainder = 0;
+    }
+    for(i = 0; i < extendedMaterials.length; i++) {
+        extendedMaterials[i].amount = 0;
+        extendedMaterials[i].stacks = 0;
+        extendedMaterials[i].remainder = 0;
+    }
+
+    if(furnace == "coal") {
+        for(i = 0; i < guns.length; i++) {
+            materials[1].amount += (guns[i].coal * guns[i].amount);
+        }
+    }
+
+    //Copper
     for(i = 0; i < guns.length; i++) {
-        var itemImage = document.getElementById("item-image" + i);
-        //Halloween Event rounded icons
-        itemImage.style.borderRadius = "0.35vw";
-        //Version 1.9
-        itemImage.style.cursor = "pointer";
-        itemImage.setAttribute("onmouseover", "imageHover(" + i + ")");
-        itemImage.setAttribute("onmouseout", "imageUNHover(" + i + ")");
-        itemImage.setAttribute("onclick", "itemInfo(" + i + ")");
-        if(guns[i].class == "Pistol") {
-            itemImage.style.border = "0.175vw solid #006eff";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(87, 142, 214, 0.1), rgba(87, 142, 214, 1))";
-        } else if(guns[i].class == "Rifle") {
-            itemImage.style.border = "0.175vw solid #ff8c00";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(252, 182, 95, 0.1), rgba(252, 182, 95, 1))";
-        } else if(guns[i].class == "Knife") {
-            itemImage.style.border = "0.175vw solid #ff0000";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(249, 122, 122, 0.1), rgba(249, 122, 122, 1))";
-        } else if(guns[i].class == "Shotgun") {
-            itemImage.style.border = "0.175vw solid #7f00ff";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(183, 112, 255, 0.1), rgba(183, 112, 255, 1))";
-        } else if(guns[i].class == "Exotic") {
-            itemImage.style.border = "0.175vw solid #eeff00";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(245, 255, 117, 0.1), rgba(245, 255, 117, 1))";
-        } else if(guns[i].class == "Police") {
-            itemImage.style.border = "0.175vw solid #0015ff";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(124, 135, 255, 0.1), rgba(124, 135, 255, 1))";
-        } else if(guns[i].class == "Equipable") {
-            itemImage.style.border = "0.175vw solid #46d300";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(135, 209, 98, 0.1), rgba(135, 209, 98, 1))";
-        } else if(guns[i].class == "Door Charge") {
-            itemImage.style.border = "0.175vw solid #41006d";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(108, 0, 181, 0.1), rgba(108, 0, 181, 1))";
-        } else if(guns[i].class == "Item") {
-            itemImage.style.border = "0.175vw solid #333333";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1))";
+        materials[0].amount += (guns[i].copper * guns[i].amount);
+    }
+    //Iron
+    for(i = 0; i < guns.length; i++) {
+        materials[2].amount += (guns[i].iron * guns[i].amount);
+    }
+    //Silver
+    for(i = 0; i < guns.length; i++) {
+        materials[3].amount += (guns[i].silver * guns[i].amount);
+    }
+    //Gold
+    for(i = 0; i < guns.length; i++) {
+        materials[4].amount += (guns[i].gold * guns[i].amount);
+    }
+    //Titanium
+    for(i = 0; i < guns.length; i++) {
+        materials[5].amount += (guns[i].titanium * guns[i].amount);
+    }
+    //Wood Log
+    for(i = 0; i < guns.length; i++) {
+        materials[6].amount += (guns[i].wood * guns[i].amount);
+    }
+    //Maple Log
+    for(i = 0; i < guns.length; i++) {
+        materials[7].amount += (guns[i].maple * guns[i].amount);
+    }
+    //Willow Log
+    for(i = 0; i < guns.length; i++) {
+        materials[8].amount += (guns[i].willow * guns[i].amount);
+    }
+    //Cash
+    for(i = 0; i < guns.length; i++) {
+        materials[9].amount += (guns[i].price * guns[i].amount);
+    }
+
+    //Extended Material Calculations
+    extendedMaterials[0].amount = materials[0].amount / 2;
+    extendedMaterials[1].amount = materials[2].amount / 2;
+    //Steel
+    for(i = 0; i < guns.length; i++) {
+        extendedMaterials[2].amount += guns[i].steel * guns[i].amount;
+    }
+    extendedMaterials[3].amount = materials[3].amount / 2;
+    extendedMaterials[4].amount = materials[4].amount / 2;
+    extendedMaterials[5].amount = materials[5].amount / 2;
+    extendedMaterials[6].amount = materials[6].amount / 4;
+    extendedMaterials[7].amount = materials[7].amount / 4;
+    extendedMaterials[8].amount = materials[8].amount / 4;
+
+    //Stacks
+    for(i = 0; i < materials.length; i++) {
+        if(i < 5) {
+            //Ores
+            materials[i].remainder = (materials[i].amount % 64);
+            materials[i].stacks = ((materials[i].amount - materials[i].remainder) / 64);
+        } else if(i < materials.length - 1) {
+            //Logs
+            materials[i].remainder = (materials[i].amount % 128);
+            materials[i].stacks = ((materials[i].amount - materials[i].remainder) / 128);
+        }
+    }
+    for(i = 0; i < extendedMaterials.length; i++) {
+        if(i < 5) {
+            //Ingots
+            extendedMaterials[i].remainder = (extendedMaterials[i].amount % 32);
+            extendedMaterials[i].stacks = ((extendedMaterials[i].amount - extendedMaterials[i].remainder) / 32);
+        } else {
+            //Planks
+            extendedMaterials[i].remainder = (extendedMaterials[i].amount % 128);
+            extendedMaterials[i].stacks = ((extendedMaterials[i].amount - extendedMaterials[i].remainder) / 128);
         }
     }
 
     for(i = 0; i < materials.length; i++) {
-        var materialImage = document.getElementById("material-image" + i);
-        materialImage.style.top = "0.1vw";
-        materialImage.style.left = "0.1vw";
-        materialImage.style.border = "0.175vw solid #333333";
-        materialImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1))";
-        materialImage.style.borderRadius = "0.35vw";
-    }
-}
-
-function v18() {
-    for(i = 0; i < guns.length; i++) {
-        var itemImage = document.getElementById("item-image" + i);
-        itemImage.style.cursor = "default";
-        itemImage.setAttribute("onmouseover", "");
-        itemImage.setAttribute("onmouseout", "");
-        itemImage.setAttribute("onclick", "");
-
-        itemImage.style.top = "0.075vw";
-        itemImage.style.left = "0.2vw";
-        itemImage.style.borderRadius = "0vw";
-        if(guns[i].class == "Pistol") {
-            itemImage.style.border = "2px solid #006eff";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(87, 142, 214, 1), rgba(0, 110, 225, 0.25))";
-        } else if(guns[i].class == "Rifle") {
-            itemImage.style.border = "2px solid #ff8c00";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(252, 182, 95, 1), rgba(255, 140, 0, 0.25))";
-        } else if(guns[i].class == "Knife") {
-            itemImage.style.border = "2px solid #ff0000";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(249, 122, 122, 1), rgba(255, 0, 0, 0.25))";
-        } else if(guns[i].class == "Shotgun") {
-            itemImage.style.border = "2px solid #7f00ff";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(183, 112, 255, 1), rgba(127, 0, 255, 0.25))";
-        } else if(guns[i].class == "Exotic") {
-            itemImage.style.border = "2px solid #eeff00";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(245, 255, 117, 1), rgba(238, 255, 0, 0.25))";
-        } else if(guns[i].class == "Police") {
-            itemImage.style.border = "2px solid #0015ff";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(124, 135, 255, 1), rgba(0, 21, 255, 0.25))";
-        } else if(guns[i].class == "Equipable") {
-            itemImage.style.border = "2px solid #46d300";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(135, 209, 98, 1), rgba(70, 211, 0, 0.25))";
-        } else if(guns[i].class == "Door Charge") {
-            itemImage.style.border = "2px solid #41006d";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(108, 0, 181, 1), rgba(65, 0, 109, 0.25))";
-        } else if(guns[i].class == "Item") {
-            itemImage.style.border = "2px solid #333333";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
+        if(i != materials.length - 1) {
+            if(stacksEnabled == true) {
+                document.getElementById("material-amount" + i).innerHTML = "Stacks: " + materials[i].stacks + " <span style='color: black;'>|</span> Remainder: " + materials[i].remainder;
+            } else {
+                document.getElementById("material-amount" + i).innerHTML = "Amount: " + numberWithCommas(materials[i].amount);
+            }
+        } else {
+            document.getElementById("material-amount" + i).innerHTML = "Amount: $" + numberWithCommas(materials[i].amount);
         }
     }
 
-    for(i = 0; i < materials.length; i++) {
-        var materialImage = document.getElementById("material-image" + i);
-        materialImage.style.borderRadius = "0vw";
-        materialImage.style.top = "0.2vw";
-        materialImage.style.left = "0.2vw";
-        materialImage.style.border = "2px solid #333333";
-        materialImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
+    for(i = 0; i < materials.length - 1; i++) {
+        if(toggled[i] == true) {
+            if(stacksEnabled == true) {
+                document.getElementById("extended-material-amount" + i).innerHTML = "Stacks: " + extendedMaterials[i].stacks + " <span style='color: black;'>|</span> Remainder: " + extendedMaterials[i].remainder;
+            } else {
+                document.getElementById("extended-material-amount" + i).innerHTML = "Amount: " + numberWithCommas(extendedMaterials[i].amount);
+            }
+        }
+    }
+    if(toggled[2] == true) {
+        if(stacksEnabled == true) {
+            document.getElementById("extended-material-amount1").innerHTML = "Stacks: " + extendedMaterials[1].stacks + " <span style='color: black;'>|</span> Remainder: " + extendedMaterials[1].remainder;
+            document.getElementById("extended-material-amount2").innerHTML = "Stacks: " + extendedMaterials[2].stacks + " <span style='color: black;'>|</span> Remainder: " + extendedMaterials[2].remainder;
+        } else {
+            document.getElementById("extended-material-amount1").innerHTML = "Amount: " + numberWithCommas(extendedMaterials[1].amount);
+            document.getElementById("extended-material-amount2").innerHTML = "Amount: " + numberWithCommas(extendedMaterials[2].amount);
+        }
+    }
+
+    timeEstimation();
+}
+
+let toggled = [false, false, false, false, false, false, false, false, false];
+
+for(i = 0; i < materials.length; i++) {
+    if(i != materials.length - 1) {
+        document.getElementById("material-item-container" + i).onclick = function() {
+            let selectedId = parseInt(this.id.substring(23));
+            if(toggled[selectedId] == false) {
+                toggled[selectedId] = true;
+                generateExtendedMaterial(selectedId, true);
+            } else {
+                toggled[selectedId] = false;
+                generateExtendedMaterial(selectedId, false);
+            }
+        }
     }
 }
 
-var versionAlert = 0;
-function deprecated() {
-    if(versionAlert == 0) {
-        versionInterval = setInterval(deprecatedFadeIn, 10);
-        versionAlert = 1;
+function generateExtendedMaterial(selectedId, open) {
+    if(open == true) {
+        //Generate the extended material for that selectedId
+
+        //Iron + Steel
+        if(selectedId == 1) {
+            //Placeholder
+        } else if(selectedId == 2) {
+            const container = document.createElement("div");
+            container.id = "extended-material-container1";
+            container.style.position = "relative";
+            container.style.width = "37.5vw";
+            container.style.height = "3vw";
+            container.style.top = "-3.5vw";
+            container.style.left = "0%";
+            container.style.borderTop = "1px solid gray";
+
+            const image = document.createElement("img");
+            image.id = "extended-material-image1";
+            image.setAttribute("src", extendedMaterials[1].image);
+            image.setAttribute("title", extendedMaterials[1].name);
+            image.style.position = "absolute";
+            image.style.top = "0.2vw";
+            image.style.left = "0.2vw";
+            image.style.width = "2.25vw";
+            image.style.border = "0.175vw solid rgb(50, 50, 50)"
+            image.style.borderRadius = "0.25vw";
+
+            const name = document.createElement("div");
+            name.id = "extended-material-name1";
+            name.innerHTML = extendedMaterials[1].name;
+            name.style.color = "white";
+            name.style.fontSize = "1vw";
+            name.style.fontWeight = "bold";
+            name.style.position = "absolute";
+            name.style.top = "0.2vw";
+            name.style.left = "3.25vw";
+
+            const amount = document.createElement("div");
+            amount.id = "extended-material-amount1";
+            if(stacksEnabled == true) {
+                amount.innerHTML = "Stacks: " + extendedMaterials[1].stacks + " <span style='color: black;'>|</span> Remainder: " + extendedMaterials[1].remainder;
+            } else {
+                amount.innerHTML = "Amount: " + extendedMaterials[1].amount;
+            }
+            amount.style.color = "white";
+            amount.style.fontSize = "1vw";
+            amount.style.fontWeight = "500";
+            amount.style.position = "absolute";
+            amount.style.top = "1.25vw";
+            amount.style.left = "3.25vw";
+
+            const container2 = document.createElement("div");
+            container2.id = "extended-material-container2";
+            container2.style.position = "relative";
+            container2.style.width = "37.5vw";
+            container2.style.height = "3vw";
+            container2.style.top = "-3.5vw";
+            container2.style.left = "0%";
+            container2.style.borderTop = "1px solid gray";
+
+            const image2 = document.createElement("img");
+            image2.id = "extended-material-image2";
+            image2.setAttribute("src", extendedMaterials[2].image);
+            image2.setAttribute("title", extendedMaterials[2].name);
+            image2.style.position = "absolute";
+            image2.style.top = "0.2vw";
+            image2.style.left = "0.2vw";
+            image2.style.width = "2.25vw";
+            image2.style.border = "0.175vw solid rgb(50, 50, 50)"
+            image2.style.borderRadius = "0.25vw";
+
+            const name2 = document.createElement("div");
+            name2.id = "extended-material-name2";
+            name2.innerHTML = extendedMaterials[2].name;
+            name2.style.color = "white";
+            name2.style.fontSize = "1vw";
+            name2.style.fontWeight = "bold";
+            name2.style.position = "absolute";
+            name2.style.top = "0.2vw";
+            name2.style.left = "3.25vw";
+
+            const amount2 = document.createElement("div");
+            amount2.id = "extended-material-amount2";
+            if(stacksEnabled == true) {
+                amount2.innerHTML = "Stacks: " + extendedMaterials[2].stacks + " <span style='color: black;'>|</span> Remainder: " + extendedMaterials[2].remainder;
+            } else {
+                amount2.innerHTML = "Amount: " + extendedMaterials[2].amount;
+            }
+            amount2.style.color = "white";
+            amount2.style.fontSize = "1vw";
+            amount2.style.fontWeight = "500";
+            amount2.style.position = "absolute";
+            amount2.style.top = "1.25vw";
+            amount2.style.left = "3.25vw";
+        
+            document.getElementById("material-item-container2").appendChild(container);
+            document.getElementById("material-item-container2").appendChild(container2);
+            container.appendChild(image);
+            container.appendChild(name);
+            container.appendChild(amount);
+
+            container2.appendChild(image2);
+            container2.appendChild(name2);
+            container2.appendChild(amount2);
+        
+            document.getElementById("material-item-container" + selectedId).style.paddingBottom = "6vw";
+        } else {
+            const container = document.createElement("div");
+            container.id = "extended-material-container" + selectedId;
+            container.style.position = "relative";
+            container.style.width = "37.5vw";
+            container.style.height = "3vw";
+            container.style.top = "-3.5vw";
+            container.style.left = "0%";
+            container.style.borderTop = "1px solid gray";
+
+            const image = document.createElement("img");
+            image.id = "extended-material-image" + selectedId;
+            image.setAttribute("src", extendedMaterials[selectedId].image);
+            image.setAttribute("title", extendedMaterials[selectedId].name);
+            image.style.position = "absolute";
+            image.style.top = "0.2vw";
+            image.style.left = "0.2vw";
+            image.style.width = "2.25vw";
+            image.style.border = "0.175vw solid rgb(50, 50, 50)"
+            image.style.borderRadius = "0.25vw";
+
+            const name = document.createElement("div");
+            name.id = "extended-material-name" + selectedId;
+            name.innerHTML = extendedMaterials[selectedId].name;
+            name.style.color = "white";
+            name.style.fontSize = "1vw";
+            name.style.fontWeight = "bold";
+            name.style.position = "absolute";
+            name.style.top = "0.2vw";
+            name.style.left = "3.25vw";
+
+            const amount = document.createElement("div");
+            amount.id = "extended-material-amount" + selectedId;
+            if(stacksEnabled == true) {
+                amount.innerHTML = "Stacks: " + extendedMaterials[selectedId].stacks + " <span style='color: black;'>|</span> Remainder: " + extendedMaterials[selectedId].remainder;
+            } else {
+                amount.innerHTML = "Amount: " + extendedMaterials[selectedId].amount;
+            }
+            amount.style.color = "white";
+            amount.style.fontSize = "1vw";
+            amount.style.fontWeight = "500";
+            amount.style.position = "absolute";
+            amount.style.top = "1.25vw";
+            amount.style.left = "3.25vw";
+        
+            document.getElementById("material-item-container" + selectedId).appendChild(container);
+            container.appendChild(image);
+            container.appendChild(name);
+            container.appendChild(amount);
+        
+            document.getElementById("material-item-container" + selectedId).style.paddingBottom = "3vw";
+        }
+    } else if(open == false) {
+        //Delete the extended material for that selectedId
+        if(selectedId == 1) {
+            //Placeholder
+        } else if(selectedId == 2) {
+            document.getElementById("extended-material-container1").remove();
+            document.getElementById("extended-material-container2").remove();
+            document.getElementById("material-item-container" + selectedId).style.paddingBottom = "0vw";
+        } else {
+            document.getElementById("extended-material-container" + selectedId).remove();
+            document.getElementById("material-item-container" + selectedId).style.paddingBottom = "0vw";
+        }
     }
 }
 
-var opacity = 0;
-function deprecatedFadeIn() {
-    if(opacity <= 90) {
-        document.getElementById("version-warning-container").style.visibility = "visible";
-        document.getElementById("version-warning-container").style.opacity = opacity + "%";
-        opacity++;
+let stacksEnabled = false;
+
+function changeStackType() {
+    if(stacksEnabled == false) {
+        //Turn stack viewer on
+        stacksEnabled = true;
+        calculateMaterials();
+        document.getElementById("stack-type").innerHTML = "Stacks: On";
+    } else if(stacksEnabled == true) {
+        //Turn stack viewer off
+        stacksEnabled = false;
+        calculateMaterials();
+        document.getElementById("stack-type").innerHTML = "Stacks: Off";
+    }
+}
+
+//Time estimation
+let seconds = 0;
+let minutes = 0;
+let hours = 0;
+let presentableSeconds = "";
+let presentableMinutes = "";
+let presentableHours = "";
+let gunsHaveBeenAdded = false;
+
+//*Electric furnace - extra 2 minutes (120s)
+//*Coal furnace - extra 30 seconds
+//*Per ore, add 7 seconds each
+//*Per ingot, add 8 seconds each
+//*Per Weapon, add 15 seconds
+
+function timeEstimation() {
+    //Reinitialize all time components
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+    presentableSeconds = "";
+    presentableMinutes = "";
+    presentableHours = "";
+    gunsHaveBeenAdded = false;
+
+    if(furnace == "coal") {
+        seconds += 30;
+    } else if(furnace == "electric") {
+        seconds += 120;
+    }
+
+    for(i = 0; i < materials.length - 1; i++) {
+        seconds += (7 * materials[i].amount);
+    }
+    for(i = 0; i < extendedMaterials.length; i++) {
+        seconds += (8 * extendedMaterials[i].amount);
+    }
+    for(i = 0; i < guns.length; i++) {
+        if(i < 37 || i > 44) {
+            seconds += (15 * guns[i].amount);
+            if(guns[i].amount > 0) {
+                gunsHaveBeenAdded = true;
+            }
+        }
+    }
+
+    while(seconds > 59) {
+        minutes++;
+        seconds -= 60;
+    }
+    while(minutes > 59) {
+        hours++;
+        minutes -= 60;
+    }
+
+    if(seconds < 10) {
+        presentableSeconds = "0" + seconds;
     } else {
-        clearInterval(versionInterval);
+        presentableSeconds = seconds;
+    }
+
+    if(minutes < 10) {
+        presentableMinutes = "0" + minutes;
+    } else {
+        presentableMinutes = minutes;
+    }
+
+    if(hours < 10) {
+        presentableHours = "0" + hours;
+    } else {
+        presentableHours = hours;
+    }
+
+    if(gunsHaveBeenAdded == false) {
+        document.getElementById("time").innerHTML = "00:00:00";
+    } else if(gunsHaveBeenAdded == true) {
+        document.getElementById("time").innerHTML = presentableHours + ":" + presentableMinutes + ":" + presentableSeconds;
     }
 }
 
-function versionCloseWarning() {
-    document.getElementById("version-warning-container").style.visibility = "hidden";
+function coloredLog(msg, color) {
+    console.warn("%c" + msg, "color:" + color + ";font-weight:600; font-family: Purista;");
 }
+
+coloredLog("Monolith Crafting Calculator [ Version " + version + " ] | Created by: ClutchMasterFTW", "white");

@@ -4,12 +4,13 @@
     <head>
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="shortcut icon" type="image/jpg" href="images/logo-autumn.png"/>
+        <link rel="shortcut icon" type="image/jpg" href="images/logo.png"/>
     </head>
-    <body onload="deprecated()">
+    <body>
         <div id="header">
-            <img src="images/gun.png" id="logo">
+            <img src="images/gun-new.png" id="logo">
             <div id="logo-text">Monolith Crafting Calculator</div>
+            <span id="logo-2">2.0</span>
         </div>
         <div id="background-img"></div>
 
@@ -20,7 +21,7 @@
         <div id="material-container"></div>
         <div id="reset" onclick="location.reload()">RESET QUANTITY</div>
 
-        <div id="bg-type">Background: Autumn</div>
+        <div id="bg-type">Background: Winter Monoford</div>
         <label class="switch" id="switch1">
             <input type="checkbox" id="checkbox" onclick="changeBG()">
             <span class="slider"></span>
@@ -32,33 +33,19 @@
             <span class="slider"></span>
         </label>
 
-        <div id="time-text-container" onclick="time(1)">
+        <div id="time-text-container">
             <div id="time-text">Estimated Time To Craft:</div>
             <div id="time">00:00:00</div>
         </div>
 
-        <div id="time-menu-container">
-            <div id="time-menu">
-                <div id="overview-text">Overview</div>
-                <img src="images/close.png" id="close" onclick="time(0)">
-                <div id="crushers"># of Crushers:</div>
-                <img src="images/crusher.png" id="crusher">
-                <input type="range" min="1" max="10" value="1" id="slider" onchange="time(2)">
-                <div id="numbers-container">
-                    <div class="number">1</div>
-                    <div class="number">2</div>
-                    <div class="number">3</div>
-                    <div class="number">4</div>
-                    <div class="number">5</div>
-                    <div class="number">6</div>
-                    <div class="number">7</div>
-                    <div class="number">8</div>
-                    <div class="number">9</div>
-                    <div class="number">10</div>
-                </div>
-                <div id="estimated">Estimated Time To Craft:</div>
-                <div id="time2">00:00:00</div>
-            </div>
+        <div id="coal-furnace" onclick="changeFurnace('coal')">
+            <img src="images/coal furnace.png" id="coal-furnace-image">
+            <h1 class="furnace-text">Coal Furnace</h1>
+        </div>
+
+        <div id="electric-furnace" onclick="changeFurnace('electric')">
+            <img src="images/electric furnace.png" id="electric-furnace-image">
+            <h1 class="furnace-text">Electric Furnace</h1>
         </div>
 
         <div id="dim-warning-container">
@@ -67,21 +54,16 @@
             <div id="dim-warning-text">We have detected that your browser window is below the recommended size (1920px x 1080px). If you would like to view this webpage without any resolution issues, we suggest to resize your browser to a 16:9 ratio size. Thanks!</div>
             <div id="proceed" onclick="closeWarning()">Proceed</div>
         </div>
-
-        <div id="version-warning-container">
-            <span class="material-icons" id="version-warning-icon">pan_tool</span>
-            <div id="version-warning-title">TOOL DEPRECATED!</div>
-            <div id="version-warning-text">As of the new Monolith Update <b>2.0.12</b>, the crafting system as a whole has had a total overhaul. I will try to create a fully new system for calculating crafting recipes as soon as possible, but as of December 15th, this tool is nearly useless.</div>
-            <div id="version-proceed" onclick="versionCloseWarning()">Proceed</div>
-        </div>
-
+        
         <span class="material-icons" id="warning">report_problem</span>
         <div id="warning-text">If you experience any bugs, please post them on the <a href="https://github.com/ClutchMasterFTW/Monolith-Crafting-Calculator/issues" target="_blank" class="link">GitHub issues</a> page.</div>
     
+        <!--
         <div id="help" onclick="help(1)">
             <span class="material-icons info" title="Help" id="info-icon">info</span>
-        </div>
+        </div>-->
         <!--Help Section-->
+        <!--
         <div id="help-container">
             <span class="material-icons" id="help-icon">emoji_people</span>
             <div id="help-title">Welcome</div>
@@ -125,20 +107,15 @@
             <div id="help-proceed9" onclick="help(11)">Finish</div>
         </div>
 
-        <span class="material-icons" id="beta-icon" onclick="betaMenu(1)" title="Beta">new_releases</span>
+        <span class="material-icons" id="settings-icon" onclick="settingsMenu(1)" title="Settings">settings</span>
 
-        <div id="beta-container">
-            <div id="beta-title">Active Betas</div>
-            <p id="beta-text">Welcome to the Betas Menu. Here you can switch from 'slightly' unstable/unfinished betas, to stable releases of this calculator. Your current selected version will save in your browsers cookie data.</p>
-            <div id="beta-version">Current Version: v.1.9 (BETA)</div>
-            <label class="switch" id="switch3">
-                <input type="checkbox" id="checkbox3" onclick="changeBeta()">
-                <span class="slider"></span>
-            </label>
-            <img src="images/close.png" id="beta-close" onclick="betaMenu(0)">
+        <div id="settings-container">
+            <div id="settings-title">Settings</div>
+            <img src="images/close.png" id="settings-close" onclick="settingsMenu(0)">
         </div>
+        -->
 
-        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class" class="link">ClutchMasterFTW</a> | v.1.9 (BETA)</div>
+        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class" class="link">ClutchMasterFTW</a> | <b>v.2.0</b></div>
         <script src="index.js"></script>
     </body>
 </html>
