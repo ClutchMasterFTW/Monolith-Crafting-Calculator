@@ -10,7 +10,6 @@
         <div id="header">
             <img src="images/gun-new.png" id="logo">
             <div id="logo-text">Monolith Crafting Calculator</div>
-            <span id="logo-2">2.0</span>
         </div>
         <div id="background-img"></div>
 
@@ -21,7 +20,7 @@
         <div id="material-container"></div>
         <div id="reset" onclick="location.reload()">RESET QUANTITY</div>
 
-        <div id="bg-type">Background: Winter Monoford</div>
+        <div id="bg-type">Background: Riverden</div>
         <label class="switch" id="switch1">
             <input type="checkbox" id="checkbox" onclick="changeBG()">
             <span class="slider"></span>
@@ -58,6 +57,37 @@
         <span class="material-icons" id="warning">report_problem</span>
         <div id="warning-text">If you experience any bugs, please post them on the <a href="https://github.com/ClutchMasterFTW/Monolith-Crafting-Calculator/issues" target="_blank" class="link">GitHub issues</a> page.</div>
     
+        <div id="plastic-alert-container">
+            <img src="images/ores/plastic.png" id="plastic-alert-image" title="Plastic Chunk">
+            <div id="plastic-alert-title">Plastic Chunk</div>
+            <div id="plastic-alert-amount">Amount: 0</div>
+        </div>
+
+        <div id="plastic-alert2-container">
+            <img src="images/ores/plastic.png" id="plastic-alert2-image" title="Plastic Chunk">
+            <div id="plastic-alert2-title">&darr; Plastic Chunks Required to Craft! &darr;</div>
+        </div>
+
+        <div id="update-log-container">
+            <div id="update-log-header-container">
+                <img id="update-log-header-image" src="images/Update Log.png" title="Changelog">
+                <div id="update-log-header-text">Changelog</div>
+            </div>
+
+            <div id="update-log-version-container">
+                <div id="update-log-version-text">VERSION</div>
+                <div id="update-log-version-value">2.1</div>
+            </div>
+
+            <div id="update-log-content-container">
+                
+            </div>
+
+            <div id="update-log-close" onclick="closeLog()">CLOSE</div>
+        </div>
+
+        <span class="material-icons changelogs" title="Changelogs" onclick="document.getElementById('update-log-container').style.visibility = 'visible';">receipt_long</span>
+
         <!--
         <div id="help" onclick="help(1)">
             <span class="material-icons info" title="Help" id="info-icon">info</span>
@@ -115,7 +145,7 @@
         </div>
         -->
 
-        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class" class="link">ClutchMasterFTW</a> | <b>v.2.0</b></div>
+        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class" class="link">ClutchMasterFTW</a> | <b>v.2.1</b></div>
         <script src="index.js"></script>
     </body>
 </html>
