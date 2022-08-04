@@ -50,7 +50,7 @@ body {
 }
 
 #background-img {
-    background-image: url("images/background-fall.jpg");
+    background-image: url("images/background-rockford.jfif");
     background-size: cover;
     filter: blur(0px);
     -webkit-filter: blur(0px);
@@ -62,11 +62,13 @@ body {
 #header {
     width: 100vw;
     height: 60px;
-    background-color: #001f0a;
+    background-color: rgba(0, 15, 31, 0.95);
     border-bottom: white solid 1px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 100;
 }
 
 #logo {
@@ -268,11 +270,11 @@ textarea:focus, input:focus{
     color: black;
     background-image: linear-gradient(135deg, white, rgba(86, 86, 86, 0.25));
     border-radius: 0.3vw;
+    transition: border 0.5s ease;
 }
 
 #reset:hover {
     border: 4px solid black;
-    transition: border ease-in-out 0.25s;
 }
 
 #title1 {
@@ -1121,6 +1123,9 @@ input:checked + .slider:before {
     transform: translate(-50%, -50%);
     border: 2px white solid;
     box-shadow: 0px 0px 50px black;
+    opacity: 100%;
+    visibility: visible;
+    transition: opacity ease 0.5s, visibility ease 0.5s;
 }
 
 #update-log-close {
@@ -1137,6 +1142,7 @@ input:checked + .slider:before {
     padding-right: 3%;
     cursor: pointer;
     user-select: none;
+    transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
 }
 
 #update-log-close:hover {
@@ -1204,11 +1210,88 @@ input:checked + .slider:before {
 }
 
 .material-icons.changelogs {
-    font-size: 2vw;
+    font-size: 40px;
     position: fixed;
     top: 0.5vw;
     left: 0.5vw;
     color: white;
     user-select: none;
     cursor: pointer;
+    z-index: 100;
+}
+
+#weapons-button-container {
+    position: absolute;
+    top: 3.55vw;
+    left: 42vw;
+    width: 5vw;
+    height: 1.75vw;
+    border: 0.175vw solid #333333;
+    background-image: linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1));
+    border-radius: 0.35vw;
+    cursor: pointer;
+    user-select: none;
+}
+
+#weapons-button-container:hover {
+    border: 0.175vw solid #777777;
+    background-image: linear-gradient(135deg, rgba(150, 150, 150, 0.1), rgba(150, 150, 150, 1));
+    transition-duration: 0.5s;
+}
+
+#weapons-button-text {
+    color: white;
+    font-size: 1vw;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#attachments-button-container {
+    position: absolute;
+    top: 3.55vw;
+    left: 48vw;
+    width: 6.75vw;
+    height: 1.75vw;
+    border: 0.175vw solid #333333;
+    background-image: linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1));
+    border-radius: 0.35vw;
+    cursor: pointer;
+    user-select: none;
+}
+
+#attachments-button-container:hover {
+    border: 0.175vw solid #777777;
+    background-image: linear-gradient(135deg, rgba(150, 150, 150, 0.1), rgba(150, 150, 150, 1));
+    transition-duration: 0.5s;
+}
+
+#attachments-button-text {
+    color: white;
+    font-size: 1vw;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.active {
+    border: 0.175vw solid #19ff00 !important;
+    background-image: linear-gradient(135deg, rgba(22, 135, 0, 0.1), rgba(22, 135, 0, 1)) !important;
+}
+
+.inactive {
+    border: 0.175vw solid #19ff00;
+    background-image: linear-gradient(135deg, rgba(22, 135, 0, 0.1), rgba(22, 135, 0, 1));
+}
+
+.inactive:hover {
+    border: 0.175vw solid #333333;
+    background-image: linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1));
+}
+
+.disabled {
+    border: 0.175vw solid #ff0000 !important;
+    background-image: linear-gradient(135deg, rgba(124, 4, 4, 0.1), rgb(124, 4, 4)) !important;
 }

@@ -2,6 +2,7 @@
 <html lang="en">
     <title>Monolith Crafting Calculator</title>
     <head>
+        <link rel="stylesheet" href="ClutchEngine1/main.css">
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="shortcut icon" type="image/jpg" href="images/logo.png"/>
@@ -20,7 +21,7 @@
         <div id="material-container"></div>
         <div id="reset" onclick="location.reload()">RESET QUANTITY</div>
 
-        <div id="bg-type">Background: Riverden</div>
+        <div id="bg-type">Background: Rockford</div>
         <label class="switch" id="switch1">
             <input type="checkbox" id="checkbox" onclick="changeBG()">
             <span class="slider"></span>
@@ -76,7 +77,7 @@
 
             <div id="update-log-version-container">
                 <div id="update-log-version-text">VERSION</div>
-                <div id="update-log-version-value">2.1</div>
+                <div id="update-log-version-value">2.2</div>
             </div>
 
             <div id="update-log-content-container">
@@ -86,7 +87,15 @@
             <div id="update-log-close" onclick="closeLog()">CLOSE</div>
         </div>
 
-        <span class="material-icons changelogs" title="Changelogs" onclick="document.getElementById('update-log-container').style.visibility = 'visible';">receipt_long</span>
+        <span class="material-icons changelogs" title="Changelogs" onclick="document.getElementById('update-log-container').style.visibility = 'visible'; document.getElementById('update-log-container').style.opacity = '100%';">list_alt</span>
+
+        <div id="weapons-button-container" onclick="changeType('weapons')" title="Weapons">
+            <h1 id="weapons-button-text">Weapons</h1>
+        </div>
+
+        <div id="attachments-button-container" onclick="changeType('attachments')" title="Attachments (DISABLED)">
+            <h1 id="attachments-button-text">Attachments</h1>
+        </div>
 
         <!--
         <div id="help" onclick="help(1)">
@@ -145,7 +154,9 @@
         </div>
         -->
 
-        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class" class="link">ClutchMasterFTW</a> | <b>v.2.1</b></div>
+        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class" class="link">ClutchMasterFTW</a> | <b>v.2.2</b></div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="ClutchEngine1/main.js"></script>
         <script src="index.js"></script>
     </body>
 </html>

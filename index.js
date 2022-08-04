@@ -20,7 +20,7 @@ let guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 900
+        price: 850
     },
     {
         name: "M1911",
@@ -41,7 +41,7 @@ let guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 1100
+        price: 1000
     },
     {
         name: "P99",
@@ -62,7 +62,7 @@ let guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 1750
+        price: 1500
     },
     {
         name: "FN Five-Seven",
@@ -83,7 +83,7 @@ let guns = [
         willow: 0,
         steel: 2,
         coal: 0,
-        price: 2250
+        price: 2000
     },
     {
         name: "Mac-11",
@@ -167,7 +167,7 @@ let guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 2250
+        price: 2500
     },
     {
         name: "H&K UMP .45",
@@ -230,7 +230,7 @@ let guns = [
         willow: 0,
         steel: 6,
         coal: 0,
-        price: 5000
+        price: 5500
     },
     {
         name: "AR-15",
@@ -272,7 +272,7 @@ let guns = [
         willow: 0,
         steel: 2,
         coal: 0,
-        price: 7500
+        price: 8000
     },
     {
         name: "Glock 17",
@@ -314,7 +314,7 @@ let guns = [
         willow: 0,
         steel: 9,
         coal: 0,
-        price: 8250
+        price: 9500
     },
     {
         name: "Desert Eagle",
@@ -335,7 +335,7 @@ let guns = [
         willow: 0,
         steel: 3,
         coal: 0,
-        price: 5500
+        price: 6000
     },
     {
         name: "G36C",
@@ -356,7 +356,7 @@ let guns = [
         willow: 0,
         steel: 5,
         coal: 0,
-        price: 9500
+        price: 10000
     },
     {
         name: "LR-300",
@@ -419,7 +419,7 @@ let guns = [
         willow: 0,
         steel: 11,
         coal: 0,
-        price: 9000
+        price: 9500
     },
     {
         name: "G3A3",
@@ -482,7 +482,7 @@ let guns = [
         willow: 0,
         steel: 10,
         coal: 0,
-        price: 14000
+        price: 13500
     },
     {
         name: "M249",
@@ -524,7 +524,7 @@ let guns = [
         willow: 0,
         steel: 5,
         coal: 0,
-        price: 11500
+        price: 11250
     },
     {
         name: "Mosin Nagant",
@@ -545,7 +545,7 @@ let guns = [
         willow: 12,
         steel: 20,
         coal: 0,
-        price: 18000
+        price: 17000
     },
     {
         name: "M14",
@@ -566,7 +566,7 @@ let guns = [
         willow: 12,
         steel: 17,
         coal: 0,
-        price: 19000
+        price: 17500
     },
     {
         name: "M3 Super 90",
@@ -608,7 +608,7 @@ let guns = [
         willow: 0,
         steel: 12,
         coal: 0,
-        price: 16000
+        price: 16500
     },
     {
         name: "IMI Galil",
@@ -650,7 +650,7 @@ let guns = [
         willow: 0,
         steel: 7,
         coal: 0,
-        price: 22000
+        price: 18000
     },
     {
         name: "ACR-E",
@@ -671,7 +671,7 @@ let guns = [
         willow: 0,
         steel: 12,
         coal: 0,
-        price: 18500
+        price: 17500
     },
     {
         name: "FAMAS F1",
@@ -692,7 +692,7 @@ let guns = [
         willow: 0,
         steel: 12,
         coal: 0,
-        price: 30000
+        price: 22500
     },
     {
         name: "KSG-12",
@@ -766,17 +766,38 @@ let guns = [
         firemodes: "Bolt-Action",
         legal: false,
         ammo: "sniper",
-        copper: null,
-        iron: null,
-        silver: null,
-        gold: null,
-        titanium: null,
+        copper: 0,
+        iron: 40,
+        silver: 17,
+        gold: 6,
+        titanium: 5,
         wood: null,
         maple: null,
-        willow: null,
-        steel: null,
+        willow: 12,
+        steel: 0,
         coal: null,
-        price: 45000
+        price: 50000
+    },
+    {
+        name: "Silver Baller",
+        class: "Exotic",
+        amount: 0,
+        level: 47,
+        mag: 7,
+        firemodes: "Semi-Automatic",
+        legal: true,
+        ammo: "pistol",
+        copper: 9,
+        iron: 12,
+        silver: null,
+        gold: 2,
+        titanium: null,
+        wood: 8,
+        maple: 4,
+        willow: null,
+        steel: 5,
+        coal: 0,
+        price: 10000
     },
     {
         name: "L115",
@@ -798,27 +819,6 @@ let guns = [
         steel: null,
         coal: null,
         price: 110000
-    },
-    {
-        name: "Silver Baller",
-        class: "Exotic",
-        amount: 0,
-        level: 0,
-        mag: 7,
-        firemodes: "Semi-Automatic",
-        legal: true,
-        ammo: "pistol",
-        copper: null,
-        iron: null,
-        silver: null,
-        gold: null,
-        titanium: null,
-        wood: null,
-        maple: null,
-        willow: null,
-        steel: null,
-        coal: null,
-        price: 75000
     },
     {
         name: "Magnum .357",
@@ -881,7 +881,7 @@ let guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 150000
+        price: 140000
     },
     {
         name: "M1 Carbine",
@@ -902,7 +902,7 @@ let guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 150000
+        price: 175000
     },
     {
         name: "M1 Garand",
@@ -923,7 +923,7 @@ let guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 150000
+        price: 160000
     },
     {
         name: "MP-40",
@@ -944,7 +944,7 @@ let guns = [
         willow: null,
         steel: null,
         coal: null,
-        price: 90000
+        price: 80000
     },
     {
         name: "BMG-50",
@@ -1007,7 +1007,7 @@ let guns = [
         willow: 0,
         steel: 2,
         coal: 0,
-        price: 1500
+        price: 2000
     },
     {
         name: "Lockpick",
@@ -1070,7 +1070,7 @@ let guns = [
         willow: 0,
         steel: 3,
         coal: 0,
-        price: 4000
+        price: 5000
     },
     {
         name: "Crafted Kevlar",
@@ -1113,7 +1113,7 @@ let guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 280
+        price: 275
     },
     {
         name: "Rifle Ammo",
@@ -1134,7 +1134,7 @@ let guns = [
         willow: 0,
         steel: 0,
         coal: 0,
-        price: 1000
+        price: 950
     },
     {
         name: "Shotgun Ammo",
@@ -1197,7 +1197,7 @@ let guns = [
         willow: 0,
         steel: 30,
         coal: 0,
-        price: 20000
+        price: 19000
     },
     {
         name: "Copper Ingot",
@@ -1327,7 +1327,7 @@ let guns = [
     }
 ];
 
-//Attachments 2.1
+//Attachments 2.3
 //WIP: When an attachment is clicked, it will show the compatible guns with
 //that corresponding attachment
 let attachments = [
@@ -1369,7 +1369,7 @@ for(i = 0; i < guns.length; i++) {
     guns[i].coal = ((guns[i].copper * 1) + (guns[i].iron * 1) + ((guns[i].steel * 3) * 1) + (guns[i].steel * 1) + (guns[i].silver * 1) + (guns[i].gold * 1) + (guns[i].titanium * 1));
     guns[i].copper = (guns[i].copper * 2);
     guns[i].iron = (guns[i].iron * 2);
-    guns[i].iron += (guns[i].steel * 6);
+    guns[i].iron += (guns[i].steel * 4);
     guns[i].silver = (guns[i].silver * 2);
     guns[i].gold = (guns[i].gold * 2);
     guns[i].titanium = (guns[i].titanium * 2);
@@ -1514,7 +1514,7 @@ var extendedMaterials = [
     }
 ];
 
-let version = "2.1";
+let version = "2.2";
 
 function loadGuns() {
     for(i = 0; i < guns.length; i++) {
@@ -1700,7 +1700,7 @@ function loadGuns() {
             itemInputBox.style.color = "white";
             itemInputBox.setAttribute("min", "0");
             itemInputBox.setAttribute("max", "0");
-        } else if(guns[i].class == "Exotic" || guns[i].name == "TAC-338") {
+        } else if(guns[i].class == "Exotic" && guns[i].name != "Silver Baller") {
             itemInputBox.style.backgroundColor = "salmon";
             itemInputBox.style.color = "red";
             itemInputBox.setAttribute("min", "0");
@@ -1712,7 +1712,7 @@ function loadGuns() {
             itemInputBox.setAttribute("max", "99");
         }
 
-        if(guns[i].name == "FAMAS F1" || guns[i].name == "HK MP7A1" || guns[i].name == "TAC-338") {
+        if(guns[i].name == "FAMAS F1" || guns[i].name == "HK MP7A1" || guns[i].name == "TAC-338" || guns[i].name == "Silver Baller") {
             itemContainer.style.backgroundImage = "url('images/blueprint.png')";
         }
         
@@ -1834,12 +1834,12 @@ function changeBG() {
         background = "simple";
         localStorage.setItem("theme", "Simple");
     } else if(background == "simple") {
-        document.getElementById("background-img").style.backgroundImage = "url(images/background-riverden.jpg)";
+        document.getElementById("background-img").style.backgroundImage = "url(images/background-rockford.jfif)";
         document.getElementById("background-img").style.filter = "blur(0px)";
         document.getElementById("warning-text").style.color = "white";
         document.getElementById("warning").style.color = "white";
         document.getElementById("credits").style.color = "white";
-        document.getElementById("bg-type").innerHTML = "Background: Riverden";
+        document.getElementById("bg-type").innerHTML = "Background: Rockford";
         background = "autumn";
         localStorage.setItem("theme", "Autumn");
     }
@@ -1883,8 +1883,8 @@ if(localStorage.getItem("theme") == null){
 
 if(localStorage.getItem("theme") == "Autumn") {
     background = "autumn";
-    document.getElementById("background-img").style.backgroundImage = "url(images/background-riverden.jpg)";
-    document.getElementById("bg-type").innerHTML = "Background: Riverden";
+    document.getElementById("background-img").style.backgroundImage = "url(images/background-rockford.jfif)";
+    document.getElementById("bg-type").innerHTML = "Background: Rockford";
 } else if(localStorage.getItem("theme") == "Simple") {
     background = "simple";
     document.getElementById("background-img").style.backgroundImage = "linear-gradient(#181818, #070707)";
@@ -1894,7 +1894,7 @@ if(localStorage.getItem("theme") == "Autumn") {
 
 //Version 1.9 (Item Info)
 function imageHover(element) {
-    if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338") {
+    if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338" || guns[element].name == "Silver Baller") {
         document.getElementById("item-container" + element).style.backgroundImage = "url('images/blueprint.png'), gray";
         document.getElementById("item-container" + element).style.background = "gray";
     } else {
@@ -1904,7 +1904,7 @@ function imageHover(element) {
 }
 
 function imageUNHover(element) {
-    if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338") {
+    if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338" || guns[element].name == "Silver Baller") {
         document.getElementById("item-container" + element).style.backgroundImage = "url('images/blueprint.png')";
     } else {
         document.getElementById("item-container" + element).style.backgroundColor = "";
@@ -1955,7 +1955,7 @@ function itemInfo(element) {
         itemInfoContainer.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 1), rgba(51, 51, 51, 0.25))";
     }
     
-    if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338") {
+    if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338" || guns[element].name == "Silver Baller") {
         itemInfoContainer.style.backgroundImage = "url('images/blueprint.png')";
         itemInfoContainer.style.border = "0.25vw solid rgb(0, 0, 50)";
     }
@@ -1987,7 +1987,7 @@ function itemInfo(element) {
     itemInfoLevel.style.marginLeft = "32vw";
     itemInfoLevel.style.verticalAlign = "middle";
     if(guns[element].level != 0) {
-        if(guns[element].name == "Gas Mask" || guns[element].name == "Gas Filter" || guns[element].name == "Door Charge" || guns[element].name == "Copper Ingot" || guns[element].name == "Iron Ingot" || guns[element].name == "Steel Ingot" || guns[element].name == "Silver Ingot" || guns[element].name == "Gold Ingot" || guns[element].name == "Titanium Ingot") {
+        if(guns[element].name == "Gas Mask" || guns[element].name == "Gas Filter" || guns[element].name == "Door Charge" || guns[element].name == "Pistol Ammo" || guns[element].name == "Rifle Ammo" || guns[element].name == "Shotgun Ammo" || guns[element].name == "Sniper Ammo" || guns[element].name == "Grenade Launcher Ammo" || guns[element].name == "Copper Ingot" || guns[element].name == "Iron Ingot" || guns[element].name == "Steel Ingot" || guns[element].name == "Silver Ingot" || guns[element].name == "Gold Ingot" || guns[element].name == "Titanium Ingot") {
             itemInfoLevel.innerHTML = "Metalworking Level: " + guns[element].level;
             itemInfoLevel.style.color = "black";
         } else {
@@ -2029,7 +2029,7 @@ function itemInfo(element) {
     } else if(guns[element].mag == "") {
         itemInfoMag.innerHTML = "‎";
     } else {
-        itemInfoMag.innerHTML = "Magazine Size: " + guns[i].mag;
+        itemInfoMag.innerHTML = "Magazine Size: " + guns[element].mag;
         itemInfoMag.style.color = "white";
     }
 
@@ -2666,109 +2666,48 @@ function timeEstimation() {
 
 let changelog = [
     {
-        title: "New Items Added",
+        title: "Blueprint & New Recipes Added",
         thumbnail: "images/New Content.png",
         subcontent: [
             {
                 type: "item",
-                borderColor: "#1c397a",
-                color1: "rgba(53, 75, 104, 0.1)",
-                color2: "rgba(53, 75, 104, 1)",
+                borderColor: "#eeff00",
+                color1: "rgba(245, 255, 117, 0.1)",
+                color2: "rgba(245, 255, 117, 1)",
                 degrees: 135,
-                name: "Crafted Kevlar",
-                image: "images/weapons/Crafted Kevlar.png"
+                name: "Silver Baller",
+                image: "images/weapons/Silver Baller.png"
             },
             {
                 type: "item",
-                borderColor: "#46d300",
-                color1: "rgba(135, 209, 98, 0.1)",
-                color2: "rgba(135, 209, 98, 1)",
+                borderColor: "#ff8c00",
+                color1: "rgba(252, 182, 95, 0.1)",
+                color2: "rgba(252, 182, 95, 1)",
                 degrees: 135,
-                name: "Lockpick",
-                image: "images/weapons/Lockpick.png"
-            },
-            {
-                type: "item",
-                borderColor: "#7f00ff",
-                color1: "rgba(183, 112, 255, 0.1)",
-                color2: "rgba(183, 112, 255, 1)",
-                degrees: 135,
-                name: "Zipties",
-                image: "images/weapons/Zipties.png"
-            },
-            {
-                type: "item",
-                borderColor: "#333333",
-                color1: "rgba(109, 109, 109, 0.1)",
-                color2: "rgba(109, 109, 109, 1)",
-                degrees: 135,
-                name: "Pistol Ammo",
-                image: "images/weapons/Pistol Ammo.png"
-            },
-            {
-                type: "item",
-                borderColor: "#333333",
-                color1: "rgba(109, 109, 109, 0.1)",
-                color2: "rgba(109, 109, 109, 1)",
-                degrees: 135,
-                name: "Rifle Ammo",
-                image: "images/weapons/Rifle Ammo.png"
-            },
-            {
-                type: "item",
-                borderColor: "#333333",
-                color1: "rgba(109, 109, 109, 0.1)",
-                color2: "rgba(109, 109, 109, 1)",
-                degrees: 135,
-                name: "Shotgun Ammo",
-                image: "images/weapons/Shotgun Ammo.png"
-            },
-            {
-                type: "item",
-                borderColor: "#333333",
-                color1: "rgba(109, 109, 109, 0.1)",
-                color2: "rgba(109, 109, 109, 1)",
-                degrees: 135,
-                name: "Sniper Ammo",
-                image: "images/weapons/Sniper Ammo.png"
-            },
-            {
-                type: "item",
-                borderColor: "#333333",
-                color1: "rgba(109, 109, 109, 0.1)",
-                color2: "rgba(109, 109, 109, 1)",
-                degrees: 135,
-                name: "GL Ammo",
-                image: "images/weapons/Grenade Launcher Ammo.png"
+                name: "TAC-338",
+                image: "images/weapons/TAC-338.png"
             }
         ]
-        // text: "Added many new highly requested items to the calculator."
     },
     {
-        title: "New Material Added",
+        title: "Material Calculations Fixed",
         thumbnail: "images/New Content.png",
         subcontent: [
             {
                 type: "item",
-                borderColor: "rgb(66, 20, 20)",
-                color1: "rgba(66, 20, 20, 0.1)",
-                color2: "rgba(66, 20, 20, 1)",
+                borderColor: "#333333",
+                color1: "rgba(51, 51, 51, 0.25)",
+                color2: "rgba(109, 109, 109, 1)",
                 degrees: 135,
-                name: "Plastic",
-                image: "images/ores/plastic.png"
-            }
-        ]
-    },
-    {
-        title: "Optimizations & More",
-        thumbnail: "images/Fix.png",
-        subcontent: [
+                name: "Steel Bar",
+                image: "images/ores/i_steel_new.png"
+            },
             {
                 type: "decorated text",
                 color: "white",
                 underline: false,
-                italics: false,
-                text: "The background image has been changed to Riverden, more smaller changes have been made, and many optimizations were added to the code.",
+                italics: true,
+                text: "Thank you for the GitHub issue on the recipe of Steel Bars @bobyto93!",
                 fontSize: 1,
                 fontWeight: 500,
                 textAlign: "center"
@@ -2776,17 +2715,62 @@ let changelog = [
         ]
     },
     {
-        title: "And as always...",
-        thumbnail: "images/Eye.png",
+        title: "Additions",
+        thumbnail: "images/Fix.png",
+        subcontent: [
+            {
+                type: "item",
+                borderColor: "#ff9a68",
+                color1: "rgba(255, 154, 104, 0.25)",
+                color2: "rgba(255, 154, 104, 1)",
+                degrees: 135,
+                name: "Attachments",
+                image: "images/attachment.png"
+            },
+            {
+                type: "decorated text",
+                color: "white",
+                underline: false,
+                italics: false,
+                text: "A new tab has been placed at the top of the weapons & items section of the calculator. Currently, it is disabled until the next update, but soon you will be able to calculate any attachments you wish!",
+                fontSize: 1,
+                fontWeight: 500,
+                textAlign: "center"
+            },
+            {
+                type: "decorated text",
+                color: "salmon",
+                underline: false,
+                italics: false,
+                text: "This website is now utilizing my new simple Javascript Library 'Clutch Engine&#8482; 1.0'. It is only used for testing at the moment, but will later be available for anyone to use.",
+                fontSize: 1,
+                fontWeight: 500,
+                textAlign: "center"
+            }
+        ]
+    },
+    {
+        title: "Changes & Upcoming Changes",
+        thumbnail: "images/Fix.png",
         subcontent: [
             {
                 type: "decorated text",
                 color: "white",
                 underline: false,
                 italics: false,
-                text: "Keep an eye out for a huge update in the near future!",
+                text: "The background has been changed to the Rockford Outskirts, and there will be further items added in the future due to them being requested.",
                 fontSize: 1,
                 fontWeight: 500,
+                textAlign: "center"
+            },
+            {
+                type: "decorated text",
+                color: "white",
+                underline: false,
+                italics: false,
+                text: "Some CSS animations have been optimized, instead of utilizing Javascript for them.",
+                fontSize: 1,
+                fontWeight: 600,
                 textAlign: "center"
             }
         ]
@@ -2910,7 +2894,46 @@ function generateLog() {
 
 generateLog();
 
+let craftingTab = "weapons";
+// document.getElementById("weapons-button-container").style.border = "0.175vw solid #19ff00";
+// document.getElementById("weapons-button-container").style.backgroundImage = "linear-gradient(135deg, rgba(22, 135, 0, 0.1), rgba(22, 135, 0, 1))";
+document.getElementById("weapons-button-container").classList.add("active");
+
+function changeType(type) {
+    if(craftingTab != type) {
+        //Preventing overflow recreation of the items (also prevents website lag)
+        craftingTab = type;
+    }
+
+    if(type == "weapons") {
+        //Recreate Weapon Containers (and set input box values accordingly)
+
+        // document.getElementById("weapons-button-container").style.border = "0.175vw solid #19ff00";
+        // document.getElementById("weapons-button-container").style.backgroundImage = "linear-gradient(135deg, rgba(22, 135, 0, 0.1), rgba(22, 135, 0, 1))";
+        document.getElementById("weapons-button-container").classList.add("active");
+        document.getElementById("weapons-button-container").classList.remove("inactive");
+
+        // document.getElementById("attachments-button-container").style.border = "0.175vw solid #333333";
+        // document.getElementById("attachments-button-container").style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1))";
+        document.getElementById("attachments-button-container").classList.add("inactive");
+        document.getElementById("attachments-button-container").classList.remove("disabled");
+    } else if(type == "attachments") {
+        //Recreate Attachment Containers (and set input box values accordingly)
+
+        // document.getElementById("attachments-button-container").style.border = "0.175vw solid #19ff00";
+        // document.getElementById("attachments-button-container").style.backgroundImage = "linear-gradient(135deg, rgba(22, 135, 0, 0.1), rgba(22, 135, 0, 1))";
+        document.getElementById("attachments-button-container").classList.add("disabled");
+        document.getElementById("attachments-button-container").classList.remove("inactive");
+
+        // document.getElementById("weapons-button-container").style.border = "0.175vw solid #333333";
+        // document.getElementById("weapons-button-container").style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 1))";
+        document.getElementById("weapons-button-container").classList.add("inactive");
+        document.getElementById("weapons-button-container").classList.remove("active");
+    }
+}
+
 function closeLog() {
+    document.getElementById("update-log-container").style.opacity = "0%";
     document.getElementById("update-log-container").style.visibility = "hidden";
 }
 
@@ -2921,7 +2944,8 @@ function coloredLog(msg, color) {
 coloredLog("Monolith Crafting Calculator [ Version " + version + " ] | Created by: ClutchMasterFTW", "white");
 
 //Later implementations:
+//|2.2| Change Favicon to a spring logo
 //|2.2| Weapon Attachments
 //|2.25?-2.3| Search query for weapons (and materials?)
 //|2.3| Help/Guide fixation
-//|2.4+| Organization implementation (unknown for now)
+//|2.4+| Organization integration (unknown for now)
