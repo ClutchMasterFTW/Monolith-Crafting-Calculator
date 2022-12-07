@@ -5,58 +5,78 @@
         <link rel="stylesheet" href="ClutchEngine1/main.css">
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="shortcut icon" type="image/jpg" href="images/logo.png"/>
+        <link rel="shortcut icon" type="image/png" href="images/logo-silkroad.png"/>
     </head>
+    <!-- Google Analytics (Version 2.3) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RH740JH1L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8RH740JH1L');
+    </script>
     <body>
         <div id="header">
-            <img src="images/gun-new.png" id="logo">
-            <div id="logo-text">Monolith Crafting Calculator</div>
+            <div id="changelogs-container">
+                <div id="changelogs-hover" title="Action Menu"></div>
+                <span class="material-icons changelogs notranslate" title="Changelogs" onclick="document.getElementById('update-log-container').style.visibility = 'visible'; document.getElementById('update-log-container').style.opacity = '100%';">list_alt</span>
+            </div>
+            <img src="images/updated-logo2.png" id="logo">
+            <div id="language-container">
+                <p class="medium-text">EXPERIMENTAL FEATURE</p>
+                <p class="tiny-text">(Some languages may break the styling of the calculator and/or may be translated incorrectly)</p>
+                <div id="google_translate_element"></div>
+            </div>
         </div>
         <div id="background-img"></div>
 
-        <div id="title1">Weapons & Items</div>
-        <div id="guns-container"></div>
+        <div id="page-container">
+            <div class="main-flex-container">
+                <div class="aux-container">
+                    <div class="title" id="weapon-title">Weapons & Items</div>
+                    <div class="aux-container2">
+                        <div id="weapons-button-container" onclick="changeType('weapons')" title="Weapons">
+                            <h1 class="change-section-button-text">Weapons</h1>
+                        </div>
+                        <div id="attachments-button-container" onclick="changeType('attachments')" title="Attachments">
+                            <h1 class="change-section-button-text">Attachments</h1>
+                        </div>
+                    </div>
+                </div>
 
-        <div id="title2">Crafting Ingredients</div>
-        <div id="material-container"></div>
-        <div id="reset" onclick="location.reload()">RESET QUANTITY</div>
+                <div id="guns-container"><!--Item(s) are generated here--></div>
+            </div>
 
-        <div id="bg-type">Background: Rockford</div>
-        <label class="switch" id="switch1">
-            <input type="checkbox" id="checkbox" onclick="changeBG()">
-            <span class="slider"></span>
-        </label>
+            <div class="main-flex-container">
+                <div class="title">Crafting Ingredients</div>
+                <div id="material-container"><!--Material(s) are generated here--></div>
+                <div id="reset" onclick="location.reload()">RESET QUANTITY</div>
+        
+                <div class="aux-container3" style="gap: 5px;">
+                    <div id="electric-furnace" onclick="changeFurnace('electric')">
+                        <img src="images/electric furnace.png" id="electric-furnace-image">
+                        <h1 class="furnace-text">Electric Furnace</h1>
+                    </div>
+                    <div id="coal-furnace" onclick="changeFurnace('coal')">
+                        <img src="images/coal furnace.png" id="coal-furnace-image">
+                        <h1 class="furnace-text">Coal Furnace</h1>
+                    </div>
+                </div>
 
-        <div id="stack-type">Stacks: Off</div>
-        <label class="switch" id="switch2">
-            <input type="checkbox" id="checkbox2" onclick="changeStackType()">
-            <span class="slider"></span>
-        </label>
-
-        <div id="time-text-container">
-            <div id="time-text">Estimated Time To Craft:</div>
-            <div id="time">00:00:00</div>
-        </div>
-
-        <div id="coal-furnace" onclick="changeFurnace('coal')">
-            <img src="images/coal furnace.png" id="coal-furnace-image">
-            <h1 class="furnace-text">Coal Furnace</h1>
-        </div>
-
-        <div id="electric-furnace" onclick="changeFurnace('electric')">
-            <img src="images/electric furnace.png" id="electric-furnace-image">
-            <h1 class="furnace-text">Electric Furnace</h1>
+                <div id="time-text-container">
+                    <div id="time-text">Estimated Time To Craft:</div>
+                    <div id="time">00:00:00</div>
+                </div>
+            </div>
         </div>
 
         <div id="dim-warning-container">
-            <span class="material-icons" id="dim-warning-icon">report_problem</span>
+            <span class="material-icons notranslate" id="dim-warning-icon">report_problem</span>
             <div id="dim-warning-title">ATTENTION:</div>
-            <div id="dim-warning-text">We have detected that your browser window is below the recommended size (1920px x 1080px). If you would like to view this webpage without any resolution issues, we suggest to resize your browser to a 16:9 ratio size. Thanks!</div>
+            <div id="dim-warning-text">We have detected that your browser window is far below the recommended size (1920px x 1080px). If you would like to view this webpage without any resolution issues, we suggest to resize your browser to a 16:9 ratio size. Thanks!</div>
             <div id="proceed" onclick="closeWarning()">Proceed</div>
         </div>
-        
-        <span class="material-icons" id="warning">report_problem</span>
-        <div id="warning-text">If you experience any bugs, please post them on the <a href="https://github.com/ClutchMasterFTW/Monolith-Crafting-Calculator/issues" target="_blank" class="link">GitHub issues</a> page.</div>
     
         <div id="plastic-alert-container">
             <img src="images/ores/plastic.png" id="plastic-alert-image" title="Plastic Chunk">
@@ -75,26 +95,38 @@
                 <div id="update-log-header-text">Changelog</div>
             </div>
 
-            <div id="update-log-version-container">
-                <div id="update-log-version-text">VERSION</div>
-                <div id="update-log-version-value">2.2</div>
-            </div>
+            <div id="update-log-version-text">VERSION</div>
+            <div id="update-log-version-value">2.3</div>
 
-            <div id="update-log-content-container">
-                
-            </div>
+            <div id="update-log-content-container"><!--Changelog content is generated here--></div>
 
             <div id="update-log-close" onclick="closeLog()">CLOSE</div>
         </div>
 
-        <span class="material-icons changelogs" title="Changelogs" onclick="document.getElementById('update-log-container').style.visibility = 'visible'; document.getElementById('update-log-container').style.opacity = '100%';">list_alt</span>
+        <div id="settings-container">
+            <div id="settings-title">Settings</div>
+            <span class="material-icons notranslate close-settings" onclick="document.getElementById('settings-container').style.opacity = '0%'; document.getElementById('settings-container').style.visibility = 'hidden';" title="Close">close</span>
 
-        <div id="weapons-button-container" onclick="changeType('weapons')" title="Weapons">
-            <h1 id="weapons-button-text">Weapons</h1>
-        </div>
-
-        <div id="attachments-button-container" onclick="changeType('attachments')" title="Attachments (DISABLED)">
-            <h1 id="attachments-button-text">Attachments</h1>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 10px; color: white; font-size: 20px; font-weight: 600;">
+                <!--Make a CSS class for the inline styling here soon...-->
+                <p>Background:</p>
+                <div id="bg-type" onclick="changeBG()">Manhattan</div>
+            </div>
+            <p style="color: white; font-size: 20px; font-weight: 600;">Prestiges:</p>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 10px; color: white; font-size: 20px; font-weight: 600;">
+                <div class="prestige-container" onclick="changePrestiges(0)" id="prestige-container0">
+                    <img src="images/mining.png" style="padding: 0 5px 0 5px;">
+                    <p>Mining</p>
+                </div>
+                <div class="prestige-container" onclick="changePrestiges(1)" id="prestige-container1">
+                    <img src="images/metalworking.png" style="padding: 0 5px 0 5px;">
+                    <p>Metalworking</p>
+                </div>
+                <div class="prestige-container" onclick="changePrestiges(2)" id="prestige-container2">
+                    <img src="images/woodcutting.png" style="padding: 0 5px 0 5px;">
+                    <p>Woodcutting</p>
+                </div>
+            </div>
         </div>
 
         <!--
@@ -154,9 +186,95 @@
         </div>
         -->
 
-        <div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" id="class" class="link">ClutchMasterFTW</a> | <b>v.2.2</b></div>
+        <div id="footer">
+            <div id="footer-flex1">
+                <img src="images/updated-logo.png" id="footer-logo">
+                <div id="credits-flex">
+                    <p id="credits">Created by </p>
+                    <a href="https://github.com/ClutchMasterFTW" target="_blank" class="link notranslate">ClutchMasterFTW</a>
+                </div>
+                <p id="credits-divider">|</p>
+                <b>v.2.3</b>
+
+                <div id="stack-type-container">
+                    <div id="stack-type">Stacks: Off</div>
+                    <input type="checkbox" id="checkbox2" onclick="changeStackType()">
+                </div>
+            </div>
+            
+            <div id="footer-flex3">
+                <span class="material-icons notranslate" id="warning">report_problem</span>
+                <div id="warning-text">If you experience any bugs, please post them on the <a href="https://github.com/ClutchMasterFTW/Monolith-Crafting-Calculator/issues" target="_blank" class="link">GitHub issues</a> page.</div>
+            </div>
+        </div>
+
+        <!--Google Translate-->
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+        </script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="ClutchEngine1/main.js"></script>
         <script src="index.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+        <script src="v2_3.js"></script>
+
+        <noscript>Uh oh, there has been a critical error attempting to load Javascript in this browser! Please try refreshing the tab, or reopening this website in another web browser.</noscript>
     </body>
 </html>
+
+<!--
+    Version 2.3 (ALL COMPLETED -- not everything changed is listed here)
+    - change color scheme
+    - change background to southside
+    - Edit favicon
+    - Google bubble button effect
+    - create footer with new logo
+    - Add class notranslate to things that shouldn't be translated
+    - Change flex direction of furnace types upon resizing page smaller, so the material section is more filled
+    - change changelogs to additional menus, include settings, changelogs, help, and betas there
+    - Fix logo when using google translate
+    - Create new changelog for 2.3
+    - Titanium Stacks bug
+    - Version animation at launch (use localstorage to prevent from playing again)
+    - fix itemInfo javascript/styling
+    - Fix attachments
+    - changelog arrow (stored in localstorage)
+    - [!] Add prices to all attachments
+    - Insert prestiges into settings to help better calculate estimated time
+-->
+
+<!--
+    Version 2.4 (and beyond):
+    - [!] Change color scheme and background image for winterford
+    - No javascript on browser popup (noscript)
+    - Redesign material section with flex-box
+    - Fix how the close button is made with javascript, make the transition CSS instead
+    - Redo item info popup (when you click on an item)
+    - Change the look of images (instead of a box with a rarity border, the gradient should be connected to the main container and branch off a little bit w/ a border on the right OR the border of the whole container - may conflict with hovering on the image for item info)
+    - Instead of text, make the mag size, fire modes, and ammo types icon's and progress bar's
+    - Remove mag size, fire modes, and ammo types from weapon section in the case of mobile resizing
+    - "link" and "none" for changelog subcontent
+    - Mobile support (make material section span vertically after the weapons section, make both widths fit the screen, and make the footer appear at the very bottom)
+    - Animations for text in item info
+    - Show materials to craft a certain item upon clicking on the item info
+    - Search query for weapons (and materials?) <- maybe only include in Beta so it doesn't get too complicated, collect statistics of usage
+    - Add help guide back, collect statistics of usage
+    - Organization integration (unknown for now, will require php and transfer of webserver)
+    - Switch item info all to CSS classes, I'm tired of this JS animation bullshit!
+    - Filters (Rifles, Pistols, Equipables, etc.)
+    - MP-40 may be a blueprint now?
+    - Look into whether plastic still works after using flex-box
+    - Redesign itemInfo javascript/styling
+-->
+
+<!--
+    KNOWN BUGS:
+    - [2.4] Bubble animation position (and position of the actionmenu) bug when using google translate
+    - [2.4] Google Translate breaks item info positioning
+-->

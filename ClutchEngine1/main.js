@@ -6,7 +6,7 @@ let intervalList = [];
 let cVersion = "Clutch Engine 1.0.0aT";
 
 //True/False to enable/disable initial launch logo
-let launchOpt = true; //True by default
+let launchOpt = false; //True by default
 if(launchOpt) {
     launch = document.createElement("img");
     launch.id = "clutch-engine-launch-image";
