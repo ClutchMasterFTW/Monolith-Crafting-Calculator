@@ -1508,7 +1508,7 @@ let attachments = [
         price: 750
     },
     {
-        name: "AK-74 Foldable stock",
+        name: "AK-74 Foldable Stock",
         class: "Normal",
         amount: 0,
         abbreviation: "AK-FS",
@@ -2262,13 +2262,44 @@ var extendedMaterials = [
 
 let craftingTab = "weapons";
 
-let version = "2.3";
+let version = "2.35";
 
 function loadGuns() {
     for(i = 0; i < guns.length; i++) {
         let itemContainer = document.createElement("div");
         itemContainer.id = "item-container" + i;
         itemContainer.classList.add("item-container");
+        if(guns[i].class == "Pistol") {
+            itemContainer.style.border = "3.5px solid #006eff";
+            itemContainer.style.backgroundImage = "linear-gradient(135deg, rgba(87, 142, 214, 0.25), rgba(87, 142, 214, 1))";
+        } else if(guns[i].class == "Rifle") {
+            itemContainer.style.border = "3.5px solid #ff8c00";
+            itemContainer.style.backgroundImage = "linear-gradient(135deg, rgba(252, 182, 95, 0.25), rgba(252, 182, 95, 1))";
+        } else if(guns[i].class == "Knife") {
+            itemContainer.style.border = "3.5px solid #ff0000";
+            itemContainer.style.backgroundImage = "linear-gradient(135deg, rgba(249, 122, 122, 0.25), rgba(249, 122, 122, 1))";
+        } else if(guns[i].class == "Shotgun") {
+            itemContainer.style.border = "3.5px solid #7f00ff";
+            itemContainer.style.backgroundImage = "linear-gradient(135deg, rgba(183, 112, 255, 0.25), rgba(183, 112, 255, 1))";
+        } else if(guns[i].class == "Exotic") {
+            itemContainer.style.border = "3.5px solid #eeff00";
+            itemContainer.style.backgroundImage = "linear-gradient(135deg, rgba(245, 255, 117, 0.25), rgba(245, 255, 117, 1))";
+        } else if(guns[i].class == "Police") {
+            itemContainer.style.border = "3.5px solid #0015ff";
+            itemContainer.style.backgroundImage = "linear-gradient(135deg, rgba(124, 135, 255, 0.25), rgba(124, 135, 255, 1))";
+        } else if(guns[i].class == "Equipable") {
+            itemContainer.style.border = "3.5px solid #46d300";
+            itemContainer.style.backgroundImage = "linear-gradient(135deg, rgba(135, 209, 98, 0.25), rgba(135, 209, 98, 1))";
+        } else if(guns[i].class == "Door Charge") {
+            itemContainer.style.border = "3.5px solid #41006d";
+            itemContainer.style.backgroundImage = "linear-gradient(135deg, rgba(108, 0, 181, 0.25), rgba(108, 0, 181, 1))";
+        } else if(guns[i].class == "Kevlar") {
+            itemContainer.style.border = "3.5px solid #1c397a";
+            itemContainer.style.backgroundImage = "linear-gradient(135deg, rgba(53, 75, 104, 0.25), rgba(53, 75, 104, 1))";
+        } else if(guns[i].class == "Item") {
+            itemContainer.style.border = "3.5px solid #333333";
+            itemContainer.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.25), rgba(109, 109, 109, 1))";
+        }
 
         let itemImage = document.createElement("img");
         itemImage.id = "item-image" + i;
@@ -2277,37 +2308,37 @@ function loadGuns() {
         itemImage.setAttribute("onmouseover", "imageHover(" + i + ")");
         itemImage.setAttribute("onmouseout", "imageUNHover(" + i + ")");
         itemImage.setAttribute("onclick", "itemInfo(" + i + ")");
-        if(guns[i].class == "Pistol") {
-            itemImage.style.border = "3.5px solid #006eff";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(87, 142, 214, 0.25), rgba(87, 142, 214, 1))";
-        } else if(guns[i].class == "Rifle") {
-            itemImage.style.border = "3.5px solid #ff8c00";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(252, 182, 95, 0.25), rgba(252, 182, 95, 1))";
-        } else if(guns[i].class == "Knife") {
-            itemImage.style.border = "3.5px solid #ff0000";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(249, 122, 122, 0.25), rgba(249, 122, 122, 1))";
-        } else if(guns[i].class == "Shotgun") {
-            itemImage.style.border = "3.5px solid #7f00ff";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(183, 112, 255, 0.25), rgba(183, 112, 255, 1))";
-        } else if(guns[i].class == "Exotic") {
-            itemImage.style.border = "3.5px solid #eeff00";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(245, 255, 117, 0.25), rgba(245, 255, 117, 1))";
-        } else if(guns[i].class == "Police") {
-            itemImage.style.border = "3.5px solid #0015ff";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(124, 135, 255, 0.25), rgba(124, 135, 255, 1))";
-        } else if(guns[i].class == "Equipable") {
-            itemImage.style.border = "3.5px solid #46d300";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(135, 209, 98, 0.25), rgba(135, 209, 98, 1))";
-        } else if(guns[i].class == "Door Charge") {
-            itemImage.style.border = "3.5px solid #41006d";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(108, 0, 181, 0.25), rgba(108, 0, 181, 1))";
-        } else if(guns[i].class == "Kevlar") {
-            itemImage.style.border = "3.5px solid #1c397a";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(53, 75, 104, 0.25), rgba(53, 75, 104, 1))";
-        } else if(guns[i].class == "Item") {
-            itemImage.style.border = "3.5px solid #333333";
-            itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.25), rgba(109, 109, 109, 1))";
-        }
+        // if(guns[i].class == "Pistol") {
+        //     itemImage.style.border = "3.5px solid #006eff";
+        //     itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(87, 142, 214, 0.25), rgba(87, 142, 214, 1))";
+        // } else if(guns[i].class == "Rifle") {
+        //     itemImage.style.border = "3.5px solid #ff8c00";
+        //     itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(252, 182, 95, 0.25), rgba(252, 182, 95, 1))";
+        // } else if(guns[i].class == "Knife") {
+        //     itemImage.style.border = "3.5px solid #ff0000";
+        //     itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(249, 122, 122, 0.25), rgba(249, 122, 122, 1))";
+        // } else if(guns[i].class == "Shotgun") {
+        //     itemImage.style.border = "3.5px solid #7f00ff";
+        //     itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(183, 112, 255, 0.25), rgba(183, 112, 255, 1))";
+        // } else if(guns[i].class == "Exotic") {
+        //     itemImage.style.border = "3.5px solid #eeff00";
+        //     itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(245, 255, 117, 0.25), rgba(245, 255, 117, 1))";
+        // } else if(guns[i].class == "Police") {
+        //     itemImage.style.border = "3.5px solid #0015ff";
+        //     itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(124, 135, 255, 0.25), rgba(124, 135, 255, 1))";
+        // } else if(guns[i].class == "Equipable") {
+        //     itemImage.style.border = "3.5px solid #46d300";
+        //     itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(135, 209, 98, 0.25), rgba(135, 209, 98, 1))";
+        // } else if(guns[i].class == "Door Charge") {
+        //     itemImage.style.border = "3.5px solid #41006d";
+        //     itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(108, 0, 181, 0.25), rgba(108, 0, 181, 1))";
+        // } else if(guns[i].class == "Kevlar") {
+        //     itemImage.style.border = "3.5px solid #1c397a";
+        //     itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(53, 75, 104, 0.25), rgba(53, 75, 104, 1))";
+        // } else if(guns[i].class == "Item") {
+        //     itemImage.style.border = "3.5px solid #333333";
+        //     itemImage.style.backgroundImage = "linear-gradient(135deg, rgba(109, 109, 109, 0.25), rgba(109, 109, 109, 1))";
+        // }
         itemImage.classList.add("item-image");
 
         let itemFlex = document.createElement("div");
@@ -2474,7 +2505,11 @@ function loadAttachments() {
 
         var itemImage = document.createElement("img");
         itemImage.id = "item-image" + i;
-        itemImage.setAttribute("src", "images/attachment.png");
+        if(attachments[i].name == "AN/PEQ-15") {
+            itemImage.setAttribute("src", "images/attachments/ANPEQ-15.png");
+        } else {
+            itemImage.setAttribute("src", "images/attachments/" + attachments[i].name + ".png");
+        }
         itemImage.setAttribute("title", attachments[i].name);
         itemImage.classList.add("attachment-image");
 
@@ -2527,7 +2562,6 @@ function loadAttachments() {
         document.getElementById("item-input-box" + i).oninput = function() {
             attachments[parseInt(this.id.substring(14))].amount = parseInt(document.getElementById(this.id).value);
             calculateMaterials();
-            console.log("TEST" + i);
         }
 
         document.getElementById("item-input-box" + i).value = attachments[i].amount;
@@ -2637,12 +2671,12 @@ function changeBG() {
         background = "simple";
         localStorage.setItem("theme", "Simple");
     } else if(background == "simple") {
-        document.getElementById("background-img").style.backgroundImage = "url(images/background-southside.jpg)";
+        document.getElementById("background-img").style.backgroundImage = "url(images/background-winter.jpg)";
         document.getElementById("background-img").style.filter = "blur(0px)";
         document.getElementById("warning-text").style.color = "white";
         document.getElementById("warning").style.color = "white";
         document.getElementById("credits").style.color = "white";
-        document.getElementById("bg-type").innerHTML = "Manhattan";
+        document.getElementById("bg-type").innerHTML = "Winterford";
         background = "image";
         localStorage.setItem("theme", "image");
     }
@@ -2686,8 +2720,8 @@ if(localStorage.getItem("theme") == null){
 
 if(localStorage.getItem("theme") == "image") {
     background = "image";
-    document.getElementById("background-img").style.backgroundImage = "url(images/background-southside.jpg)";
-    document.getElementById("bg-type").innerHTML = "Manhattan";
+    document.getElementById("background-img").style.backgroundImage = "url(images/background-winter.jpg)";
+    document.getElementById("bg-type").innerHTML = "Winterford";
 } else if(localStorage.getItem("theme") == "Simple") {
     background = "simple";
     document.getElementById("background-img").style.backgroundImage = "linear-gradient(#181818, #070707)";
@@ -2842,7 +2876,7 @@ function itemInfo(element, type) {
         //     itemInfoMag.innerHTML = "Doesn't accept ammo";
         //     itemInfoMag.style.color = "red";
         // } else if(guns[element].mag == "") {
-        //     itemInfoMag.innerHTML = "‎";
+        //     itemInfoMag.innerHTML = "";
         // } else {
         //     itemInfoMag.innerHTML = "Magazine Size: " + guns[element].mag;
         //     itemInfoMag.style.color = "white";
@@ -2857,7 +2891,7 @@ function itemInfo(element, type) {
         // itemInfoFiremodes.style.marginLeft = "32vw";
         // itemInfoFiremodes.style.verticalAlign = "middle";
         // if(guns[element].firemodes == "") {
-        //     itemInfoFiremodes.innerHTML = "‎";
+        //     itemInfoFiremodes.innerHTML = "";
         // } else {
         //     itemInfoFiremodes.innerHTML = "Fire Modes: " + guns[element].firemodes;
         // }
@@ -2879,7 +2913,7 @@ function itemInfo(element, type) {
         // } else if(guns[element].ammo == "sniper") {
         //     itemInfoAmmo.innerHTML = "Ammo Type: Sniper Ammo";
         // } else if(guns[element].ammo == "") {
-        //     itemInfoAmmo.innerHTML = "‎";
+        //     itemInfoAmmo.innerHTML = "";
         // } else {
         //     itemInfoAmmo.innerHTML = "Ammo Type: Doesn't accept ammo";
         // }
@@ -2953,7 +2987,11 @@ function itemInfo(element, type) {
         itemInfoImage.id = "item-info-image";
         itemInfoImage.style.maxHeight = "30vh";
         itemInfoImage.setAttribute("title", attachments[element].name);
-        itemInfoImage.setAttribute("src", "images/attachment.png");
+        if(attachments[element].name == "AN/PEQ-15") {
+            itemInfoImage.setAttribute("src", "images/attachments/ANPEQ-15.png");
+        } else {
+            itemInfoImage.setAttribute("src", "images/attachments/" + attachments[element].name + ".png");
+        }
 
         const itemInfoTitle = document.createElement("div");
         itemInfoTitle.id = "item-info-title";
@@ -3617,112 +3655,23 @@ function timeEstimation() {
 
 let changelog = [
     {
-        title: "Added Prestiges",
-        thumbnail: "images/crown_128.png",
-        subcontent: [
-            {
-                type: "item",
-                color1: "rgba(132, 132, 132, 1)",
-                color2: "rgba(109, 110, 110, 1)",
-                degrees: 90,
-                name: "Metal Working",
-                image: "images/metalworking.png"
-            },
-            {
-                type: "decorated text",
-                color: "white",
-                underline: false,
-                italics: false,
-                text: "10% faster smelting",
-                fontSize: 20,
-                fontWeight: 500,
-                textAlign: "center"
-            },
-            {
-                type: "item",
-                color1: "rgba(144, 111, 35, 1)",
-                color2: "rgba(120, 92, 38, 1)",
-                degrees: 90,
-                name: "Mining",
-                image: "images/mining.png"
-            },
-            {
-                type: "decorated text",
-                color: "white",
-                underline: false,
-                italics: false,
-                text: "10% chance for +1 ore",
-                fontSize: 20,
-                fontWeight: 500,
-                textAlign: "center"
-            },
-            {
-                type: "item",
-                color1: "rgba(93, 51, 30, 1)",
-                color2: "rgba(79, 49, 37, 1)",
-                degrees: 90,
-                name: "Woodcutting",
-                image: "images/woodcutting.png"
-            },
-            {
-                type: "decorated text",
-                color: "white",
-                underline: false,
-                italics: false,
-                text: "10% chance for +1 log",
-                fontSize: 20,
-                fontWeight: 500,
-                textAlign: "center"
-            },
-            {
-                type: "decorated text",
-                color: "white",
-                underline: false,
-                italics: false,
-                text: "You can access prestiges in the settings, which can now be found in the top left corner. Selecting your current prestige will allow for more accurate time estimations.",
-                fontSize: 20,
-                fontWeight: 500,
-                textAlign: "center"
-            }
-        ]
-    },
-    {
         title: "Additions",
-        thumbnail: "images/New Content.png",
+        thumbnail: "images/attachment.png",
         subcontent: [
             {
                 type: "item",
-                borderColor: "#ff9a68",
-                color1: "rgba(255, 154, 104, 0.25)",
-                color2: "rgba(255, 154, 104, 1)",
-                degrees: 135,
-                name: "Attachments",
-                image: "images/attachment.png"
-            },
-            {
-                type: "decorated text",
-                color: "white",
-                underline: false,
-                italics: false,
-                text: "Attachments for weapons have finally been added, a seperate tab has been made usable with information on each attachment. Happy Crafting!",
-                fontSize: 20,
-                fontWeight: 500,
-                textAlign: "center"
-            },
-            {
-                type: "item",
-                color1: "#cccccc",
+                color1: "#2b2b2b",
                 color2: "#ffffff",
                 degrees: 135,
-                name: "Google Translate",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Google_Translate_logo.svg/1024px-Google_Translate_logo.svg.png?20210606111727"
+                name: "Attachment Images",
+                image: "images/attachments/ACOG Sights.png"
             },
             {
                 type: "decorated text",
                 color: "white",
                 underline: false,
                 italics: false,
-                text: "Google Translate has been introduced as an experimental feature, in order to help those not so fluent in English (I'm lookin at you Monolith France!). Click the Google Translate logo in the top right in order to switch the language, keep in mind some languages will ruin the way the calculator looks.",
+                text: "All of the new inventory images for attachments have been added. Thanks to Marwan for creating and supplying them for me!",
                 fontSize: 20,
                 fontWeight: 500,
                 textAlign: "center"
@@ -3730,7 +3679,7 @@ let changelog = [
         ]
     },
     {
-        title: "Changes, Fixes, and Upcoming Additions",
+        title: "Changes",
         thumbnail: "images/Fix.png",
         subcontent: [
             {
@@ -3738,7 +3687,7 @@ let changelog = [
                 color: "white",
                 underline: false,
                 italics: false,
-                text: "The background has been changed to Manhattan, it will be changed to Monoford in the coming update.",
+                text: "The background has been changed to Winterford.",
                 fontSize: 20,
                 fontWeight: 500,
                 textAlign: "center"
@@ -3748,7 +3697,7 @@ let changelog = [
                 color: "white",
                 underline: false,
                 italics: false,
-                text: "Settings, Changelogs, Help guide & Betas (both coming soon), are all accessable in the new menu located in the top left corner.",
+                text: "The styling of the weapons section has been changed, so that the weapon's rarity color scheme will cover the whole section of that weapon.",
                 fontSize: 20,
                 fontWeight: 500,
                 textAlign: "center"
@@ -3758,94 +3707,7 @@ let changelog = [
                 color: "white",
                 underline: false,
                 italics: false,
-                text: "A new logo was created for the calculator, and a footer has been made to make the bottom look more sleek.",
-                fontSize: 20,
-                fontWeight: 500,
-                textAlign: "center"
-            },
-            {
-                type: "decorated text",
-                color: "white",
-                underline: false,
-                italics: false,
-                text: "The whole layout of the calculator has been changed to a new positioning system (flexbox). This allows for better resizing of this website. Because of this change, full tablet support has been added and mobile support will be available in the following update.",
-                fontSize: 20,
-                fontWeight: 500,
-                textAlign: "center"
-            },
-            {
-                type: "decorated text",
-                color: "white",
-                underline: false,
-                italics: false,
-                text: "Removed Clutch Engine Library and changelogs popup on load.",
-                fontSize: 20,
-                fontWeight: 500,
-                textAlign: "center"
-            },
-            {
-                type: "decorated text",
-                color: "white",
-                underline: false,
-                italics: false,
-                text: "Mobile support will be available in update 2.4.",
-                fontSize: 20,
-                fontWeight: 500,
-                textAlign: "center"
-            },
-            {
-                type: "decorated text",
-                color: "white",
-                underline: false,
-                italics: false,
-                text: "Clicking on an item, prompting it's magnified details has been reworked.",
-                fontSize: 20,
-                fontWeight: 500,
-                textAlign: "center"
-            },
-            {
-                type: "item",
-                color1: "rgba(0, 50, 0, 0.25)",
-                color2: "rgba(0, 154, 104, 1)",
-                degrees: 135,
-                name: "Favicon",
-                image: "images/logo-silkroad.png"
-            },
-            {
-                type: "decorated text",
-                color: "white",
-                underline: false,
-                italics: false,
-                text: "The favicon has been changed to a Silk Road themed logo.",
-                fontSize: 20,
-                fontWeight: 500,
-                textAlign: "center"
-            },
-            {
-                type: "item",
-                borderColor: "rgb(51, 51, 51)",
-                color1: "rgba(51, 51, 51, 0.25)",
-                color2: "rgb(109, 109, 109)",
-                degrees: 135,
-                name: "Titanium",
-                image: "images/ores/titanium.png"
-            },
-            {
-                type: "decorated text",
-                color: "white",
-                underline: false,
-                italics: false,
-                text: "Fixed a bug regarding incorrect titanium stack calculations, thanks to @something for the Github issue once again!",
-                fontSize: 20,
-                fontWeight: 500,
-                textAlign: "center"
-            },
-            {
-                type: "decorated text",
-                color: "white",
-                underline: false,
-                italics: false,
-                text: "Fixed many other unlisted minor bugs.",
+                text: "Other small fixes.",
                 fontSize: 20,
                 fontWeight: 500,
                 textAlign: "center"

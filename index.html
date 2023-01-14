@@ -32,41 +32,50 @@
         <div id="background-img"></div>
 
         <div id="page-container">
-            <div class="main-flex-container">
-                <div class="aux-container">
-                    <div class="title" id="weapon-title">Weapons & Items</div>
-                    <div class="aux-container2">
-                        <div id="weapons-button-container" onclick="changeType('weapons')" title="Weapons">
-                            <h1 class="change-section-button-text">Weapons</h1>
-                        </div>
-                        <div id="attachments-button-container" onclick="changeType('attachments')" title="Attachments">
-                            <h1 class="change-section-button-text">Attachments</h1>
-                        </div>
-                    </div>
+            <div id="monoaward-container">
+                <img src="images/monoaward.png" alt="Image of Mono Award" title="Mono Award" style="max-height: 100%;">
+                <div>
+                    <h2>Winner of the 2022 Mono Awards</h2>
+                    <h3>&#9733 ClutchMasterFTW | Best Forum Guide</h3>
                 </div>
-
-                <div id="guns-container"><!--Item(s) are generated here--></div>
             </div>
+            <div id="content">
+                <div class="main-flex-container">
+                    <div class="aux-container">
+                        <div class="title" id="weapon-title">Weapons & Items</div>
+                        <div class="aux-container2">
+                            <div id="weapons-button-container" onclick="changeType('weapons')" title="Weapons">
+                                <h1 class="change-section-button-text">Weapons</h1>
+                            </div>
+                            <div id="attachments-button-container" onclick="changeType('attachments')" title="Attachments">
+                                <h1 class="change-section-button-text">Attachments</h1>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="main-flex-container">
-                <div class="title">Crafting Ingredients</div>
-                <div id="material-container"><!--Material(s) are generated here--></div>
-                <div id="reset" onclick="location.reload()">RESET QUANTITY</div>
-        
-                <div class="aux-container3" style="gap: 5px;">
-                    <div id="electric-furnace" onclick="changeFurnace('electric')">
-                        <img src="images/electric furnace.png" id="electric-furnace-image">
-                        <h1 class="furnace-text">Electric Furnace</h1>
-                    </div>
-                    <div id="coal-furnace" onclick="changeFurnace('coal')">
-                        <img src="images/coal furnace.png" id="coal-furnace-image">
-                        <h1 class="furnace-text">Coal Furnace</h1>
-                    </div>
+                    <div id="guns-container"><!--Item(s) are generated here--></div>
                 </div>
 
-                <div id="time-text-container">
-                    <div id="time-text">Estimated Time To Craft:</div>
-                    <div id="time">00:00:00</div>
+                <div class="main-flex-container">
+                    <div class="title">Crafting Ingredients</div>
+                    <div id="material-container"><!--Material(s) are generated here--></div>
+                    <div id="reset" onclick="location.reload()">RESET QUANTITY</div>
+            
+                    <div class="aux-container3" style="gap: 5px;">
+                        <div id="electric-furnace" onclick="changeFurnace('electric')">
+                            <img src="images/electric furnace.png" id="electric-furnace-image">
+                            <h1 class="furnace-text">Electric Furnace</h1>
+                        </div>
+                        <div id="coal-furnace" onclick="changeFurnace('coal')">
+                            <img src="images/coal furnace.png" id="coal-furnace-image">
+                            <h1 class="furnace-text">Coal Furnace</h1>
+                        </div>
+                    </div>
+
+                    <div id="time-text-container">
+                        <div id="time-text">Estimated Time To Craft:</div>
+                        <div id="time">00:00:00</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,7 +105,7 @@
             </div>
 
             <div id="update-log-version-text">VERSION</div>
-            <div id="update-log-version-value">2.3</div>
+            <div id="update-log-version-value">2.35</div>
 
             <div id="update-log-content-container"><!--Changelog content is generated here--></div>
 
@@ -177,13 +186,6 @@
         <div id="help-text9">Lastly, report any bugs you find by visiting my GitHub Issues page, and sumbit the bug under issues. That's all, Enjoy!
             <div id="help-proceed9" onclick="help(11)">Finish</div>
         </div>
-
-        <span class="material-icons" id="settings-icon" onclick="settingsMenu(1)" title="Settings">settings</span>
-
-        <div id="settings-container">
-            <div id="settings-title">Settings</div>
-            <img src="images/close.png" id="settings-close" onclick="settingsMenu(0)">
-        </div>
         -->
 
         <div id="footer">
@@ -194,7 +196,7 @@
                     <a href="https://github.com/ClutchMasterFTW" target="_blank" class="link notranslate">ClutchMasterFTW</a>
                 </div>
                 <p id="credits-divider">|</p>
-                <b>v.2.3</b>
+                <b>v.2.35</b>
 
                 <div id="stack-type-container">
                     <div id="stack-type">Stacks: Off</div>
@@ -229,33 +231,11 @@
 </html>
 
 <!--
-    Version 2.3 (ALL COMPLETED -- not everything changed is listed here)
-    - change color scheme
-    - change background to southside
-    - Edit favicon
-    - Google bubble button effect
-    - create footer with new logo
-    - Add class notranslate to things that shouldn't be translated
-    - Change flex direction of furnace types upon resizing page smaller, so the material section is more filled
-    - change changelogs to additional menus, include settings, changelogs, help, and betas there
-    - Fix logo when using google translate
-    - Create new changelog for 2.3
-    - Titanium Stacks bug
-    - Version animation at launch (use localstorage to prevent from playing again)
-    - fix itemInfo javascript/styling
-    - Fix attachments
-    - changelog arrow (stored in localstorage)
-    - [!] Add prices to all attachments
-    - Insert prestiges into settings to help better calculate estimated time
--->
-
-<!--
     Version 2.4 (and beyond):
-    - [!] Change color scheme and background image for winterford
     - No javascript on browser popup (noscript)
     - Redesign material section with flex-box
-    - Fix how the close button is made with javascript, make the transition CSS instead
-    - Redo item info popup (when you click on an item)
+    - Fix how the close button for item-info is made with javascript, make the transition CSS instead
+    - Redo item info popup (when you click on an item) - maybe not after the change in 2.3
     - Change the look of images (instead of a box with a rarity border, the gradient should be connected to the main container and branch off a little bit w/ a border on the right OR the border of the whole container - may conflict with hovering on the image for item info)
     - Instead of text, make the mag size, fire modes, and ammo types icon's and progress bar's
     - Remove mag size, fire modes, and ammo types from weapon section in the case of mobile resizing
@@ -271,10 +251,16 @@
     - MP-40 may be a blueprint now?
     - Look into whether plastic still works after using flex-box
     - Redesign itemInfo javascript/styling
+    - [!] Fix discrepancy regarding names of ingots (in weapons tab) vs. bars (in materials dropdown tab)
+    - Add an opaque weapon in the background of the item info
+    - Add description of attachment whenever the iteminfo of an attachment is shown
 -->
 
 <!--
     KNOWN BUGS:
     - [2.4] Bubble animation position (and position of the actionmenu) bug when using google translate
     - [2.4] Google Translate breaks item info positioning
+    - [2.4] Resizing bug of prestige containers in settings
+    - [2.4] Styling of furnace type is messed up after clicking, then hovering on one of the buttons
+    - [2.4] Fix bug regarding hovering over the furnace tabs (gradient and border)
 -->
