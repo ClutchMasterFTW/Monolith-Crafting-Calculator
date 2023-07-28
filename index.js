@@ -254,6 +254,27 @@ let guns = [
         price: 6000
     },
     {
+        name: "MP-40",
+        class: "Exotic",
+        amount: 0,
+        level: 31,
+        mag: 32,
+        firemodes: "Automatic",
+        legal: false,
+        ammo: "pistol",
+        copper: 16,
+        iron: 18,
+        silver: 0,
+        gold: 0,
+        titanium: 0,
+        wood: 2,
+        maple: 0,
+        willow: 0,
+        steel: 3,
+        coal: 0,
+        price: 16500
+    },
+    {
         name: "Thompson",
         class: "Rifle",
         amount: 0,
@@ -767,16 +788,16 @@ let guns = [
         legal: false,
         ammo: "sniper",
         copper: 0,
-        iron: 40,
+        iron: 12,
         silver: 17,
         gold: 6,
         titanium: 5,
-        wood: null,
-        maple: null,
-        willow: 12,
-        steel: 0,
-        coal: null,
-        price: 50000
+        wood: 0,
+        maple: 0,
+        willow: 3,
+        steel: 14,
+        coal: 0,
+        price: 27500
     },
     {
         name: "Silver Baller",
@@ -789,12 +810,12 @@ let guns = [
         ammo: "pistol",
         copper: 9,
         iron: 12,
-        silver: null,
+        silver: 0,
         gold: 2,
-        titanium: null,
+        titanium: 0,
         wood: 8,
         maple: 4,
-        willow: null,
+        willow: 0,
         steel: 5,
         coal: 0,
         price: 10000
@@ -924,27 +945,6 @@ let guns = [
         steel: null,
         coal: null,
         price: 160000
-    },
-    {
-        name: "MP-40",
-        class: "Exotic",
-        amount: 0,
-        level: 0,
-        mag: 32,
-        firemodes: "Automatic",
-        legal: false,
-        ammo: "pistol",
-        copper: null,
-        iron: null,
-        silver: null,
-        gold: null,
-        titanium: null,
-        wood: null,
-        maple: null,
-        willow: null,
-        steel: null,
-        coal: null,
-        price: 80000
     },
     {
         name: "BMG-50",
@@ -2143,6 +2143,13 @@ var materials = [
         stacks: 0,
         remainder: 0
     },
+    // {
+    //     name: "Aluminum Ore",
+    //     image: "images/ores/iron.png",
+    //     amount: 0,
+    //     stacks: 0,
+    //     remainder: 0
+    // },
     {
         name: "Silver Ore",
         image: "images/ores/silver.png",
@@ -2216,6 +2223,13 @@ var extendedMaterials = [
         stacks: 0,
         remainder: 0
     },
+    // {
+    //     name: "Aluminum Bar",
+    //     image: "images/ores/i_steel_new.png",
+    //     amount: 0,
+    //     stacks: 0,
+    //     remainder: 0
+    // },
     {
         name: "Silver Bar",
         image: "images/ores/i_silver_new.png",
@@ -2262,7 +2276,7 @@ var extendedMaterials = [
 
 let craftingTab = "weapons";
 
-let version = "2.35";
+let version = "2.37";
 
 function loadGuns() {
     for(i = 0; i < guns.length; i++) {
@@ -2442,7 +2456,7 @@ function loadGuns() {
             itemInputBox.style.border = "2px red solid";
             itemInputBox.setAttribute("min", "0");
             itemInputBox.setAttribute("max", "0");
-        } else if(guns[i].class == "Exotic" && guns[i].name != "Silver Baller") {
+        } else if(guns[i].class == "Exotic" && (guns[i].name != "Silver Baller" && guns[i].name != "MP-40")) {
             itemInputBox.style.backgroundColor = "#5a5a5a";
             itemInputBox.style.color = "salmon";
             itemInputBox.style.border = "2px salmon solid";
@@ -2455,7 +2469,7 @@ function loadGuns() {
             itemInputBox.setAttribute("max", "99");
         }
 
-        if(guns[i].name == "FAMAS F1" || guns[i].name == "HK MP7A1" || guns[i].name == "TAC-338" || guns[i].name == "Silver Baller") {
+        if(guns[i].name == "FAMAS F1" || guns[i].name == "HK MP7A1" || guns[i].name == "TAC-338" || guns[i].name == "Silver Baller" || guns[i].name == "MP-40") {
             itemContainer.style.backgroundImage = "url('images/blueprint.png')";
         }
         
@@ -2671,12 +2685,12 @@ function changeBG() {
         background = "simple";
         localStorage.setItem("theme", "Simple");
     } else if(background == "simple") {
-        document.getElementById("background-img").style.backgroundImage = "url(images/background-winter.jpg)";
+        document.getElementById("background-img").style.backgroundImage = "url(images/background.jpg)";
         document.getElementById("background-img").style.filter = "blur(0px)";
         document.getElementById("warning-text").style.color = "white";
         document.getElementById("warning").style.color = "white";
         document.getElementById("credits").style.color = "white";
-        document.getElementById("bg-type").innerHTML = "Winterford";
+        document.getElementById("bg-type").innerHTML = "Monoford";
         background = "image";
         localStorage.setItem("theme", "image");
     }
@@ -2720,8 +2734,8 @@ if(localStorage.getItem("theme") == null){
 
 if(localStorage.getItem("theme") == "image") {
     background = "image";
-    document.getElementById("background-img").style.backgroundImage = "url(images/background-winter.jpg)";
-    document.getElementById("bg-type").innerHTML = "Winterford";
+    document.getElementById("background-img").style.backgroundImage = "url(images/background.jpg)";
+    document.getElementById("bg-type").innerHTML = "Monoford";
 } else if(localStorage.getItem("theme") == "Simple") {
     background = "simple";
     document.getElementById("background-img").style.backgroundImage = "linear-gradient(#181818, #070707)";
@@ -2730,7 +2744,7 @@ if(localStorage.getItem("theme") == "image") {
 
 //Version 1.9 (Item Info)
 function imageHover(element) {
-    if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338" || guns[element].name == "Silver Baller") {
+    if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338" || guns[element].name == "Silver Baller" || guns[element].name == "MP-40") {
         document.getElementById("item-container" + element).style.backgroundImage = "url('images/blueprint.png'), gray";
         document.getElementById("item-container" + element).style.background = "gray";
     } else {
@@ -2740,7 +2754,7 @@ function imageHover(element) {
 }
 
 function imageUNHover(element) {
-    if((guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338" || guns[element].name == "Silver Baller") && currentTab == "weapons") {
+    if((guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338" || guns[element].name == "Silver Baller" || guns[element].name == "MP-40") && currentTab == "weapons") {
         document.getElementById("item-container" + element).style.backgroundImage = "url('images/blueprint.png')";
     } else {
         document.getElementById("item-container" + element).style.backgroundColor = "";
@@ -2808,7 +2822,7 @@ function itemInfo(element, type) {
                 break;
         }
         
-        if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338" || guns[element].name == "Silver Baller") {
+        if(guns[element].name == "HK MP7A1" || guns[element].name == "FAMAS F1" || guns[element].name == "TAC-338" || guns[element].name == "Silver Baller" || guns[element].name == "MP-40") {
             itemInfoContainer.style.backgroundImage = "url('images/blueprint.png')";
             itemInfoContainer.style.border = "0.25vw solid rgb(0, 0, 50)";
         }
@@ -3543,42 +3557,42 @@ function timeEstimation() {
     gunsHaveBeenAdded = false;
 
     if(furnace == "coal") {
-        seconds += 30;
+        seconds += 20;
     } else if(furnace == "electric") {
-        seconds += 90;
+        seconds += 80;
     }
 
     for(i = 0; i < materials.length - 4; i++) {
         if(prestiges[0] == true) {
-            seconds += (6 * materials[i].amount);
+            seconds += (5 * materials[i].amount);
         } else {
-            seconds += (7 * materials[i].amount);
+            seconds += (6 * materials[i].amount);
         }
     }
     for(i = materials.length - 4; i < materials.length - 1; i++) {
         if(prestiges[2] == true) {
-            seconds += (6 * materials[i].amount);
+            seconds += (5 * materials[i].amount);
         } else {
-            seconds += (7 * materials[i].amount);
+            seconds += (6 * materials[i].amount);
         }
     }
     for(i = 0; i < extendedMaterials.length; i++) {
         if(prestiges[1] == true) {
-            seconds += (7 * extendedMaterials[i].amount);
+            seconds += (6 * extendedMaterials[i].amount);
         } else {
-            seconds += (8 * extendedMaterials[i].amount);
+            seconds += (7 * extendedMaterials[i].amount);
         }
     }
     for(i = 0; i < guns.length; i++) {
-        if(i < 38 || i > 44) {
-            seconds += (15 * guns[i].amount);
+        if(i < 39 || i > 44) {
+            seconds += (10 * guns[i].amount);
             if(guns[i].amount > 0) {
                 gunsHaveBeenAdded = true;
             }
         }
     }
     for(i = 0; i < attachments.length; i++) {
-        seconds += (15 * attachments[i].amount);
+        seconds += (10 * attachments[i].amount);
         if(attachments[i].amount > 0) {
             gunsHaveBeenAdded = true;
         }
@@ -3594,9 +3608,9 @@ function timeEstimation() {
     }
 
     if(seconds < 10) {
-        presentableSeconds = "0" + seconds;
+        presentableSeconds = "0" + Math.floor(seconds);
     } else {
-        presentableSeconds = seconds;
+        presentableSeconds = Math.floor(seconds);
     }
 
     if(minutes < 10) {
@@ -3660,26 +3674,36 @@ let changelog = [
         subcontent: [
             {
                 type: "item",
-                color1: "#2b2b2b",
-                color2: "#ffffff",
+                color1: "#0048ff",
+                color2: "#002177",
                 degrees: 135,
-                name: "Attachment Images",
-                image: "images/attachments/ACOG Sights.png"
+                name: "MP-40 Blueprint",
+                image: "images/weapons/MP-40.png"
             },
             {
                 type: "decorated text",
                 color: "white",
                 underline: false,
                 italics: false,
-                text: "All of the new inventory images for attachments have been added. Thanks to Marwan for creating and supplying them for me!",
-                fontSize: 20,
+                text: "The MP-40 has been a craftable weapon for a while now, requiring a blueprint.",
+                fontSize: 18,
+                fontWeight: 500,
+                textAlign: "center"
+            },
+            {
+                type: "decorated text",
+                color: "white",
+                underline: false,
+                italics: true,
+                text: "@something gracefully gave me the recipe for many of the blueprint weapons, including this one, so it's now in the calculator!",
+                fontSize: 18,
                 fontWeight: 500,
                 textAlign: "center"
             }
         ]
     },
     {
-        title: "Changes",
+        title: "Fixes & Changes",
         thumbnail: "images/Fix.png",
         subcontent: [
             {
@@ -3687,7 +3711,7 @@ let changelog = [
                 color: "white",
                 underline: false,
                 italics: false,
-                text: "The background has been changed to Winterford.",
+                text: "The background has been changed to Monoford.",
                 fontSize: 20,
                 fontWeight: 500,
                 textAlign: "center"
@@ -3697,7 +3721,7 @@ let changelog = [
                 color: "white",
                 underline: false,
                 italics: false,
-                text: "The styling of the weapons section has been changed, so that the weapon's rarity color scheme will cover the whole section of that weapon.",
+                text: "Many other bugs have been patched, including one that causes the estimated time to not change when crafting Silver Ballers.",
                 fontSize: 20,
                 fontWeight: 500,
                 textAlign: "center"
@@ -3707,7 +3731,17 @@ let changelog = [
                 color: "white",
                 underline: false,
                 italics: false,
-                text: "Other small fixes.",
+                text: "Color scheme has changed.",
+                fontSize: 20,
+                fontWeight: 500,
+                textAlign: "center"
+            },
+            {
+                type: "decorated text",
+                color: "white",
+                underline: false,
+                italics: false,
+                text: "The Google Translate feature has been moved into the settings tab.",
                 fontSize: 20,
                 fontWeight: 500,
                 textAlign: "center"

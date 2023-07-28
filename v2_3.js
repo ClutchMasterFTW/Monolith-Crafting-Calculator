@@ -1,4 +1,4 @@
-//Confetti is disabled after December 10th 2022
+//Confetti is disabled after July 30th 2023
 //Documentation for party.js: https://party.js.org/docs/
 
 let today = new Date();
@@ -7,9 +7,9 @@ let mm = String(today.getMonth() + 1).padStart(2, '0');
 let yyyy = today.getFullYear();
 
 today = mm + '/' + dd + '/' + yyyy;
-if(yyyy == "2022" && mm == "12") {
-    if(dd <= "10") {
-        if(localStorage.getItem("version2.3announcement") == undefined) {
+if(yyyy == "2023" && mm == "07") {
+    if(dd <= "30") {
+        if(localStorage.getItem("version2.37announcement") == undefined) {
             setTimeout(function() {
                 party.confetti(document.body, {
                     count: party.variation.range(25, 75),
@@ -29,7 +29,7 @@ if(yyyy == "2022" && mm == "12") {
 
             let version = document.createElement("div");
             version.id = "version2_3";
-            version.innerHTML = "2.3";
+            version.innerHTML = "2.37";
 
             document.body.appendChild(container);
             container.appendChild(title);
@@ -69,7 +69,7 @@ if(yyyy == "2022" && mm == "12") {
                 }, 8250);
             }, 10000);
 
-            localStorage.setItem("version2.3announcement", true);
+            localStorage.setItem("version2.37announcement", true);
         }
     }
 }

@@ -23,11 +23,7 @@
                 <span class="material-icons changelogs notranslate" title="Changelogs" onclick="document.getElementById('update-log-container').style.visibility = 'visible'; document.getElementById('update-log-container').style.opacity = '100%';">list_alt</span>
             </div>
             <img src="images/updated-logo2.png" id="logo">
-            <div id="language-container">
-                <p class="medium-text">EXPERIMENTAL FEATURE</p>
-                <p class="tiny-text">(Some languages may break the styling of the calculator and/or may be translated incorrectly)</p>
-                <div id="google_translate_element"></div>
-            </div>
+            
         </div>
         <div id="background-img"></div>
 
@@ -105,7 +101,7 @@
             </div>
 
             <div id="update-log-version-text">VERSION</div>
-            <div id="update-log-version-value">2.35</div>
+            <div id="update-log-version-value">2.37</div>
 
             <div id="update-log-content-container"><!--Changelog content is generated here--></div>
 
@@ -136,6 +132,8 @@
                     <p>Woodcutting</p>
                 </div>
             </div>
+            <p style="color: white; font-size: 20px; font-weight: 600;">(EXPERIMENTAL FEATURE) Language:</p>
+            <div id="google_translate_element"></div>
         </div>
 
         <!--
@@ -196,7 +194,7 @@
                     <a href="https://github.com/ClutchMasterFTW" target="_blank" class="link notranslate">ClutchMasterFTW</a>
                 </div>
                 <p id="credits-divider">|</p>
-                <b>v.2.35</b>
+                <b>v.2.37</b>
 
                 <div id="stack-type-container">
                     <div id="stack-type">Stacks: Off</div>
@@ -245,10 +243,8 @@
     - Show materials to craft a certain item upon clicking on the item info
     - Search query for weapons (and materials?) <- maybe only include in Beta so it doesn't get too complicated, collect statistics of usage
     - Add help guide back, collect statistics of usage
-    - Organization integration (unknown for now, will require php and transfer of webserver)
     - Switch item info all to CSS classes, I'm tired of this JS animation bullshit!
     - Filters (Rifles, Pistols, Equipables, etc.)
-    - MP-40 may be a blueprint now?
     - Look into whether plastic still works after using flex-box
     - Redesign itemInfo javascript/styling
     - [!] Fix discrepancy regarding names of ingots (in weapons tab) vs. bars (in materials dropdown tab)
@@ -258,9 +254,10 @@
 
 <!--
     KNOWN BUGS:
-    - [2.4] Bubble animation position (and position of the actionmenu) bug when using google translate
-    - [2.4] Google Translate breaks item info positioning
-    - [2.4] Resizing bug of prestige containers in settings
-    - [2.4] Styling of furnace type is messed up after clicking, then hovering on one of the buttons
-    - [2.4] Fix bug regarding hovering over the furnace tabs (gradient and border)
+    - [2.5] Bubble animation position (and position of the actionmenu) bug when using google translate
+    - [2.5] Google Translate breaks item info positioning
+    - [2.5] Resizing bug of prestige containers in settings
+    - [2.5] Styling of furnace type is messed up after clicking, then hovering on one of the buttons
+    - [2.5] Fix bug regarding hovering over the furnace tabs (gradient and border)
+    - [2.4] Silver baller doesn't contribute to the estimated time
 -->
