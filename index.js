@@ -2276,7 +2276,7 @@ var extendedMaterials = [
 
 let craftingTab = "weapons";
 
-let version = "2.37";
+let version = "2.37dep";
 
 function loadGuns() {
     for(i = 0; i < guns.length; i++) {

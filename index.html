@@ -108,6 +108,13 @@
             <div id="update-log-close" onclick="closeLog()">CLOSE</div>
         </div>
 
+        <div id="version-warning-container">
+            <span class="material-icons" id="version-warning-icon">pan_tool</span>
+            <div id="version-warning-title">TOOL DEPRECATED!</div>
+            <div id="version-warning-text">As of Monolith's recent Update <b>2.7</b>, the crafting system as a whole has once again had a total overhaul. I will try to create a fully new system for calculating crafting recipes as soon as possible, but as of March 2nd, this tool is nearly useless for crafting.</div>
+            <div id="version-proceed" onclick="versionCloseWarning()">Proceed</div>
+        </div>
+
         <div id="settings-container">
             <div id="settings-title">Settings</div>
             <span class="material-icons notranslate close-settings" onclick="document.getElementById('settings-container').style.opacity = '0%'; document.getElementById('settings-container').style.visibility = 'hidden';" title="Close">close</span>
@@ -194,7 +201,7 @@
                     <a href="https://github.com/ClutchMasterFTW" target="_blank" class="link notranslate">ClutchMasterFTW</a>
                 </div>
                 <p id="credits-divider">|</p>
-                <b>v.2.37</b>
+                <b>v.2.37dep</b>
 
                 <div id="stack-type-container">
                     <div id="stack-type">Stacks: Off</div>
@@ -220,6 +227,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="ClutchEngine1/main.js"></script>
         <script src="index.js"></script>
+        <script src="dep.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
         <script src="v2_3.js"></script>
